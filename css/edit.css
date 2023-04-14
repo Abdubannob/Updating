@@ -19,14 +19,12 @@
 .edit-profile{
     position: absolute;
     width: 240px;
-    height: 1145px;
+    height: 1190px;
     left: 101px;
     top: 0;
     background-color: #fff;
     z-index: 99;
-    border: 1px solid red;
     padding: 40px 46px 40px 20px;
-
 }
 
 .edit-profile .edit-items{
@@ -59,6 +57,57 @@
     color: var(--primary);
 }
 
+.edition .email{
+    background-color: transparent;
+    padding: 0;
+}
+.edition .password{
+    display: flex;
+    height: 40px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: var(--extra);
+}
+
+.edition .password button{
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.password button img{
+    width: 18px;
+    height: 12px;
+}
+
+.edition .password input{
+    border: none;
+    outline: none;
+}
+.edition .email-password{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.email-password .save{
+    margin-top: 10px;
+}
+
+.edition .email-item{
+    width: 500px;
+}
+
+.edition .email-item{
+    font-size: 14px;
+    color: #9397B2;
+    line-height: 16.14px;
+}
 .edition-profile{
     width: 100%;
     height: 975px;
@@ -86,7 +135,9 @@
     color: var(--edition-button);
     font-size: 15px;
     border-radius: 6px;
+    cursor: pointer;
 }
+
 .delete-button{
     display: flex;
     align-items: center;
@@ -98,6 +149,7 @@
     background-color: var(--extra-four);
     border: 1px solid var(--edition-button) ;
     color: var(--edition-button);
+    cursor: pointer;
 }
 
 .sign-in{
@@ -142,15 +194,17 @@
     width: 347px;
 }
 .sign-in .input-active{
-
+    outline: 1px solid var(--secondary);
     background-color: transparent;
     border: 1px solid var(--secondary);
 }
-
+.input-item{
+    outline: 1px solid var(--secondary);
+}
 .gender-button{
     /* width: 81px; */
     /* height: 40px; */
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +229,7 @@
     height: 30px;
 }
 .sign-info .code-number{
-    width: 65px;
+    width: 70px;
     font-size: 15px;
     padding: 0 0 0 20px;
     outline: none;
@@ -209,4 +263,121 @@
 .gender span{
     font-size: 14px;
     color: #99A19C;
+}
+
+.btn-edit{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.save{
+    width: 73px;
+    height: 40px;
+    background-color: var(--secondary);
+    font-size: 15px;
+    font-weight: 500;
+    border: navajowhite;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.email-item .notifcation-btn{
+    background-color: #fff;
+    border:  1px solid #C5C5C5;
+}
+
+.notifcation-btn button{
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.email-notifcation-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 97px;
+    height: 31px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    border:  1px solid #CED4E2;
+}
+
+.email-notifcation-button label{
+    min-width: 53px;
+    height: 100%;
+    font-size: 13px;
+    color: #373E56;
+    border-right: 1px solid #CED4E2;
+    padding:8px;
+}
+
+.email-notifcation-button .cancel-item{
+    color: #373356;
+    width: 15px;
+}
+
+.edition .dark-light .light-active {
+    width: 21px;
+    height: 21px;
+    border-radius: 13px;
+    background-color: #fff;
+    position: absolute;
+    left: 21px;
+    top: 2px;
+}
+
+.edit-profile a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.navigation .settings-actived{
+    width: 101px;
+    height: 84px;
+    padding: 20px 0px;
+    gap: 4px;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    color: #000;
+}
+.notifcation-profile{
+    height: 701px;
+}
+
+.notifcation-profile .email-item form{
+    font-size: 16px;
+}
+
+.notifcation-edition{
+    height: 882px;
+}
+
+.stop-notifcation{
+    font-size: 16px;
+    color: #373E56;
+    font-weight: 700;
+}
+
+.edition .dark-light{
+    background-color: var(--secondary);
+}
+.edition-profile .turn-on-off{
+    margin: 30px 0 20px 0;
 }

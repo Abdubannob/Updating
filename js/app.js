@@ -18,3 +18,8 @@ document.getElementById("notification").onclick =()=>{
 document.getElementById("screen").onclick =()=>{
     screen.style.display = "none"
 }
+
+document.getElementById("input-item").onclick = () => {
+   
+    document.getElementById("input-item").style.outlineColor ="1px solid var(--secondary)"
+}
