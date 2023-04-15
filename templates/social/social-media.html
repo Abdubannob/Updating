@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/edit.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Document</title>
 </head>
 
@@ -43,7 +44,7 @@
     </header>
     <section class="contain">
         <nav class="navigation">
-            <a href="../index.html">
+            <a href="../../index.html">
                 <div class="menu-service">
                     <div class="contain-img">
                         <img src="../images/DASHt.svg" alt="bar">
@@ -51,7 +52,7 @@
                     <span>Dashboard</span>
                 </div>
             </a>
-         <a href="./basic.html">
+         <a href="../basic.html">
             <div class="menu-bar ">
                 <div class="contain-img">
                     <img src="../images/RequstWhite.svg" alt="bar">
@@ -59,7 +60,7 @@
                 <span>Requests</span>
             </div>
          </a>
-           <a href="./services.html">
+           <a href="../services.html">
             <div class="menu-bar unactive-one ">
                 <div class="contain-img">
                     <img src="../images/Vector (1).svg" alt="bar">
@@ -67,53 +68,49 @@
                 <span>Services</span>
             </div>
            </a>
+           <a href="">
             <div class="menu-bar active">
                 <div class="contain-img">
                     <img src="../image/channel.svg" alt="bar">
                 </div>
                 <span>Channels</span>
             </div>
+           </a>
+           <a href="../order.html">
             <div class="menu-bar unactive">
-                <div class="contain-img">
-                    <img src="../images/order.svg" alt="bar">
-                </div>
-                <span>Orders</span>
+                <div class="contain-img con">
+                    <img src="../images/Vector (3).svg" alt="bar">
+                  </div>
+                   <span>Orders</span>
+                   <img class="count" src="../images/Frame 1637432.svg" alt="count">
                 <!-- <img class="count" src="./images/Frame 1637432.svg" alt="count"> -->
             </div>
+           </a>
             <div class="menu-bar ">
                 <div class="contain-img">
                     <img src="../images/Vector 328.svg" alt="bar">
                 </div>
                 <span>Payments</span>
             </div>
+           <a href="../settings.html">
             <div class="menu-bar">
                 <div class="contain-img">
                     <img src="../images/Vector (4).svg" alt="bar">
                 </div>
                 <span>Settings</span>
             </div>
+           </a>
             <div class="menu-cont">
 
             </div>
         </nav>
 
         <div class="operation-request">
-            <h1>Orders</h1>
-            <div class="order-operation">
-                <div class="order-item">
-                    <span class="isactived" >All orders</span>
-                    <span class="unactived" >Custom requests</span>
-                    <span class="unactived" >Services</span>
-                </div>
-                <div class="sorts">
-                    <div>
-                        Sort by: 
-                    </div>
-                    <select name="select" id="select">
-                        <option value="Bestsellers">Bestsellers</option>
-                    </select>
-                </div> 
-            </div>
+           <div class="social-item">
+            <h1>Social media channels</h1>
+           <a href="./create-channel.html"> <button> <img src="../image/whitePlus.svg" alt="plus"> Add Channel</button></a>
+           </div>
+            
             
             <div class="filters">
 
@@ -161,91 +158,28 @@
           <div class="order-schedule">
             <div class="order-list">
                 <div class="top-order">
-                    <div class="left-order-side">
-                        <label class="Order-name"><img src="../images/Youtub.svg" alt="Youtube"></label>
-                        <label>Sat, 18 Jul</label>
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
                         <label class="order-type">
-                        Order type:
-                            <div>
-                                <img src="../image/servic.svg" alt="service">
-                                <div>Service</div>
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
                             </div>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
                         </label>
                     </div>
 
                     <div class="right-order-side">
-                        <div class="images-service serve-order">
-                            <div class="image imaging">
-                                <img src="../images/Ellipse 293.svg" class="commentment" alt="comment">
-                                <div class="dots">
-                                    <img src="../images/dot.svg" class="dotted" alt="dot">
-                                    <img src="../images/dot.svg" class="dotted" alt="dot">
-                                    <img src="../images/dot.svg" class="dotted" alt="dot">
-                                </div>
-                            </div>
-                             <label class="yellow-color">Pending</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-order">
-                    <div class="left-bottom-side">
-                        <img src="../image/computer.svg" alt="computer">
-                    <div class="service-name">
-                        <span>Service name</span>
-                        <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
-                    </div>
-                    </div>
-
-                    <div class="right-bottom-side">
-                        <div class="bx">
-                            <label>Channel</label>
-                            <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>smotraTV</span>
-                            </div>
-                        </div>
-                        <div class="bx">
-                            <label>Delivery Days</label>
-                            <div class="you">
-                                
-                                <span>4</span>
-                            </div>
-                        </div>
-                        <div class="bx">
-                            <label>Due date</label>
-                            <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>12/10/2021</span>
-                            </div>
-                        </div>
-                        <div class="prices">AED 450</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="order-list">
-                <div class="top-order">
-                    <div class="left-order-side">
-                        <label class="Order-name">Order #2453</label>
-                        <label>Sat, 18 Jul</label>
-                        <label class="order-type">
-                        Order type:
-                            <div>
-                                <img src="../image/drizzlegray.svg" alt="drizzle">
-                                <div>Custom requests</div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div class="right-order-side">
-                        <div class="left-days">
-                            <span>Left days:</span>
-                            <label>
-                                <p></p>
-                            </label>
-                            <span>19/25</span>
-                        </div>
-
                         <div class="images-service serve-order">
                             <div class="image imaging">
                                 <img src="../images/green.svg" class="commentment" alt="comment">
@@ -255,300 +189,424 @@
                                     <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
                             </div>
-                             <label class="green-color">In progress</label>
+                             <label class="green-color">Active</label>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-order">
-                    <div class="left-bottom-side">
-                        <img src="../image/order1 (1).svg" alt="computer">
-                    <div class="service-name">
-                        <span>Service name</span>
-                        <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media0.svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
                     </div>
                     </div>
 
                     <div class="right-bottom-side">
                         <div class="bx">
+                            <div class="you">
+                                <span>123</span>
+                            </div>
                             <label>Channel</label>
-                            <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>smotraTV</span>
-                            </div>
                         </div>
                         <div class="bx">
-                            <label>Delivery Days</label>
                             <div class="you">
-                                
-                                <span>4</span>
+                                <span>5.5M</span>
                             </div>
+                            <label>Subscribes</label>
                         </div>
                         <div class="bx">
-                            <label>Due date</label>
                             <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>12/10/2021</span>
+                                <span>193M</span>
                             </div>
+                            <label>Views</label>
                         </div>
-                        <div class="prices">AED 450</div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
+                            </div>
+                            <label>Comments</label>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="order-list">
                 <div class="top-order">
-                    <div class="left-order-side">
-                        <label class="Order-name">Order #2453</label>
-                        <label>Sat, 18 Jul</label>
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
                         <label class="order-type">
-                        Order type:
-                        <div>
-                            <img src="../image/drizzlegray.svg" alt="drizzle">
-                            <div>Custom requests</div>
-                        </div>
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
+                            </div>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
                         </label>
                     </div>
-    
+
                     <div class="right-order-side">
                         <div class="images-service serve-order">
                             <div class="image imaging">
-                                <img src="../images/greentwo.svg" class="commentment" alt="comment">
+                                <img src="../images/green.svg" class="commentment" alt="comment">
                                 <div class="dots">
                                     <img src="../images/dot.svg" class="dotted" alt="dot">
                                     <img src="../images/dot.svg" class="dotted" alt="dot">
                                     <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
                             </div>
-                             <label class="light-green">Completed</label>
+                             <label class="green-color">Active</label>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-order">
-                    <div class="left-bottom-side">
-                        <img src="../image/order1 (5).svg" alt="computer">
-                    <div class="service-name">
-                        <span>Service name</span>
-                        <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media1 (2).svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
                     </div>
                     </div>
-    
+
                     <div class="right-bottom-side">
                         <div class="bx">
+                            <div class="you">
+                                <span>123</span>
+                            </div>
                             <label>Channel</label>
-                            <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>smotraTV</span>
-                            </div>
                         </div>
                         <div class="bx">
-                            <label>Delivery Days</label>
                             <div class="you">
-                                
-                                <span>4</span>
+                                <span>5.5M</span>
                             </div>
+                            <label>Subscribes</label>
                         </div>
                         <div class="bx">
-                            <label>Due date</label>
                             <div class="you">
-                                <img src="../image/you.svg" alt="youtube">
-                                <span>12/10/2021</span>
+                                <span>193M</span>
                             </div>
+                            <label>Views</label>
                         </div>
-                        <div class="prices">AED 450</div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
+                            </div>
+                            <label>Comments</label>
+                        </div>
                     </div>
                 </div>
-                  </div>
-    
-                  <div class="order-list">
-                    <div class="top-order">
-                        <div class="left-order-side">
-                            <label class="Order-name">Order #2453</label>
-                            <label>Sat, 18 Jul</label>
-                            <label class="order-type">
-                            Order type:
-                            <div>
-                                <img src="../image/drizzlegray.svg" alt="drizzle">
-                                <div>Custom requests</div>
+            </div>
+
+            <div class="order-list">
+                <div class="top-order">
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
+                        <label class="order-type">
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
                             </div>
-                            </label>
-                        </div>
-        
-                        <div class="right-order-side">
-                            <div class="images-service serve-order">
-                                <div class="image imaging">
-                                    <img src="../images/greentwo.svg" class="commentment" alt="comment">
-                                    <div class="dots">
-                                        <img src="../images/dot.svg" class="dotted" alt="dot">
-                                        <img src="../images/dot.svg" class="dotted" alt="dot">
-                                        <img src="../images/dot.svg" class="dotted" alt="dot">
-                                    </div>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
+                        </label>
+                    </div>
+
+                    <div class="right-order-side">
+                        <div class="images-service serve-order">
+                            <div class="image imaging">
+                                <img src="../images/green.svg" class="commentment" alt="comment">
+                                <div class="dots">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
-                                 <label class="light-green">Completed</label>
                             </div>
+                             <label class="green-color">Active</label>
                         </div>
                     </div>
-                    <div class="bottom-order">
-                        <div class="left-bottom-side">
-                            <img src="../image/order1 (4).svg" alt="computer">
-                        <div class="service-name">
-                            <span>Service name</span>
-                            <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
+                </div>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media1 (3).svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
+                    </div>
+                    </div>
+
+                    <div class="right-bottom-side">
+                        <div class="bx">
+                            <div class="you">
+                                <span>123</span>
+                            </div>
+                            <label>Channel</label>
                         </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>5.5M</span>
+                            </div>
+                            <label>Subscribes</label>
                         </div>
-        
-                        <div class="right-bottom-side">
-                            <div class="bx">
-                                <label>Channel</label>
-                                <div class="you">
-                                    <img src="../image/you.svg" alt="youtube">
-                                    <span>smotraTV</span>
-                                </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>193M</span>
                             </div>
-                            <div class="bx">
-                                <label>Delivery Days</label>
-                                <div class="you">
-                                    
-                                    <span>4</span>
-                                </div>
+                            <label>Views</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
                             </div>
-                            <div class="bx">
-                                <label>Due date</label>
-                                <div class="you">
-                                    <img src="../image/you.svg" alt="youtube">
-                                    <span>12/10/2021</span>
-                                </div>
-                            </div>
-                            <div class="prices">AED 450</div>
+                            <label>Comments</label>
                         </div>
                     </div>
-                      </div>
-    
-                      <div class="order-list">
-                        <div class="top-order">
-                            <div class="left-order-side">
-                                <label class="Order-name">Order #2453</label>
-                                <label>Sat, 18 Jul</label>
-                                <label class="order-type">
-                                Order type:
-                                <div>
-                                    <img src="../image/drizzlegray.svg" alt="drizzle">
-                                    <div>Custom requests</div>
-                                </div>
-                                </label>
+                </div>
+            </div>
+
+            <div class="order-list">
+                <div class="top-order">
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
+                        <label class="order-type">
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
                             </div>
-            
-                            <div class="right-order-side">
-                                <div class="images-service serve-order">
-                                    <div class="image imaging">
-                                        <img src="../images/greentwo.svg" class="commentment" alt="comment">
-                                        <div class="dots">
-                                            <img src="../images/dot.svg" class="dotted" alt="dot">
-                                            <img src="../images/dot.svg" class="dotted" alt="dot">
-                                            <img src="../images/dot.svg" class="dotted" alt="dot">
-                                        </div>
-                                    </div>
-                                     <label class="light-green">Completed</label>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
+                        </label>
+                    </div>
+
+                    <div class="right-order-side">
+                        <div class="images-service serve-order">
+                            <div class="image imaging">
+                                <img src="../images/green.svg" class="commentment" alt="comment">
+                                <div class="dots">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
                             </div>
+                             <label class="green-color">Active</label>
                         </div>
-                        <div class="bottom-order">
-                            <div class="left-bottom-side">
-                                <img src="../image/order1 (3).svg" alt="computer">
-                            <div class="service-name">
-                                <span>Service name</span>
-                                <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
+                    </div>
+                </div>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media1 (4).svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
+                    </div>
+                    </div>
+
+                    <div class="right-bottom-side">
+                        <div class="bx">
+                            <div class="you">
+                                <span>123</span>
                             </div>
-                            </div>
-            
-                            <div class="right-bottom-side">
-                                <div class="bx">
-                                    <label>Channel</label>
-                                    <div class="you">
-                                        <img src="../image/you.svg" alt="youtube">
-                                        <span>smotraTV</span>
-                                    </div>
-                                </div>
-                                <div class="bx">
-                                    <label>Delivery Days</label>
-                                    <div class="you">
-                                        
-                                        <span>4</span>
-                                    </div>
-                                </div>
-                                <div class="bx">
-                                    <label>Due date</label>
-                                    <div class="you">
-                                        <img src="../image/you.svg" alt="youtube">
-                                        <span>12/10/2021</span>
-                                    </div>
-                                </div>
-                                <div class="prices">AED 450</div>
-                            </div>
+                            <label>Channel</label>
                         </div>
-                          </div>
-                          <div class="order-list">
-                            <div class="top-order">
-                                <div class="left-order-side">
-                                    <label class="Order-name">Order #2453</label>
-                                    <label>Sat, 18 Jul</label>
-                                    <label class="order-type">
-                                    Order type:
-                                    <div>
-                                        <img src="../image/drizzlegray.svg" alt="drizzle">
-                                        <div>Custom requests</div>
-                                    </div>
-                                    </label>
-                                </div>
-                
-                                <div class="right-order-side">
-                                    <div class="images-service serve-order">
-                                        <div class="image imaging">
-                                            <img src="../images/greentwo.svg" class="commentment" alt="comment">
-                                            <div class="dots">
-                                                <img src="../images/dot.svg" class="dotted" alt="dot">
-                                                <img src="../images/dot.svg" class="dotted" alt="dot">
-                                                <img src="../images/dot.svg" class="dotted" alt="dot">
-                                            </div>
-                                        </div>
-                                         <label class="light-green">Completed</label>
-                                    </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>5.5M</span>
+                            </div>
+                            <label>Subscribes</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>193M</span>
+                            </div>
+                            <label>Views</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
+                            </div>
+                            <label>Comments</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order-list">
+                <div class="top-order">
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
+                        <label class="order-type">
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
+                            </div>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
+                        </label>
+                    </div>
+
+                    <div class="right-order-side">
+                        <div class="images-service serve-order">
+                            <div class="image imaging">
+                                <img src="../images/green.svg" class="commentment" alt="comment">
+                                <div class="dots">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
                             </div>
-                            <div class="bottom-order">
-                                <div class="left-bottom-side">
-                                    <img src="../image/order1 (2).svg" alt="computer">
-                                <div class="service-name">
-                                    <span>Service name</span>
-                                    <label>Lorem ipsum dolor sit amet consectetur. Scelerisque feugiat justo amet habitant nunc facilisis augue id...</label>
-                                </div>
-                                </div>
-                
-                                <div class="right-bottom-side">
-                                    <div class="bx">
-                                        <label>Channel</label>
-                                        <div class="you">
-                                            <img src="../image/you.svg" alt="youtube">
-                                            <span>smotraTV</span>
-                                        </div>
-                                    </div>
-                                    <div class="bx">
-                                        <label>Delivery Days</label>
-                                        <div class="you">
-                                            
-                                            <span>4</span>
-                                        </div>
-                                    </div>
-                                    <div class="bx">
-                                        <label>Due date</label>
-                                        <div class="you">
-                                            <img src="../image/you.svg" alt="youtube">
-                                            <span>12/10/2021</span>
-                                        </div>
-                                    </div>
-                                    <div class="prices">AED 450</div>
+                             <label class="green-color">Active</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media1 (5).svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
+                    </div>
+                    </div>
+
+                    <div class="right-bottom-side">
+                        <div class="bx">
+                            <div class="you">
+                                <span>123</span>
+                            </div>
+                            <label>Channel</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>5.5M</span>
+                            </div>
+                            <label>Subscribes</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>193M</span>
+                            </div>
+                            <label>Views</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
+                            </div>
+                            <label>Comments</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="order-list">
+                <div class="top-order">
+                    <div class="left-order-side social-media-left">
+                        <label class="Order-name">
+                            <img src="../images/Youtub.svg" alt="Youtube">
+                            <span>Youtube</span>
+                        </label>
+                        <label>
+                            <img src="../images/location.svg" alt="location">
+                            <span class="country">UAE, Saudi Arabia</span>
+                        </label>
+                        <label class="order-type">
+                            <div >
+                                <img src="../images/kashaluk.svg" alt="service">
+                                <span class="country">Travel</span>
+                            </div>
+                        </label>
+                        <label>
+                            <img src="../images/earth.svg" alt="location">
+                            <span class="country">English</span>
+                        </label>
+                    </div>
+
+                    <div class="right-order-side">
+                        <div class="images-service serve-order">
+                            <div class="image imaging">
+                                <img src="../images/green.svg" class="commentment" alt="comment">
+                                <div class="dots">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
+                                    <img src="../images/dot.svg" class="dotted" alt="dot">
                                 </div>
                             </div>
-                              </div>
+                             <label class="green-color">Active</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-order order-text">
+                    <div class="left-bottom-text">
+                        <img src="../image/social-media1 (1).svg" alt="computer">
+                    <div class="service-name social-service-name">
+                        <span>Nature Soundscapes</span>
+                        <label> Lorem ipsum dolor sit amet consectetur. Quis curabitur magna ipsum purus diam arcu sed gravida. Rhoncus interdum nis...</label>
+                    </div>
+                    </div>
+
+                    <div class="right-bottom-side">
+                        <div class="bx">
+                            <div class="you">
+                                <span>123</span>
+                            </div>
+                            <label>Channel</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>5.5M</span>
+                            </div>
+                            <label>Subscribes</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>193M</span>
+                            </div>
+                            <label>Views</label>
+                        </div>
+                        <div class="bx">
+                            <div class="you">
+                                <span>240M</span>
+                            </div>
+                            <label>Comments</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
           </div>
 
@@ -630,4 +688,4 @@
     <script src="../js/app.js"></script>
 </body>
 
-</html> -->
+</html>
