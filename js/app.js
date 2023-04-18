@@ -23,3 +23,25 @@ document.getElementById("input-item").onclick = () => {
    
     document.getElementById("input-item").style.outlineColor ="1px solid var(--secondary)"
 }
+
+document.getElementById("order2").onclick = ()=> {
+}
+
+let order2 = document.getElementById("order2")
+
+if(order2.checked){
+    document.getElementById('ord2').addClass("pseudo-active")
+}
+
+
+
+window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          if (document.documentElement.scrollTop > 60) {
+            document.getElementById("filter").className = "filt";
+          }
+          else {
+            document.getElementById("filter").className = "none";
+          }
+        }
