@@ -12,7 +12,7 @@
     left: 0;
     top: 60px;
     bottom: 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 
@@ -36,7 +36,7 @@
 .navigation .nav-bars {
     width: 101px;
     height: 84px;
-    padding: 62px 0px;
+    padding: 66px 0px;
     gap: 4px;
     isolation: isolate;
     display: flex;
@@ -145,7 +145,7 @@
     width: 101px;
     left: 0;
     top: 60px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
    /* z-index: 0; */
     /* bottom: 114px; */
 }
@@ -202,7 +202,7 @@
 
 .navigations .menu-top{
 width: 101px;
-height: 220px;
+height: 270px;
 background: #707FDA;
 border-bottom-right-radius: 10px;
 }
