@@ -95,7 +95,7 @@
                 <div class="operation-request">
                     <h1>Marketplace</h1>
                     <span class="explore">Explore service requsts from brands. Respond to requests that are right for you</span>
-                    <div class="filters">
+                    <main id="filter">
                        <a href="./service.html">
                         <select name="select" id="select">
                             <option value="Categories">Categories</option>
@@ -128,7 +128,7 @@
                            </a>
                            <span class="span">Responses only</span>
                         </label> -->
-                    </div>
+                    </main>
         
                     <div class="carousel">
                         <div class="link links">
@@ -1698,6 +1698,41 @@
 
       </div>
 
+      <style>
+        .filt {
+            position: fixed;
+            top: 60px;
+        width: 1290px;
+        background-color: yellow;
+        height: 50px;
+        z-index: 99;
+        }
+        
+        @keyframes slideUp {
+          0% {
+            opacity: 0;
+            transform: translateY(70%);
+          } 
+          100% {
+            opacity: 1;
+            transform: translateY(0%);
+          }
+        }
+        
+   
+        </style>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          if (document.documentElement.scrollTop > 60) {
+            document.getElementById("filter").className = "filt";
+          }
+          else {
+            document.getElementById("filter").className = "none";
+          }
+        }
+        </script>
      
 
         <script src="./js/app.js"></script>

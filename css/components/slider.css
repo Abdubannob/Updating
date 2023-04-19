@@ -1,0 +1,58 @@
+.carousel-control-next{
+    position: absolute;
+    top: 150px;
+    right: -35px;
+    width: 50px;
+    height: 60px;
+
+}
+
+.card{
+    /* background-color: #f5f5f5; */
+    border-radius: 12px;
+}
+
+.carousel-control-prev{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 150px;
+    left: -35px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+/* .carousel-control-prev-icon{
+    /* background-color: #f5f5f5; */
+/* } */
+
+/* .left-arrow{ */
+    /* background-color: #f5f5f5; */
+/* } */ */
+
+#carouselExampleCaptions{
+    background-color: #f5f5f5;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.card-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+.carousel-item{
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+.carousel-inner{
+    border-radius: 12px;
+    background-color: #F5F5F5;
+}
