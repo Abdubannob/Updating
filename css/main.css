@@ -1,5 +1,6 @@
 @import "./components/header.css";
 
+@import "./base.css";
 @import "./components/navbar.css";
 @import "./components/operation.css";
 @import "./components/service.css";

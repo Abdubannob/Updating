@@ -12,9 +12,17 @@
     left: 0;
     top: 60px;
     bottom: 0;
+    z-index: 4;
     /* overflow-y: scroll; */
 }
 
+.linear-gradi{
+    z-index: 0;
+}
+
+.navigation a{
+    text-decoration: none;
+}
 
 .navigation .menu-bars {
     width: 101px;
@@ -71,7 +79,7 @@
     background: #707FDA;
     color: #f9f9ff;
     position: relative;
-
+    z-index: 99;
 }
 
 .navigation .active {
@@ -89,6 +97,11 @@
     align-self: stretch;
     flex-grow: 0;
     color: #000;
+}
+
+
+nav{
+    z-index: 9;
 }
 
 .navs .menu-bar .count {
@@ -145,6 +158,7 @@
     width: 101px;
     left: 0;
     top: 60px;
+    z-index: 1;
     /* overflow-y: scroll; */
    /* z-index: 0; */
     /* bottom: 114px; */
@@ -198,6 +212,7 @@
     width: 101px;
     height: 100%;
     background-color: #707FDA;
+    
 }
 
 .navigations .menu-top{

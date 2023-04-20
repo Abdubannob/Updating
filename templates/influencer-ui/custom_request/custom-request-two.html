@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../../css/base.css">
         <link rel="stylesheet" href="../../../css/main.css">
     <title>Document</title>
 </head>
@@ -18,7 +17,7 @@
         <section class="contain header-top">
             <div class="header">
                 <div class="header-left">
-                    <img src="../../../images/header/techfluencer.svg" alt="logo">
+                   <img src="../../../images/header/techfluencer.svg" alt="">
                 </div>
                 <div class="header-right">
                     <div class="img-header" id="notification">
@@ -30,8 +29,8 @@
             </div>
         </section>
     </header>
-    <section class="contain">
-        <nav class="navigation">
+   
+    <nav class="navigation">
             <a href="../influencer-dashboard.html">
                 <div class="menu-bars">
                     <div class="contain-img">
@@ -40,58 +39,71 @@
                     <span>Dashboard</span>
                 </div>
             </a>
-         <a href="">
+           <a href="../custom_request/request-portal.html">
             <div class="menu-bar active">
                 <div class="contain-img">
                     <img src="../../../images/Request.svg" alt="bar">
                 </div>
                 <span>Requests</span>
             </div>
-         </a>
+           </a>
+           <a href="../service/services.html">
             <div class="menu-bar unactive">
                 <div class="contain-img">
                     <img src="../../../images/Vector (1).svg" alt="bar">
                 </div>
                 <span>Services</span>
             </div>
-          <a href="">
-            <div class="menu-bar ">
+           </a>
+           <a href="../social/youtube/social-media.html">
+            <div class="menu-bar">
                 <div class="contain-img">
                     <img src="../../../images/Vector (2).svg" alt="bar">
                 </div>
                 <span>Channels</span>
             </div>
-          </a>
+           </a>
+           <a href="../orders/order.html">
             <div class="menu-bar">
                 <div class="contain-img">
                     <img src="../../../images/Vector (3).svg" alt="bar">
                 </div>
                 <span>Orders</span>
-                <img class="count" src="../../../images/Frame 1637432.svg" alt="count">
+                <div class="request-counting">
+                    2
+                  </div>
             </div>
-            <div class="menu-bar">
-                <div class="contain-img">
-                    <img src="../../../images/Vector 328.svg" alt="bar">
+           </a>
+            <a href="#">
+                <div class="menu-bar">
+                    <div class="contain-img">
+                        <img src="../../../images/Vector 328.svg" alt="bar">
+                    </div>
+                    <span>Payments</span>
                 </div>
-                <span>Payments</span>
-            </div>
+            </a>
+           <a href="../settings/settings.html">
             <div class="menu-bar">
                 <div class="contain-img">
                     <img src="../../../images/Vector (4).svg" alt="bar">
                 </div>
                 <span>Settings</span>
             </div>
+           </a>
             <div class="menu-cont">
-
+    
             </div>
-        </nav>
+    </nav>
+    
+    
 
+    <main class="contain">
         <div class="operation-request properties">
 
          <div class="aside-extra">
             <div class="details">
                 <div class="left-sides-detail">
-                    <div class="properties-image y-prop">
+                    <div class="properties-image ">
                         <div class="column-img">
                             <img src="../../../images/image/proper (2).svg" alt="proper">
                             <img src="../../../images/image/proper (3).svg" alt="proper">
@@ -165,9 +177,7 @@
                     <div class="brand-user brand-links">
                         <img src="../../../images/image/ham.svg" alt="hamburger">
                         <div class="darrel">
-                            <a href="">
-                                <span>https://www.youtube.com/channel/UCPGKizSs-jOR0sNoOEtnMXQ</span>
-                            </a>
+                            <span>https://www.youtube.com/channel/UCPGKizSs-jOR0sNoOEtnMXQ</span>
                             <p>Description/instruction lorem ipsum</p>
                         </div>
                     </div>
@@ -175,9 +185,7 @@
                     <div class="brand-user brand-links">
                         <img src="../../../images/image/hams.svg" alt="hamburger">
                         <div class="darrel">
-                            <a href="">
-                                <span>https://www.youtube.com/channel/UCPGKizSs-jOR0sNoOEtnMXQ</span>
-                            </a>
+                            <span>https://www.youtube.com/channel/UCPGKizSs-jOR0sNoOEtnMXQ</span>
                             <p>Description/instruction lorem ipsum</p>
                         </div>
                     </div>
@@ -187,7 +195,27 @@
                 </div>
          
             </div>
-            <div class="aside-two">
+           <div class="aside-order  youtube-aside ">
+
+            <div class="aside-status">
+                <label>ORDER STATUS</label>
+                <div class="pending pending-item">
+                    <div class="image">
+                        <img src="../../../images/Ellipse 293.svg" class="comment" alt="comment">
+                        <div class="dots">
+                            <img src="../../../images/dot.svg" class="dotted" alt="dot">
+                            <img src="../../../images/dot.svg" class="dotted" alt="dot">
+                            <img src="../../../images/dot.svg" class="dotted" alt="dot">
+                        </div>
+                    </div>
+                   <div class="pending-text">
+                    <span>Pending</span>
+                    <div>Response has been sent</div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="aside-two aside-details">
                 <span class="det">DETAILS</span>
                 <h3>1450,00 AED</h3>
                 <span>4 more Influencers can take the order</span>
@@ -254,67 +282,23 @@
                         </div>
                     </div>
 
-                  <h4>
-                    CHOOSE ACCOUNT
-                  </h4>
                
-                   
-                        <form class="account">
-                            <label class="account-item">
-                                <input type="radio" name="radio" checked/>
-                                     <span class="social-medias">
-                                         <img src="../../../images/image/el.svg" alt="ellips">
-                                             <p>
-                                                  <img src="../../../images/image/you.svg" alt="youtube">
-                                                     smotraTV
-                                             </p>
-                                      </span>
-                            
-                               
-                            </label>
-                            <label class="account-item">
-                                <input type="radio" name="radio"/>
-                                      <span class="social-medias">
-                                             <img src="../../../images/image/el.svg" alt="ellips">
-                                              <p>
-                                                   <img src="../../../images/image/you.svg" alt="youtube">
-                                                   smotraTV
-                                               </p>
-                                     </span>
-                            </label>
-                            <label class="account-item">
-                                <input type="radio" name="radio"/>
-                                      <span class="social-medias">
-                                             <img src="../../../images/image/el.svg" alt="ellips">
-                                            <p>
-                                               <img src="../../../images/image/you.svg" alt="youtube">
-                                                 smotraTV
-                                            </p>
-                                     </span>   
-
-                            </label>
-
-                            <textarea name="textarea" placeholder="Give the Influencer instructions or note..." cols="30" rows="7"></textarea>
-                            <div class="btns">
-                                <button class="close">Close</button>
-                                <button class="apply">Apply</button>
-                            </div>
-
-                        </form>
                     
                   
 
                 </div>
             </div>
 
+           </div>
 
 
          </div>
 
         </div>
-    </section>
+    </main>
+
     <footer>
-        <div class="footer">
+        <div class="contain footer">
             <div class="contain">
                 <div class="top-footer">
                     <img class="influence" src="../../../images/22 1.svg" alt="fluencer">
@@ -340,51 +324,6 @@
             </div>
         </div>
     </footer>
-
-
-
-    
-    <div class="screen">
-        <b>I don't know this pages are Connected with which button or nav-bar or filter and etc.
-            so You can see order and some service pages. </b>
-
-       <div class="button">
-        <a href="./order-two.html">
-            <button>Page Order 2</button>
-        </a>
-        <a href="./order-three.html">
-            <button>Page Order 3</button>
-        </a>
-        <a href="./order-four.html">
-            <button>Page Order 4</button>
-        </a>
-        <a href="./order-five.html">
-            <button>Page Order 5</button>
-        </a>
-        <br><br>
-        <div class="etc">
-            <a href="./service-two.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-two.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-three.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-video.html">
-                <button>Page Service 2</button>
-            </a>
-        </div>
-    
-       </div>
-
-       <img id="screen" src="../../../images/image/cancelimg.svg" alt="">
-       
-    </div>
 
     <script src="../js/app.js"></script>
 </body>

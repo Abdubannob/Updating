@@ -600,6 +600,12 @@
     padding: 20px 30px 25px 30px;
 }
 
+.five-upload{
+    width: 858px;
+    height: 440px;
+    padding: 20px 30px 25px 20px;
+}
+
 .right-order-two {
     width: 351px;
     display: flex;

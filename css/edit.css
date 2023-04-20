@@ -17,9 +17,9 @@
 }
 
 .edit-profile{
-    position: absolute;
+    position: fixed;
     width: 240px;
-    height: 1240px;
+    height: 100vh;
     left: 101px;
     top: 0;
     background-color: #fff;
@@ -29,13 +29,13 @@
 
 
 .edit-invoices{
-    position: absolute;
+    position: fixed;
     width: 240px;
-    height: 1041px;
+    height: 100vh;
     left: 101px;
     top: 0;
     background-color: #fff;
-    z-index: 99;
+   
     padding: 40px 46px 40px 20px;
 }
 
@@ -999,7 +999,7 @@
     width: 100%;
     height: 1055px;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    z-index: 999;
 }
 
 .withdrawal-delete{
@@ -1008,7 +1008,7 @@
     border-radius: 12px;
     background-color: #fff;
     z-index: 999;
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 38%;
     display: flex;
