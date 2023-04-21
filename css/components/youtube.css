@@ -238,6 +238,33 @@
 }
 
 
+.channel .social{
+    font-size: 14px;
+    color: #757575;
+}
+
+#filter #select{
+    border: none;
+}
+.youtube-icon  #select {
+    border: none;
+    padding: 0;
+    font-weight: 500;
+}
+
+.youtube-icon img {
+    width: 14px;
+    height: 11px;
+}
+
+.youtube-icon {
+    border: 1px solid #99A29C;
+    border-radius: 6px;
+    padding: 0px 2.5px 0px 5px;
+
+}
+
+
 
 
 

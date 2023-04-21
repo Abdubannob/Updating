@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet"/>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+        <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../../css/components/owl.carousel.min.css">
         <link rel="stylesheet" href="../../../css/main.css">
     <title>Document</title>
 </head>
@@ -33,45 +36,33 @@
         </section>
     </header>
 
-        <nav class="navigation">
+    <nav class="navigation">
             <a href="../influencer-dashboard.html">
-                <div class="menu-bars">
-                    <div class="contain-img">
-                       <img src="../../../images/DASHt.svg" alt="bar">
-                        </div>
-                    <span>Dashboard</span>
+                <div class="menu-bar">
+                   <img src="../../../images/navbar/dashboard-noneactive.svg" alt="dash">
                 </div>
             </a>
            <a href="#">
             <div class="menu-bar active">
-                <div class="contain-img">
-                   <img src="../../../images/Request.svg" alt="bar">
-                    </div>
-                <span>Requests</span>
+               <img class="img" src="../../../images/navbar/Request-Menu.svg" alt="request">
             </div>
            </a>
            <a href="../service/services.html">
             <div class="menu-bar ">
-                            <div class="contain-img">
-                    <img src="../../../images/Vector (1).svg" alt="bar">
-                                </div>
-                <span>Services</span>
+                <img src="../../../images/navbar/Services.svg" alt="services">
             </div>
            </a>
            <a href="../social/youtube/social-media.html">
             <div class="menu-bar">
-                <div class="contain-img">
-            <img src="../../../images/Vector (2).svg" alt="bar">
-                    </div>
-             <span>Channels</span>
+                <img src="../../../images/navbar/Channel-noneactive.svg" alt="channel">
             </div>
            </a>
            <a href="../orders/order.html">
             <div class="menu-bar">
                     <div class="contain-img">
-                    <img src="../../../images/Vector (3).svg" alt="bar">
+                    <img src="../../../images/navbar/Order-noneactive.svg" alt="bar">
                      </div>
-                <span>Orders</span>
+                     <img src="../../../images/navbar/Orders-noneactive.svg" alt="order">
                 <div class="request-counting">
                     2
                   </div>
@@ -79,24 +70,18 @@
          </a>
           <a href="#">
             <div class="menu-bar">
-                <div class="contain-img">
-               <img src="../../../images/Vector 328.svg" alt="bar">
-                </div>
-            <span>Payments</span>
+                <img src="../../../images/navbar/payments-noneactive.svg" alt="payment">
         </div>
           </a>
           <a href="../settings/settings.html">
             <div class="menu-bar">
-                <div class="contain-img">
-                <img src="../../../images/Vector (4).svg" alt="bar">
-                 </div>
-            <span>Settings</span>
+               <img src="../../../images/navbar/settings-noneactive.svg" alt="setting">
         </div>
           </a>
             <div class="menu-cont">
 
             </div>
-        </nav>
+    </nav>
 
 
     <main class="contain">
@@ -105,11 +90,11 @@
             <span class="explore">Explore service requsts from brands. Respond to requests that are right for you</span>
             <main id="filter">
                <a href="./service.html">
-                <select name="select" ">
+                <select name="select">
                     <option value="Categories">Categories</option>
                 </select>
                </a>
-                <select name="select"">
+                <select name="select">
                     <option value="Budget">Budget</option>
                 </select>
                 <select name="select">
@@ -146,234 +131,81 @@
                     </div>
                 </div>
                 <div >
-                    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                           <div class="card-group">
-                            <div class="box box1">
-                                <div class="box-img">
-                                    <img src="../../../images/Rec1.svg" alt="robot">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo">
-                                            <img src="../../../images/albert.svg" alt="">
-                                        </div>
-                                        <div class="user-name">
-                                            Albert Flores
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">2300,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, France
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook
+
+                    <section id="slider" class="pt-5" >                    
+                        <div class="contains">
+                               
+                            <div class="slider">
+                              <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button>
+                               <button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div>    
+                            <div class="owl-carousel row">
+                                <div class="slider-card">
+                                    <div class="box box1">
+                                        <div class="box-img">
+                                            <img src="../../../images/ss.svg" alt="computer">
+                                            <div class="like">
+                                                <img  src="../../../images/circleHerat.svg" alt="circle">
+                                                <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-                            </div>
-                            <div class="box box2">
-                                <div class="box-img">
-                                    <img src="../../../images/Rec2.svg" alt="robot">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-        
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/cody.svg" alt="man">
+                                        <div class="all-info">
+                                            <div class="users">
+                                                <div class="user-photo">
+                                                    <img src="../../../images/kristin.svg" alt="">
+                                                </div>
+                                                <div class="user-name">
+                                                    Kristin Watson
+                                                </div>
+                                            </div>
+                                            <div class="data">
+                                                <div class="calendar">
+                                                    <img src="../../../images/calendar.svg" alt="calendar">
+                                                    <span>Feb. 12 - Feb. 24</span>
+                                                </div>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
+                                                </div>
+                                                <div class="price">3000,00 AED</div>
+                                                <div class="extra-information">
+                                                    <div class="btn">
+                                                        <img src="../../../images/location.svg" alt="location">
+                                                        UAE, Spain
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/earth.svg" alt="location">
+                                                        English
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/kashaluk.svg" alt="kashalok">
+                                                        Web development
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/sound.svg" alt="sound">
+                                                        Facebook, Instagram, Youtube
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="user-name">
-                                            Cody Fisher
+                
+                                        <div class="order">
+                                            <button>Take order</button>
                                         </div>
                                     </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">1300,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Saudi Arabia
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Instagram, Youtube
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-                            </div>
-                            <div class="box box3">
-                                <div class="box-img">
-                                    <img src="../../../images/Rec3.svg" alt="robot">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/kristin.svg" alt="man">
-                                        </div>
-                                        <div class="user-name">
-                                            Kristin Watson
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">3000,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Spain
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook, Instagram, Youtube
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-        
-                            </div>
-                            <div class="box box4">
-                                <div class="box-img">
-                                    <img src="../../../images/Rec4.svg" alt="robot">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/jane.svg" alt="">
-                                        </div>
-                                        <div class="user-name">
-                                            Jane Cooper
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">1450,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Spain
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook, Instagram, Youtube
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-        
-                            </div>
-                      </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-group">
-                                <div class="box box1">
+                                  </div>
+                        
+                              <div class="slider-card">
+                                <div class="box box2">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec1.svg" alt="robot">
+                                        <img src="../../../images/headphones.svg" alt="computer">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                         </div>
                                     </div>
+            
                                     <div class="all-info">
                                         <div class="users">
-                                            <div class="user-photo">
-                                                <img src="../../../images/albert.svg" alt="">
+                                            <div class="user-photo two">
+                                                <img src="../../../images/albert.svg" alt="man">
                                             </div>
                                             <div class="user-name">
                                                 Albert Flores
@@ -407,20 +239,22 @@
                                             </div>
                                         </div>
                                     </div>
-            
                                     <div class="order">
                                         <button>Take order</button>
                                     </div>
                                 </div>
-                                <div class="box box2">
+                              </div>
+                              
+                         
+                              <div class="slider-card">
+                                <div class="box box3">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec2.svg" alt="robot">
+                                        <img src="../../../images/headp2.svg" alt="man">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                         </div>
                                     </div>
-            
                                     <div class="all-info">
                                         <div class="users">
                                             <div class="user-photo two">
@@ -458,64 +292,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box3">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec3.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/kristin.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Kristin Watson
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">3000,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
             
                                     <div class="order">
                                         <button>Take order</button>
                                     </div>
             
                                 </div>
+                              </div>
+                              
+                             
+                              <div class="slider-card">
                                 <div class="box box4">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec4.svg" alt="robot">
+                                        <img src="../../../images/headp3.svg" alt="laptop">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
@@ -564,240 +353,18 @@
                                     </div>
             
                                 </div>
-                          </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-group">
-                                <div class="box box1">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec1.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo">
-                                                <img src="../../../images/albert.svg" alt="">
-                                            </div>
-                                            <div class="user-name">
-                                                Albert Flores
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">2300,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, France
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box2">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec2.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-            
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/cody.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Cody Fisher
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">1300,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Saudi Arabia
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box3">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec3.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/kristin.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Kristin Watson
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">3000,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-            
-                                </div>
-                                <div class="box box4">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec4.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/jane.svg" alt="">
-                                            </div>
-                                            <div class="user-name">
-                                                Jane Cooper
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">1450,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-            
-                                </div>
-                          </div>
+                              </div>
+
+                             
+                            </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span>
-                            <div class="left-arrow">
-                                <img src="../../../images/Ellips.svg" alt="ellips">
-                                <img class="arrow" src="../../../images/right-arrow.svg" alt="arrow">
-                            </div>
-                        </span>
-                          <!-- <span class="visually-hidden">
-                          
-                            
-                          </span> -->
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span> 
-                            
-                            <div class="right-arrow">
-                                <img src="../../../images/Ellips.svg" alt="ellips">
-                                <img class="arrow" src="../../../images/left-arrow.svg" alt="arrow">
-                            </div>
-                       
-    </span>
-                          
-                        </button>
-                      </div>
+                      </section>
+
+  
+
+
+                  
                 </div>
             </div>
 
@@ -808,236 +375,80 @@
                     <a href="">See all <img src="../../../images/Icon.svg" alt="arrow"></a>
                 </div>
                 <div>
-                   
-                  
-                    <div id="carouselExampleCaption" class="carousel carousel-dark slide" data-bs-ride="false">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                           <div class="card-group">
-                            <div class="box box1">
-                                <div class="box-img">
-                                    <img src="../../../images/ss.svg" alt="computer">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo">
-                                            <img src="../../../images/kristin.svg" alt="">
-                                        </div>
-                                        <div class="user-name">
-                                            Kristin Watson
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">3000,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Spain
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook, Instagram, Youtube
+                    <section id="slider" class="pt-5" >                    
+                        <div class="contains">
+                               
+                            <div class="slider">
+                              <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button>
+                               <button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div>    
+                            <div class="owl-carousel row">
+                                <div class="slider-card">
+                                    <div class="box box1">
+                                        <div class="box-img">
+                                            <img src="../../../images/ss.svg" alt="computer">
+                                            <div class="like">
+                                                <img  src="../../../images/circleHerat.svg" alt="circle">
+                                                <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-                            </div>
-                            <div class="box box2">
-                                <div class="box-img">
-                                    <img src="../../../images/headphones.svg" alt="computer">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-        
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/albert.svg" alt="man">
+                                        <div class="all-info">
+                                            <div class="users">
+                                                <div class="user-photo">
+                                                    <img src="../../../images/kristin.svg" alt="">
+                                                </div>
+                                                <div class="user-name">
+                                                    Kristin Watson
+                                                </div>
+                                            </div>
+                                            <div class="data">
+                                                <div class="calendar">
+                                                    <img src="../../../images/calendar.svg" alt="calendar">
+                                                    <span>Feb. 12 - Feb. 24</span>
+                                                </div>
+                                                <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
+                                                </div>
+                                                <div class="price">3000,00 AED</div>
+                                                <div class="extra-information">
+                                                    <div class="btn">
+                                                        <img src="../../../images/location.svg" alt="location">
+                                                        UAE, Spain
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/earth.svg" alt="location">
+                                                        English
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/kashaluk.svg" alt="kashalok">
+                                                        Web development
+                                                    </div>
+                                                    <div class="btn">
+                                                        <img src="../../../images/sound.svg" alt="sound">
+                                                        Facebook, Instagram, Youtube
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="user-name">
-                                            Albert Flores
+                
+                                        <div class="order">
+                                            <button>Take order</button>
                                         </div>
                                     </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">2300,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, France
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-                            </div>
-                            <div class="box box3">
-                                <div class="box-img">
-                                    <img src="../../../images/headp2.svg" alt="man">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/cody.svg" alt="man">
-                                        </div>
-                                        <div class="user-name">
-                                            Cody Fisher
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">1300,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Saudi Arabia
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Instagram, Youtube
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-        
-                            </div>
-                            <div class="box box4">
-                                <div class="box-img">
-                                    <img src="../../../images/headp3.svg" alt="laptop">
-                                    <div class="like">
-                                        <img  src="../../../images/circleHerat.svg" alt="circle">
-                                        <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                    </div>
-                                </div>
-                                <div class="all-info">
-                                    <div class="users">
-                                        <div class="user-photo two">
-                                            <img src="../../../images/jane.svg" alt="">
-                                        </div>
-                                        <div class="user-name">
-                                            Jane Cooper
-                                        </div>
-                                    </div>
-                                    <div class="data">
-                                        <div class="calendar">
-                                            <img src="../../../images/calendar.svg" alt="calendar">
-                                            <span>Feb. 12 - Feb. 24</span>
-                                        </div>
-                                        <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                        </div>
-                                        <div class="price">1450,00 AED</div>
-                                        <div class="extra-information">
-                                            <div class="btn">
-                                                <img src="../../../images/location.svg" alt="location">
-                                                UAE, Spain
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/earth.svg" alt="location">
-                                                English
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                Web development
-                                            </div>
-                                            <div class="btn">
-                                                <img src="../../../images/sound.svg" alt="sound">
-                                                Facebook, Instagram, Youtube
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order">
-                                    <button>Take order</button>
-                                </div>
-        
-                            </div>
-                      </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-group">
-                                <div class="box box1">
+                                  </div>
+                        
+                              <div class="slider-card">
+                                <div class="box box2">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec1.svg" alt="robot">
+                                        <img src="../../../images/headphones.svg" alt="computer">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                         </div>
                                     </div>
+            
                                     <div class="all-info">
                                         <div class="users">
-                                            <div class="user-photo">
-                                                <img src="../../../images/albert.svg" alt="">
+                                            <div class="user-photo two">
+                                                <img src="../../../images/albert.svg" alt="man">
                                             </div>
                                             <div class="user-name">
                                                 Albert Flores
@@ -1071,20 +482,22 @@
                                             </div>
                                         </div>
                                     </div>
-            
                                     <div class="order">
                                         <button>Take order</button>
                                     </div>
                                 </div>
-                                <div class="box box2">
+                              </div>
+                              
+                         
+                              <div class="slider-card">
+                                <div class="box box3">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec2.svg" alt="robot">
+                                        <img src="../../../images/headp2.svg" alt="man">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
                                         </div>
                                     </div>
-            
                                     <div class="all-info">
                                         <div class="users">
                                             <div class="user-photo two">
@@ -1122,64 +535,19 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box3">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec3.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/kristin.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Kristin Watson
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">3000,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
             
                                     <div class="order">
                                         <button>Take order</button>
                                     </div>
             
                                 </div>
+                              </div>
+                              
+                             
+                              <div class="slider-card">
                                 <div class="box box4">
                                     <div class="box-img">
-                                        <img src="../../../images/Rec4.svg" alt="robot">
+                                        <img src="../../../images/headp3.svg" alt="laptop">
                                         <div class="like">
                                             <img  src="../../../images/circleHerat.svg" alt="circle">
                                             <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
@@ -1228,241 +596,13 @@
                                     </div>
             
                                 </div>
-                          </div>
-                      
-                          </div>
-                          <div class="carousel-item">
-                            <div class="card-group">
-                                <div class="box box1">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec1.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo">
-                                                <img src="../../../images/albert.svg" alt="">
-                                            </div>
-                                            <div class="user-name">
-                                                Albert Flores
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">2300,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, France
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box2">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec2.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-            
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/cody.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Cody Fisher
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">1300,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Saudi Arabia
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-                                </div>
-                                <div class="box box3">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec3.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/kristin.svg" alt="man">
-                                            </div>
-                                            <div class="user-name">
-                                                Kristin Watson
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">3000,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-            
-                                </div>
-                                <div class="box box4">
-                                    <div class="box-img">
-                                        <img src="../../../images/Rec4.svg" alt="robot">
-                                        <div class="like">
-                                            <img  src="../../../images/circleHerat.svg" alt="circle">
-                                            <img class="LoveHeart" src="../../../images/heart.svg" alt="heart">
-                                        </div>
-                                    </div>
-                                    <div class="all-info">
-                                        <div class="users">
-                                            <div class="user-photo two">
-                                                <img src="../../../images/jane.svg" alt="">
-                                            </div>
-                                            <div class="user-name">
-                                                Jane Cooper
-                                            </div>
-                                        </div>
-                                        <div class="data">
-                                            <div class="calendar">
-                                                <img src="../../../images/calendar.svg" alt="calendar">
-                                                <span>Feb. 12 - Feb. 24</span>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetur adispiscing elit. Prease...
-                                            </div>
-                                            <div class="price">1450,00 AED</div>
-                                            <div class="extra-information">
-                                                <div class="btn">
-                                                    <img src="../../../images/location.svg" alt="location">
-                                                    UAE, Spain
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/earth.svg" alt="location">
-                                                    English
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/kashaluk.svg" alt="kashalok">
-                                                    Web development
-                                                </div>
-                                                <div class="btn">
-                                                    <img src="../../../images/sound.svg" alt="sound">
-                                                    Facebook, Instagram, Youtube
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-                                    <div class="order">
-                                        <button>Take order</button>
-                                    </div>
-            
-                                </div>
-                          </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span>
-                            <div class="left-arrow">
-                                <img src="../../../images/Ellips.svg" alt="ellips">
-                                <img class="arrow" src="../../../images/right-arrow.svg" alt="arrow">
-                            </div>
-                        </span>
-                          <!-- <span class="visually-hidden">
-                          
-                            
-                          </span> -->
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span> 
-                            
-                            <div class="right-arrow">
-                                <img src="../../../images/Ellips.svg" alt="ellips">
-                                <img class="arrow" src="../../../images/left-arrow.svg" alt="arrow">
-                            </div>
-                       
-    </span>
-                          
-                        </button>
-                      </div>
+                              </div>
 
+                             
+                            </div>
+                          </div>
+                        </div>
+                      </section>
 
                 </div>
             </div>
@@ -2224,7 +1364,13 @@
        
     </div>
 
-    <script src="../js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script> 
+<script src="../../../js/owl.carousel.min.js"></script> 
+<script src="../../../js/script.js"></script>
+
+    <script src="../../../js/app.js"></script>
 </body>
 
 </html>

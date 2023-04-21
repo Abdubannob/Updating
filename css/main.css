@@ -1,5 +1,6 @@
 @import "./components/header.css";
 
+@import './components/dashboard.css';
 @import "./base.css";
 @import "./components/navbar.css";
 @import "./components/operation.css";
@@ -20,3 +21,4 @@
 @import "./components/brand/brand-request.css";
 @import "./components/brand/brand-order-two.css";
 @import "./components/slider.css";
+@import "./components/card.css";

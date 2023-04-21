@@ -164,7 +164,7 @@ header {
 }
 
 
-.unactive {
+/* .unactive {
     width: 101px;
     height: 124px;
     padding: 64px 0px;
@@ -177,9 +177,9 @@ header {
     color: #f9f9ff;
     position: relative;
     border-top-right-radius: 10px;
-}
+} */
 
-.unactive-one {
+/* .unactive-one {
     width: 101px;
     height: 124px;
     padding: 64px 0px;
@@ -192,9 +192,9 @@ header {
     color: #f9f9ff;
     position: relative;
     border-bottom-right-radius: 10px;
-}
+} */
 
-.navigation .menu-service {
+/* .navigation .menu-service {
     width: 101px;
     height: 124px;
     padding: 62px 0px;
@@ -206,7 +206,7 @@ header {
     background: #707FDA;
     color: #f9f9ff;
     position: relative;
-}
+} */
 
 .navigation .menu-service span {
     font-size: 14px;

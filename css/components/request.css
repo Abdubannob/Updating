@@ -1,16 +1,19 @@
 
 .grid-carousel {
-    display: grid;
-    grid-template-columns: repeat(4, 294.75px);
+    display: flex;
+    width: 1239px;
+    display: flex;
     gap: 20px;
     padding-top: 20px;
 }
+
+
 
 .grids {
     margin-top: 40px;
 }
 
-.carousel .cart {
+ .cart {
     margin-top: 100px;
 }
 
@@ -19,17 +22,18 @@
     height: 150px;
 }
 
-.grid-carousel .box {
+ .box {
     border-radius: 8px;
     height: 420px;
 }
 
 .box-img img {
-    width: 100%;
+    width: 99%;
     height: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
 
 .box .all-info {
     padding: 16px 16px 16px 16px;
