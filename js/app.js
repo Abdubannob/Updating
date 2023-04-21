@@ -47,3 +47,8 @@ window.onscroll = function() {myFunction()};
         }
 
 
+        if(document.querySelector(".complete-todo input").checked){
+          document.querySelector(".select p").style.display = "inline-block"
+        }
+
+
