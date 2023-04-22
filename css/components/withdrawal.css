@@ -28,6 +28,12 @@
     height: 20px;
 }
 
+.bank-card #radio3:checked + .pay{
+    border: 6px solid #707FDA;
+    width: 20px;
+    height: 20px;
+}
+
 .payment-item-two{
     max-width: 719px;
     height: 80px;
@@ -36,4 +42,93 @@
 .payment-item-two button{
     border: none;
     background-color: transparent;
+}
+
+.payment-item button{
+    border: none;
+    background-color: transparent;
+}
+
+
+.withdrawal-amount{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 420px;
+    height: 168px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.withdraw-method{
+    border-bottom: none;
+}
+
+.withdrawal-amount span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4E525D;
+}
+
+.withdrawal-amount .button{
+    width: 160px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 2px solid var(--secondary);
+    border-radius: 6px;
+}
+
+
+
+.withdraw-payment-way{
+    width: 100%;
+    height: 765px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.price-withdraw{
+    height: 30px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.payment-method-two{
+    max-width: 1019px;
+    height: 331px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.payment-circle-logo{
+    width: 47px;
+    height: 47px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #F9F9FF;
+    border: 1px solid  #CED4E2;
+}
+
+.withdraw-btn{
+    width: 117px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #707FDA;
+    padding: 11px 20px 11px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+}
+
+.withdraw-btns{
+    background-color: var(--secondary);
+    border-radius: 6px;
+    padding: 11px 20px 11px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
 }

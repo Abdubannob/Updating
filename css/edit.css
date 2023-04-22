@@ -598,30 +598,6 @@
 
     /*****************************************************/
 
-    .withdrawal-amount{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 420px;
-        height: 168px;
-        border-bottom: 1px solid #EBEBEB;
-    }
-
-    .withdrawal-amount span{
-        font-size: 16px;
-        font-weight: 700;
-        color: #4E525D;
-    }
-
-    .withdrawal-amount .button{
-        width: 160px;
-        height: 70px;
-        font-size: 24px;
-        font-weight: 700;
-        background-color: #fff;
-        border: 2px solid var(--secondary);
-        border-radius: 6px;
-    }
 
     .process{
         width: 100%;
@@ -645,7 +621,7 @@
     }
 
     .add-withdrawal-method{
-        width: 259px;
+        max-width: 289px;
         height: 80px;
         padding: 12px 22px 12px 22px;
         background-color: #F9F9FF;
@@ -662,24 +638,13 @@
         font-size: 15px;
     }
 
- .withdraw-btn{
-    width: 117px;
-    height: 50px;
-    border-radius: 6px;
-    background-color: #707FDA;
-    padding: 11px 20px 11px 20px;
-    font-size: 16px;
-    color: #fff;
-    border: none;
-}
+
   
 .withdraw-info{
     height: 471px;
 }
 
-.withdraw-method{
-    border-bottom: none;
-}
+
 
 
 /****************************************************/
@@ -749,15 +714,7 @@
 }
 
 
-.withdraw-btns{
-    background-color: var(--secondary);
-    border-radius: 6px;
-    padding: 11px 20px 11px 20px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-}
+
 
 .logo-payment-img{
     width: 48px;
@@ -774,38 +731,6 @@
 
 
 /*************************************************************/
-
-
-.withdraw-payment-way{
-    width: 100%;
-    height: 765px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.price-withdraw{
-    height: 30px;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.payment-method-two{
-    max-width: 1019px;
-    height: 331px;
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 0;
-}
-
-.payment-circle-logo{
-    width: 47px;
-    height: 47px;
-    display: flex;
-    border-radius: 50%;
-    background-color: #F9F9FF;
-    border: 1px solid  #CED4E2;
-}
 
 
 .credit-card-number{
@@ -1048,7 +973,7 @@
     width: 100%;
     height: 1055px;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 9;
 }
 
 .withdrawal-delete{

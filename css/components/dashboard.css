@@ -59,6 +59,8 @@
     height: 28px;
     width: 28px;
   }
+
+
   .todo-body input:checked + label:before{
       border: 2px solid #4CAF50;
   }

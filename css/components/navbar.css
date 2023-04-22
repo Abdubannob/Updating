@@ -16,6 +16,10 @@
     /* overflow-y: scroll; */
 }
 
+.linear-nav{
+    z-index: 0;
+}
+
 .linear-gradi{
     z-index: 0;
 }

@@ -74,7 +74,7 @@
         </div>
     </nav>
 
-    <section class="contain">
+    <main class="contain">
         <div class="operation-request">
            <div class="order-request-info">
             <div class="drop">
@@ -310,7 +310,7 @@
          
 
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="contain footer">
@@ -340,47 +340,19 @@
         </div>
     </footer>
 
-    <div class="screen">
-        <b>I don't know this pages are Connected with which button or nav-bar or filter and etc.
-            so You can see order and some service pages. </b>
-
-       <div class="button">
-        <a href="./order-two.html">
-            <button>Page Order 2</button>
-        </a>
-        <a href="./order-three.html">
-            <button>Page Order 3</button>
-        </a>
-        <a href="./order-four.html">
-            <button>Page Order 4</button>
-        </a>
-        <a href="./order-five.html">
-            <button>Page Order 5</button>
-        </a>
-        <br><br>
-        <div class="etc">
-            <a href="./service-two.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-two.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-three.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube.html">
-                <button>Page Service 2</button>
-            </a>
-            <a href="./service-youtube-video.html">
-                <button>Page Service 2</button>
-            </a>
-        </div>
-    
-       </div>
-
-       <img id="screen" src="../../../images/image/cancelimg.svg" alt="">
-       
-    </div>
+    <script>
+        let checkboxes = document.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("click", checkboxHandler);
+            });
+            function checkboxHandler() {
+                if (this.checked === true) {
+                    this.closest(".select").classList.add("checked");
+                } else {
+                    this.closest(".select").classList.remove("checked");
+                }
+            }
+    </script>
     <script src="../js/app.js"></script>
 </body>
 
