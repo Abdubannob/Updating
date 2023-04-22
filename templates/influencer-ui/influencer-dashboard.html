@@ -715,20 +715,12 @@
             });
             function checkboxHandler() {
                 if (this.checked === true) {
-                    this.closest(".checkbox-group").classList.add("checked");
+                    this.closest(".select").classList.add("checked");
                 } else {
-                    this.closest(".checkbox-group").classList.remove("checked");
+                    this.closest(".select").classList.remove("checked");
                 }
             }
     </script>
-
-<script>
-    
-    if(document.querySelector(".complete-todo input").checked){
-          document.querySelector(".select p").style.display = "flex"
-        }
-
-</script>
 
     <script src="../../js/app.js"></script>
 </body>

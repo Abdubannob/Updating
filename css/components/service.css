@@ -79,6 +79,10 @@
 }
 
 
+.boxes .box-img img{
+    width: 100%;
+}
+
 .sort {
     display: flex;
     align-items: center;

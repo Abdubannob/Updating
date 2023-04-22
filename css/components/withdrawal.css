@@ -1,0 +1,39 @@
+
+#radio1, #radio2, #radio3{
+    display: none;
+}
+
+.pay{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #707FDA;
+}
+.payment-logo #radio1:checked + .pay{
+    border: 6px solid #707FDA;
+    width: 20px;
+    height: 20px;
+}
+
+.payment-logo #radio2:checked + .pay{
+    border: 6px solid #707FDA;
+    width: 20px;
+    height: 20px;
+}
+
+.payment-logo #radio3:checked + .pay{
+    border: 6px solid #707FDA;
+    width: 20px;
+    height: 20px;
+}
+
+.payment-item-two{
+    max-width: 719px;
+    height: 80px;
+}
+
+.payment-item-two button{
+    border: none;
+    background-color: transparent;
+}

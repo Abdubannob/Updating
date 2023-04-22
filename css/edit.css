@@ -98,10 +98,14 @@
 }
 .edition .password{
     display: flex;
-    height: 40px;
+    height: 44px;
     border-radius: 6px;
     width: 100%;
     background-color: var(--extra);
+}
+
+.edition .password:active {
+    border: 2px solid #707FDA;
 }
 
 .edition .password button{
@@ -122,12 +126,25 @@
 .edition .password input{
     border: none;
     outline: none;
+    height: 38px;
 }
+
+.edition .password input:active{
+    border: none;
+}
+
 .edition .email-password{
     width: 100%;
     background-color: #fff;
     padding: 20px;
     border-radius: 12px;
+}
+
+.email-opt{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .email-password .save{
@@ -136,6 +153,7 @@
 
 .edition .email-item{
     width: 500px;
+   
 }
 
 .edition .email-item{
@@ -171,6 +189,12 @@
     font-size: 15px;
     border-radius: 6px;
     cursor: pointer;
+    background-color: transparent;
+}
+
+.upload-button:hover{
+    background-color: #707FDA;
+    color: #fff;
 }
 
 .delete-button{
@@ -185,6 +209,11 @@
     border: 1px solid var(--edition-button) ;
     color: var(--edition-button);
     cursor: pointer;
+}
+
+.delete-button:hover{
+    background-color: #707FDA;
+    color: #fff;
 }
 
 .sign-in{
@@ -207,6 +236,7 @@
     color: var(--primary);
 }
 
+
 .sign-in input{
     width: 100%;
     height: 40px;
@@ -225,14 +255,32 @@
     color: var(--third-color);
 }
 
+.sign-in .item-select select{
+    width: 95%;
+    outline: none;
+}
+
+.sign-in .item-select{
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+}
+
 .gender{
     width: 347px;
 }
-.sign-in .input-active{
-    outline: 1px solid var(--secondary);
-    background-color: transparent;
-    border: 1px solid var(--secondary);
+
+
+.sign-in .input-active:active{
+    border: 2px solid #5B69BD;
 }
+
+.email-password .input-active {
+    border: none;
+    outline: none;
+    height: 40px;
+}
+
 .input-item{
     outline: 1px solid var(--secondary);
 }
@@ -262,6 +310,10 @@
 
 .sign-info input{
     height: 30px;
+    outline: none;
+}
+.sign-info input:active{
+    outline: none;
 }
 .sign-info .code-number{
     width: 70px;
@@ -279,6 +331,20 @@
     outline: none;
     border: none;
     background: transparent;
+}
+
+.sign-info .code-number:active{
+    border: none;
+    outline: none;
+}
+
+.sign-info .code-number-two:active{
+    border: none;
+    outline: none;
+}
+
+.sign-info:active{
+    border: 2px solid #5B69BD;
 }
 
 .gender-button img{
@@ -327,6 +393,10 @@
 .email-item .notifcation-btn{
     background-color: #fff;
     border:  1px solid #C5C5C5;
+}
+
+.notifcation-btn input{
+    background-color: #fff;
 }
 
 .notifcation-btn button{
@@ -669,27 +739,9 @@
     padding: 15px 20px;
 }
 
-.pay{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-}
 
-.pay-active{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid var(--secondary);
-}
+
+
 .payment-logo{
     display: flex;
     align-items: center;
@@ -755,10 +807,6 @@
     border: 1px solid  #CED4E2;
 }
 
-.payment-item-two{
-    max-width: 719px;
-    height: 80px;
-}
 
 .credit-card-number{
     display: flex;
@@ -947,9 +995,10 @@
 .item input:active{
     outline: 2px solid #5B69BD;
 }
-/* .item input{
-    outline: 2px solid #5B69BD;
-} */
+.email-item input:active{
+    outline: none;
+}
+
 
 .youtube-channel-place{
     width: 1239px;
