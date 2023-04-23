@@ -20,7 +20,8 @@
     position: fixed;
     width: 240px;
     height: 100vh;
-    left: 101px;
+    margin-left: 101px;
+    /* left: 101px; */
     top: 0;
     background-color: #fff;
     z-index: 0;
