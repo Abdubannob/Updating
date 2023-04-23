@@ -17,15 +17,14 @@
         <section class="contain header-top">
             <div class="header">
                 <div class="header-left">
-                    <img src="../../../images/header/techfluencer.svg" alt="vector">
-                   
+                    <img src="../../../images/header/techfluencer.svg" alt="logo">
                 </div>
                 <div class="header-right">
-                    <div class="img-header" id="notification">
+                    <button class="img-header" id="notification">
                         <img src="../../../images/q.svg" alt="vector">
                         <img class="ellipse" src="../../../images/notifcation-dotted.svg" alt="Ellipse">
-                    </div>
-                    <div class="header-img"></div>
+                    </button>
+                    <button class="header-img"><img src="../../../images/header/logo-header.svg" alt="logo"></button>
                 </div>
             </div>
         </section>
@@ -129,23 +128,37 @@
             <div class="payment-method last-method">
                 <div class="withdrawal-payment">
                     <div class="payment-logo ">
-                        <input type="radio" class="radio" id="radio1" name="withdrawal">
-                        <label for="radio1" class="pay"> </label>
-                      <div class="logo-payment-img set-logo paypal">
-                        <img src="../../../images/image/PayPalService.svg" alt="logo">
-                      </div>
+                        <input type="radio" class="radio" id="radio1"  name="withdrawal">
+                        <label for="radio1" class="pay"> 
+                            <div class="logo-payment-img set-logo paypal">
+                              <img src="../../../images/image/PayPalService.svg" alt="logo">
+                            </div>
+
+                        </label>
                         
+                    </div>
+
+                    <div class="sign-in" id="sign-in">
+                        <div class="item">
+                            <form >Email</form>
+                            <input type="text" placeholder="Email" >
+                        </div>
+                        <div class="item" id="input-item">
+                            <form >Repeat email</form>
+                            <input type="text" placeholder="Email">
+                        </div>
                     </div>
 
                     <div class="payment-logo last-payment">
                         <input type="radio" class="radio" id="radio2" name="withdrawal">
-                        <label for="radio2" class="pay"> </label>
-                      <div class="logo-payment-img set-logo">
-                        <img src="../../../images/image/payoneer.svg" alt="logo">
-                      </div>
+                        <label for="radio2" class="pay">
+                            <div class="logo-payment-img set-logo">
+                              <img src="../../../images/image/payoneer.svg" alt="logo">
+                            </div>
+                             </label>
                     </div>
 
-                  <div class="sign-in">
+                  <div class="sign-in" id="sign-in-two">
                     <div class="item">
                         <form >Email</form>
                         <input type="text" placeholder="Email" >
@@ -154,13 +167,24 @@
                         <form >Repeat email</form>
                         <input type="text" placeholder="Email">
                     </div>
-
-                  <div class="bank-card">
-                    <input type="radio" class="radio" id="radio3" name="withdrawal">
-                    <label for="radio3" class="pay"> </label>
-                    <span>Bank card</span>
-                  </div>
-                  </div>
+                </div>
+                <div class="bank-card">
+                  <input type="radio" class="radio" id="radio3" name="withdrawal">
+                  <label for="radio3" class="pay"> 
+                    
+                  </label>
+                  <span>Bank card</span>
+                </div>
+                <div class="sign-in" id="sign-in-three">
+                    <div class="item">
+                        <form >Email</form>
+                        <input type="text" placeholder="Email" >
+                    </div>
+                    <div class="item" id="input-item">
+                        <form >Repeat email</form>
+                        <input type="text" placeholder="Email">
+                    </div>
+                </div>
                 </div>
               
                     <button class="withdraw-btns btns">Add withdrawal method</button>
@@ -196,7 +220,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="../../../js/setwithdrawal.js"></script>
     <script src="../js/app.js"></script>
 </body>
 

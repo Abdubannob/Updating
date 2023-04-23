@@ -22,7 +22,7 @@
 
 #check:checked~.sent .dark-light .dark-light-item {
     top: 2px;
-    right: 2px;
+    left: 22px;
     position: absolute;
 }
 
@@ -68,4 +68,20 @@
     right: 16.67%;
     bottom: 58.33%;
 
+}
+
+.ServicePortal{
+    display: none;
+}
+
+#checks{
+    display: none;
+}
+
+#requestService{
+    display: none;
+}
+
+#grid-items{
+    display: none;
 }

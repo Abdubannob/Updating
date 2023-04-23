@@ -11,8 +11,9 @@
 }
 
 body{
-    width: 100%;
+    /* width: 100%; */
     background-color: #F5F5F5;
+    
 }
 
 :root {
@@ -38,4 +39,22 @@ width: 1290px;
 background-color: yellow;
 height: 50px;
 z-index: 99;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.container-webs{
+    max-width: 1440px;
+    overflow: hidden;
+    background-color: #4CAF50;
+    position: relative;
+}
+
+@media(min-width: 2000px){
+    .container-webs{
+        margin: 0 auto;
+    }
 }

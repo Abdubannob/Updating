@@ -18,6 +18,7 @@
 
 
 
+
 .linear-nav{
     z-index: 0;
 }
@@ -71,6 +72,7 @@
 
 
 nav{
+   
     z-index: 9;
 }
 
@@ -181,8 +183,8 @@ nav{
 /* .navigation .menu-service.active{background-image: url("../../images/navbar/Service-Menu.svg");} */
 
 .menu-cont-order{
-   width: 50px;
-   height: 50px;
+   width: 48px;
+   height: 45px;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;

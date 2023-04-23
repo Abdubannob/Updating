@@ -289,9 +289,9 @@
     /* height: 40px; */
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: #F5F5F5;
     border-radius: 6px;
     font-size: 14px;
@@ -429,6 +429,9 @@
 .email-notifcation-button .cancel-item{
     color: #373356;
     width: 15px;
+}
+.email-notifcation-button button{
+    border: none;
 }
 
 .edition .dark-light .light-active {
@@ -802,13 +805,29 @@
 .bank-card{
     display: flex;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .bank-card span{
     width: 54px;
 }
 
+.pay{
+    display: flex;
+    align-items: center;
+}
 
+.pay img{
+    margin-left: 70px;
+}
+
+#sign-in-two{
+    display: none;
+}
+
+#sign-in-three{
+    display: none;
+}
 
 
 
@@ -973,7 +992,7 @@
     width: 100%;
     height: 1055px;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 9;
+    z-index: 99999;
 }
 
 .withdrawal-delete{

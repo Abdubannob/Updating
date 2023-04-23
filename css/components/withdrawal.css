@@ -132,3 +132,7 @@
     font-weight: 500;
     border: none;
 }
+
+#sign-in{
+    display: none;
+}

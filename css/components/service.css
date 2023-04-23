@@ -124,7 +124,12 @@
     padding: 0px 2.5px 0px 5px;
 }
 
+
 .three-dots-item{
+    display: none;
+}
+
+ .three-dots-item{
     width: 240px;
     height: 180px;
     display: flex;
@@ -139,7 +144,26 @@
     top: 0;
     z-index: 999;
     border: 1px solid #E9EBF3;
+    box-shadow: 0px 15px 60px -5px rgba(27, 30, 51, 0.1);
     display: none;
+}
+
+ .actives .three-dots-item{
+    width: 240px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    right: -240px;
+    top: 0;
+    z-index: 999;
+    border: 1px solid #E9EBF3;
+    box-shadow: 0px 15px 60px -5px rgba(27, 30, 51, 0.1);
 }
 
 .three-dots-item-none{
@@ -162,7 +186,7 @@
     margin-bottom: 10px;
 }
 
-.three-dots:hover .three-dots-item{
+/* .three-dots:hover .three-dots-item{
     display: flex;
     position: fixed;
     width: 240px;
@@ -179,7 +203,7 @@
     top: 0;
     z-index: 999;
     border: 1px solid #E9EBF3;
-}
+} */
 
 .three-dots img{
     margin-bottom: 10px;

@@ -119,7 +119,7 @@
 }
 
 .operation-request .carousel .link {
-    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
@@ -134,7 +134,7 @@
 }
 
 .operation-request .carousel .links {
-    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding-top: 35px;

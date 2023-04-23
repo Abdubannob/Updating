@@ -655,6 +655,10 @@
     gap: 10px;
 }
 
+.image-uploads button{
+    border: none;
+}
+
 .btn-add {
     display: flex;
     align-items: center;
