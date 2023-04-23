@@ -202,12 +202,13 @@ line-height: 20px;
     background-color: #F5A200;
     position: absolute;
     top: 10px;
-    right: 25px;
+    right: 30px;
     font-size: 10px;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 .favorites-item{

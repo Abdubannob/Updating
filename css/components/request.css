@@ -1,14 +1,20 @@
 
 .grid-carousel {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 1239px;
-    display: flex;
+  margin-bottom: 20px;
     gap: 20px;
     padding-top: 20px;
 }
 
+.grid-carousel .boxes{
+    margin-top: 40px;
+}
 
-
+.grid-carousel .box{
+    margin-top: 40px;
+}
 .grids {
     margin-top: 40px;
 }

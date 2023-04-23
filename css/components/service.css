@@ -36,6 +36,7 @@
     padding: 16px 16px 16px 16px;
     background-color: #fff;
     border-radius: 8px;
+    position: relative;
 }
 
 .channel .social {
@@ -123,3 +124,99 @@
     padding: 0px 2.5px 0px 5px;
 }
 
+.three-dots-item{
+    width: 240px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    right: -240px;
+    top: 0;
+    z-index: 999;
+    border: 1px solid #E9EBF3;
+    display: none;
+}
+
+.three-dots-item-none{
+    display: none;
+}
+
+.three-dots-item button{
+   border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+.three-dots{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.three-dots:hover .three-dots-item{
+    display: flex;
+    position: fixed;
+    width: 240px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    position: absolute;
+    right: -240px;
+    top: 0;
+    z-index: 999;
+    border: 1px solid #E9EBF3;
+}
+
+.three-dots img{
+    margin-bottom: 10px;
+}
+/* 
+.three-dots:checked + .three-dots-item{
+    display: inline-block;
+} */
+
+.tree-dot .dropdown-menu{
+	width: 240px;
+	border: 1px solid #E9EBF3;
+	box-shadow: 0px 15px 60px -5px rgba(27, 30, 51, 0.1);
+	border-radius: 6px;
+}
+.tree-dot .dropdown-item.active, 
+.tree-dot .dropdown-item:active{
+	background-color: #f5f5f5;
+}
+
+.tree-dot .dropdown-item:focus, 
+.tree-dot .dropdown-item:hover{
+	background: rgba(66, 97, 204, 0.05);
+	color: #4261CC;
+}
+.tree-dot.brand .dropdown-item:focus, 
+.tree-dot.brand .dropdown-item:hover{
+	background: #F6F7FC;
+	color: #6A9586;
+}
+.tree-dot .btn img{
+	margin: 0;
+}
+
+.dropdown, .dropend, .dropstart, .dropup{
+	position: initial;
+}
+.tree-dot.dropdown img{
+	vertical-align: middle;
+}

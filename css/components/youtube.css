@@ -336,22 +336,6 @@
 }
 
 
-.three-dots {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.three-dots .dot {
-    width: 4px;
-    height: 4px;
-    background-color: #212121;
-    border-radius: 50%;
-}
 
 .boxes .user-services-two {
     width: 100;

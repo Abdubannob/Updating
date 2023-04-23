@@ -97,6 +97,10 @@
     display: inline-block;
 }
 
+.contain:checked ~ .multiple{
+    display: none;
+}
+
 .multiple{
     display: none;
 }
@@ -105,3 +109,19 @@
 .languages{
     position: relative;
 }
+
+.languages option{
+    display: none;
+}
+
+.selections{
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 5px;
+    border: 1px solid #99A29C;
+    display: flex;
+    gap: 10px;
+  
+}
+

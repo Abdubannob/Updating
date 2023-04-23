@@ -37,46 +37,51 @@
 
     <nav class="navigation">
             <a href="../influencer-dashboard.html">
-                <div class="menu-bar">
-                   <img src="../../../images/navbar/dashboard-noneactive.svg" alt="dash">
+                <div class="menu-bar menu-dashboard">
+                    <img class="img" src="../../../images/navbar/Dashboard.svg" alt="dashboard">
                 </div>
             </a>
            <a href="#">
-            <div class="menu-bar active">
+            <div class="menu-bar menu-request active">
                <img class="img" src="../../../images/navbar/Request-Menu.svg" alt="request">
             </div>
            </a>
            <a href="../service/services.html">
-            <div class="menu-bar ">
-                <img src="../../../images/navbar/Services.svg" alt="services">
+            <div class="menu-bar menu-service ">
+                <img src="../../../images/navbar/Service-Menu.svg" alt="service">
             </div>
            </a>
            <a href="../social/youtube/social-media.html">
-            <div class="menu-bar">
-                <img src="../../../images/navbar/Channel-noneactive.svg" alt="channel">
+            <div class="menu-bar menu-channel">
+                <img src="../../../images/navbar/Channel-Menu.svg" alt="channel">
             </div>
            </a>
            <a href="../orders/order.html">
-            <div class="menu-bar">
-                    <div class="contain-img">
-                    <img src="../../../images/navbar/Order-noneactive.svg" alt="bar">
-                     </div>
-                     <img src="../../../images/navbar/Orders-noneactive.svg" alt="order">
-                <div class="request-counting">
-                    2
-                  </div>
+           <div class="menu-bar menu-order">
+            <img src="../../../images/navbar/Order-Menu.svg" alt="order">
+            <div class="menu-cont-order">
             </div>
-         </a>
+                <div class="request-counting"> 2 </div>
+            
+            </div>
+                </a>
+            </div>
           <a href="#">
-            <div class="menu-bar">
-                <img src="../../../images/navbar/payments-noneactive.svg" alt="payment">
+            <div class="menu-bar menu-payment">
+               
         </div>
           </a>
           <a href="../settings/settings.html">
-            <div class="menu-bar">
-               <img src="../../../images/navbar/settings-noneactive.svg" alt="setting">
+            <div class="menu-bar menu-settings">
+                <img src="../../../images/navbar/Settings-Menu.svg" alt="settings">
         </div>
           </a>
+
+          <a href="#">
+          <div class="menu-bar menu-logout">
+                <img src="../../../images/navbar/logout.svg" alt="channel">
+            </div>
+        </a>
             <div class="menu-cont">
 
             </div>
@@ -89,21 +94,27 @@
             <span class="explore">Explore service requsts from brands. Respond to requests that are right for you</span>
             <main id="filter">
                <a href="../custom_request/service-requests.html">
-                <select name="select">
-                    <option value="Categories">Categories</option>
-                </select>
+                <div class="selections">
+                    Categories
+                    <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                </div>
                </a>
-                <select name="select">
-                    <option value="Budget">Budget</option>
-                </select>
-                <select name="select">
-                    <option value="Socila Networks">Social Networks</option>
-                </select>
+              
+                <div class="selections">
+                    Budget
+                    <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                </div>
+               
+                <div class="selections">
+                    Social Networks
+                    <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                </div>
                 
                 <div class="languages">
-                    <select name="select" id="language">
-                        <option value="Language">Language</option>
-                    </select>
+                    <div class="selections" id="language">
+                        Languages
+                        <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                    </div>
                     <div class="multiple" id="multiple">
                         <div class="search-item-multiple">
                             <img src="../../../images/header/search-item-multiple.svg" alt="search">
@@ -236,12 +247,14 @@
                         </div>
                     </div>
                 </div>
-                <select name="select">
-                    <option value="Locations">Locations</option>
-                </select>
-                <select name="select">
-                    <option value="Deliver time">Delivery time</option>
-                </select>
+                <div class="selections">
+                    Locations
+                    <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                </div>
+                <div class="selections">
+                    Delivery time
+                    <img src="../../../images/components/dropdown.svg" alt="dropdown">
+                </div>
 
                 <input type="checkbox" id="check">
                 <label for="check" class="sent">
@@ -266,7 +279,7 @@
                 </div>
                 <div >
 
-                    <section id="slider" class="pt-5" >                    
+                    <section id="slider" >                    
                         <div class="contains">
                                
                             <div class="slider">
@@ -992,11 +1005,6 @@
 
                     </div>
 
-
-                </div>
-
-
-                <div class="grid-carousel">
                     <div class="box box1">
                         <div class="box-img">
                             <img src="../../../images/l3.svg" alt="robot">
@@ -1202,9 +1210,7 @@
                         </div>
 
                     </div>
-                </div>
 
-                <div class="grid-carousel">
                     <div class="box box1">
                         <div class="box-img">
                             <img src="../../../images/l7.svg" alt="robot">
@@ -1410,7 +1416,11 @@
                         </div>
 
                     </div>
+
                 </div>
+
+
+            
             </div>
 
             <h5 class="loading">Loading...</h5>

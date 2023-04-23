@@ -70,6 +70,11 @@
     padding-bottom: 1px;
 }
 
+#filter a{
+    text-decoration: none;
+    color: #212121;
+}
+
 .operation-request #filter .web {
     font-size: 14px;
     font-weight: 500;

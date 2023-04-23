@@ -16,6 +16,8 @@
     /* overflow-y: scroll; */
 }
 
+
+
 .linear-nav{
     z-index: 0;
 }
@@ -26,13 +28,13 @@
 
 .navigation a{
     text-decoration: none;
+   
 }
 
 .navigation .nav-bars {
     width: 101px;
     height: 84px;
     padding: 66px 0px;
-    gap: 4px;
     isolation: isolate;
     display: flex;
     flex-direction: column;
@@ -49,7 +51,6 @@
 .navigation .menu-bar {
     width: 101px;
     height: 84px;
-    gap: 4px;
     isolation: isolate;
     display: flex;
     flex-direction: column;
@@ -63,16 +64,9 @@
 .navigation .active {
     width: 101px;
     height: 84px;
-    isolation: isolate;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F5F5F5;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    color: #000;
+   position: absolute;
+   z-index: 999;
+   
 }
 
 
@@ -159,3 +153,48 @@ nav{
     font-family: Roboto;
 }
 
+.navigation .menu-bar img{
+    display: none;
+}
+
+.navigation .active img{
+    display: inline-block;
+}
+
+.navigation .menu-logout img{
+    display: inline-block;
+}
+
+.navigation .menu-request{background-image: url('../../images/navbar/Request-menu-noneactive.svg');}
+/* .navigation .menu-request.active{background-image: url('../../images/navbar/Request-Menu.svg'); padding-bottom: 10px;} */
+
+.navigation .menu-dashboard{background-image: url("../../images/navbar/dashboard-noneactive.svg");}
+/* .navigation .menu-dashboard.active{background-image: url("../../images/navbar/Dashboard.svg");} */
+
+.navigation .menu-service{background-image: url("../../images/navbar/Services.svg"); }
+/* .navigation .menu-service.active{background-image: url("../../images/navbar/Service-Menu.svg");} */
+
+.navigation .menu-channel{background-image: url("../../images/navbar/Channel-noneactive.svg");}
+/* .navigation .menu-channel.active{background-image: url("../../images/navbar/Channel-Menu.svg");} */
+
+.navigation .menu-service{background-image: url("../../images/navbar/Services.svg");}
+/* .navigation .menu-service.active{background-image: url("../../images/navbar/Service-Menu.svg");} */
+
+.menu-cont-order{
+   width: 50px;
+   height: 50px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: 44px;
+
+}
+
+.navigation .menu-order .menu-cont-order{background-image: url("../../images/navbar/Layer@3x.svg");}
+.navigation .menu-order.active{background-image: url("../../images/navbar/Order-Menu.svg");}
+
+.navigation .menu-payment{background-image: url("../../images/navbar/payments-noneactive.svg");}
+.navigation .menu-payment.active{background-image: url("../../images/navbar/payments-noneactive.svg");}
+
+.navigation .menu-settings{background-image: url("../../images/navbar/settings-noneactive.svg");}
+.navigation .menu-settings.active{background-image: url("../../images/navbar/Settings-Menu.svg");}
