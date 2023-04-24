@@ -67,3 +67,169 @@ button{
 
 
 }
+
+
+.status {
+    padding: 10px;
+    background: #F5F5F5;
+    border-radius: 6px;
+  }
+  .status-pending p{
+    color: #F5A200!important;
+  }
+  .status-awaiting-payment p{
+    color: #707FDA!important;
+  }
+  .status-in-progress p{
+    color: #4CAF50!important;
+  }
+  .status-rejected p{
+    color: #F57070!important;
+  }
+  .status-completed p{
+    color: #34BAB2!important;
+  }
+  .status-saved p{
+    color: #99A29C!important;
+  }
+  .status-disabled p{
+    color: #99A29C!important;
+  }
+  /****status color***/
+  .status p{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #4CAF50;
+      background-repeat: no-repeat;
+      padding-left: 21px;
+      background-size: 16px;
+  }
+
+  .status-completed{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-completed span{
+    color: #34BAB2!important;
+  }
+
+  .status-completed div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/components/light-green.svg);
+  }
+
+
+  .status-pending{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 22px;
+  }
+
+  .status-pending div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/components/orange-circle-two.svg);
+  }
+
+  .status-pending span{
+    color: #F5A200!important;
+  }
+
+  .status-awaiting-payment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-awaiting-payment div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/icons/status/complete.svg);
+  }
+
+  .status-awaiting-payment span{
+    color: #707FDA!important;
+  }
+
+  .status-in-progress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.status-in-progress div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/components/green-circle.svg);
+}
+
+.status-in-progress span{
+    color: #4CAF50!important;
+}
+
+.status-rejected{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-rejected div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/icons/status/rejected.svg);
+}
+
+  .status-rejected span{
+    color: #F57070!important;
+  }
+
+  .status-saved{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-saved div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/icons/status/disabled.svg);
+  }
+
+  .status-saved span{
+    color: #99A29C!important;
+  }
+
+  .status-disabled{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .status-disabled div{
+    width: 18px;
+    height: 18px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/icons/status/disabled.svg);
+  }
+
+  .status-disabled span{
+    color: #99A29C!important;
+  }
