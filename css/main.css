@@ -27,3 +27,8 @@
 @import "./components/banner-slider.css";
 @import "./components/old.css";
 @import "./components/alert.css";
+@import "./components/landing/signupInfluencer.css";
+@import "./components/landing/landing.css";
+@import "./components/landing/login.css";
+@import "./components/landing/landing-influencer.css";
+@import "./components/landing/influencer-list.css";

@@ -137,7 +137,17 @@ header {
     text-decoration: line-through;
 }
 
+.header-right button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #707FDA;
+}
 
+.header-right button:focus{
+    outline: 2px solid #707FDA;
+    border: 1px solid #707FDA;
+}
 
 .header-right {
     display: flex;

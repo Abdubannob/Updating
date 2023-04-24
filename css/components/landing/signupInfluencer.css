@@ -1,0 +1,309 @@
+.login,
+.login-brand{
+    min-height: 90vh;
+    display: grid;
+    padding-top: 60px;
+    grid-template-columns: 40% 60%;
+}
+
+.login-left{
+	background-image: url(../../../images/login/login-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	background-color: #707FDA;
+	box-shadow: 4px 0px 16px rgba(0, 42, 99, 0.04);
+}
+.login-brand .login-left{
+	background-image: url(../../../images/login/login-brand-bg.png);
+	background-color: #6A9586;
+	box-shadow: 4px 0px 16px rgba(0, 42, 99, 0.04);
+}
+.login-left img{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: 0;
+}
+.login-left .heading{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	z-index: 2;
+	padding: 20px;
+}
+.login-influencer .login-left .heading,
+.login-brand .login-left .heading{
+	align-items: flex-start;
+	text-align: left;
+	max-width: 460px;
+	margin: 0 auto;
+} 
+/*.login-left .signup-btn{
+	position: absolute;
+	bottom: 64px;
+}*/
+.login-left .heading h1{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 56px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.login-left .heading p{
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.login-left .signup-btn button{
+	margin: 5px 10px;
+}
+
+.login-right{
+	height: 100%;
+	display: grid;
+	align-items: center;
+	z-index: 2;
+	padding: 20px;
+}
+.login-right form{
+	margin: auto;
+}
+
+.login-right .form-check label,
+.login-right .form-check a{
+	font-size: 14px;
+	line-height: 16px;
+	color: #6E7391;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.login-right .form-check-input:checked {
+    background-color: #707FDA;
+    border-color: #707FDA;
+}
+
+
+.social-choose-item{
+	min-width: 140px;
+}
+.form-check .social-choose-item label{
+	font-size: 16px;
+	line-height: 18px;
+	color: #383B50;
+}
+.form-group.social-choose{
+	margin-top: 40px;
+}
+.input-group.plus-minus{
+	width: 160px;
+}
+.plus-minus .input-group-append{
+	background: #F5F5F5;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.plus-minus .input-group-append .btn{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.timeline-number{
+	width: 34px;
+	height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #FFFFFF;
+	display: inline-flex;
+}
+.timeline-number p{
+	font-weight: normal;
+	font-size: 17px!important;
+	line-height: 26px!important;
+	text-align: center;
+	color: #FFFFFF;
+	margin: auto!important;
+
+}
+.timeline span{
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: #FFFFFF;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+.timeline-line{
+	height: 40px;
+	width: 1px;
+    margin: 10px 0 10px 17px;
+	border-right: 1px solid #FFFFFF;
+}
+
+form .form-inline{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+form{
+    max-width: 500px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+  }
+  form label {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #373E56;
+      margin-bottom: 10px;
+  }
+  .form-control{
+    background: #F5F5F5;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #222723;
+    padding: 11px 15px; 
+    border: 1px solid transparent;
+  }
+  .input-group .btn.dropdown-toggle{
+    background-color: #F5F5F5;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .form-group{
+    margin-bottom: 20px; 
+  }
+  .form-control:focus{
+    box-shadow: 0 0 0 0.25rem #F0F9F6;
+    border: 1px solid #6A9586;
+  }
+  .violet .form-control:focus{
+    box-shadow: 0 0 0 0.25rem #F6F7FC;
+    border: 1px solid #707FDA;
+  }
+  .form-check-input[type=checkbox]{
+    border-radius: 4px;
+  }
+  form .form-inline{
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+  }
+  .form-check-input{
+    margin-top: 2px;
+    border: 2px solid #C7CBE0;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+   /* margin-bottom: 20px;*/
+  }
+  .form-text.text-muted{
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: #99A29C;
+  }
+  .form-check{
+    margin-bottom: 20px;
+  }
+  .form-check-inline{
+    display: block;
+    margin: 0;
+  }
+  .form-check-inline .form-check-input{
+    border: 1px solid #B1CDBA;
+  }
+  .violet .form-check-inline .form-check-input{
+    border: 1px solid #C7CBE0;
+  }
+  .form-check-inline .form-check-input:checked{
+    background-color: #6A9586!important;
+  }
+  .violet .form-check-inline .form-check-input:checked{
+    background-color: #707FDA!important;
+  }
+  .form-check-input:focus {   
+      box-shadow: 0 0 0 0.25rem rgb(131 169 153 / 25%);
+  }
+  .form-check-label{
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222723;
+  }
+  .form-check-label img{
+    max-height: 20px;
+  }
+  .form-check-label .label-img img{
+    margin-left: 10px;
+  }
+  .input-group .input-group-append,
+  .input-group .input-group-prepend{
+      background: #F5F5F5;
+      border-radius: 6px;
+  }
+  .input-group-text{
+    background: transparent;
+    border: none;
+    height: 100%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #757575;
+  }
+  .input-group .input-group-append .btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #6A9586;
+    height: 100%;
+  }
+  .violet .input-group .input-group-append .btn{
+    color: #4261CC;
+  }
+  .input-group .dropdown-menu.tel{
+    width: 350px;
+    overflow: auto;
+    max-height: 350px;
+  }
+  .input-group .dropdown-menu.tel li{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  } 
+  .input-group .dropdown-menu.tel p{
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: #212121;
+  }
+  .input-group .dropdown-menu.tel span{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+    letter-spacing: 0.1em;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+
+
+@media (max-width: 767.98px){
+	.login, .login-brand{
+		grid-template-columns: 1fr;
+	}
+	.login-left .heading{
+		min-height: 350px;
+	}
+
+}
