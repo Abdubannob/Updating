@@ -3,7 +3,7 @@
 }
 .main-banner{
 	background-color: #FDFDFE;
-	padding: 130px 0 100px;
+	padding: 125px 0 120px;
 }
 .banner-img{
 	display: flex;
@@ -87,6 +87,9 @@
 	color: #666666;
 	text-align: left;
 	margin-bottom: 20px;
+}
+.card-footer{
+    background-color: #fff;
 }
 .section-one .card .card-footer, 
 .section-one .card .card-footer:last-child{
@@ -583,9 +586,28 @@
 }
 
 .btn-solid-violet{
-    
-    background-color: #4261CC;
+    padding: 10px  20px;
+    background-color: #707FDA;
     color: #fff;
-   
-    /* margin-bottom: 20px; */
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+.landing-background{
+    background-color: #F5FFFD;
+}
+
+.container-landing .card-img{
+    max-width: 1235px;
+    display: flex;
+    padding: 0 20px;
+}
+
+ .two-landing{
+    padding: 0 30px;
+}
+
+.container-landing .features-container{
+    padding:  50px 0 10px 0;
 }

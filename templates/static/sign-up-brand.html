@@ -15,115 +15,76 @@
 </head>
 
 <body style="background-color: #ffffff;">
-    <header class="landing-background">
-        <div class="container-landing">
-         <section class="contain header-top">
-             <div class="header">
-                 <div class="header-left">
-                  <button> <img src="../../images/header/techfluencer.io.svg" alt="logo"></button>
-                 </div>
-                 <div class="header-right login-btns">
-                    <button class="login-btn">Login</button>
-                 </div>
-             </div>
-         </section>
-        </div>
-     </header>
-
-    <div class="login login-influencer">
+    <header>
+        <section class="contain header-top">
+            <div class="header">
+                <div class="header-left">
+                  <img src="../../images/landing/techfluencer-brand.svg" alt="logo">
+                </div>
+                <div class="header-right login-btns">
+                    <button >Influencer</button>
+                    <button >Brands</button>
+                   <button class="login-btn">Login</button>
+                   <button class="logo-header"><img src="../../images/header/logo-header.svg" alt=""></button>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <div class="login-brand">
         <div class="login-left">
             <div class="heading">
-                <h1>influencer sign up</h1>
+                <h1>Brand Sign Up</h1>
                 <div class="mt-2 mb-2">
                     <div class="timeline d-flex" style="align-items: center;">
                         <div class="timeline-number">
                             <p>1</p>
                         </div>
-                        <span>register</span>
+                        <span>Register</span>
                     </div>
                     <div class="timeline-line"></div>
                     <div class="timeline d-flex" style="align-items: center;">
                         <div class="timeline-number">
                             <p>2</p>
                         </div>
-                        <span>verify email</span>
+                        <span>Verify Email</span>
                     </div>
                     <div class="timeline-line"></div>
                     <div class="timeline d-flex" style="align-items: center;">
                         <div class="timeline-number">
                             <p>3</p>
                         </div>
-                        <span>complete profile</span>
+                        <span>Complete Profile</span>
                     </div>
                 </div>
-                <p style="max-width: 450px;">tech creators innovate with us <br><br>join forces with us to bring your innovative ideas to life. <br><br> let's work together to revolutionize the tech creator industry and shape the future of innovation.</p>
+                <p style="max-width: 450px;">
+                    1 free week + 1 year subscription... we take credit card
+                    after 1 week... automatically we bill for 1 year ... but give screens to deactivate account during free trial or use promo code
+                    <br><br>
+                    During this first free week... we give them promo code for 1 year
+                </p>
             </div> 
         </div>
         <div class="login-right">
             <div>
-                <form class="violet">
+                <form>
                     <div class="form-inline">
                         <div class="form-group">
                             <label for="exampleInputEmail1">First Name*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Some text">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Last Name*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Some text">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email*</label>
+                        <label for="exampleInputEmail1">Company Name*</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
                     </div>
                     <div class="form-group">
-                        <label for="id_country">Country</label>*
-                        <select name="country" class="form-control" required="" id="id_country">
-      <option value="" selected="">---------</option>
-    
-      <option value="2">USA</option>
-    
-      <option value="1">Canada</option>
-    
-      <option value="3">United Kingdom</option>
-    
-      <option value="6">United Arab Emirates</option>
-    
-      <option value="5">Saudi Arabia</option>
-    
-      <option value="4">Qatar</option>
-    
-      <option value="38">China</option>
-    
-      <option value="10">Australia</option>
-    
-      <option value="19">Bahrain</option>
-    
-      <option value="27">Brazil</option>
-    
-      <option value="35">Central African Republic</option>
-    
-      <option value="28">Bulgaria</option>
-    
-      <option value="25">Bosnia and Herzegovina</option>
-    
-      <option value="22">Belgium</option>
-    
-      <option value="9">France</option>
-    
-      <option value="7">Germany</option>
-    
-      <option value="8">Italy</option>
-    
-      <option value="16">Australia</option>
-    
-      <option value="17">Austria</option>
-    
-      <option value="12">Algeria</option>
-    
-      <option value="11">Albania</option>
-    
-    </select>
+                        <label for="exampleInputEmail1">Work Email*</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
                     </div>
                     <div class="form-inline">
                         <div class="form-group">
@@ -138,7 +99,7 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password confirmation*</label>
                             <div class="input-group mb-3">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-enter Password">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                 <div class="input-group-append">
                                     <button class="btn" type="button"><img src="../../images/login/eye.svg"></button>
                                 </div>
@@ -154,17 +115,19 @@
                             <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <a href="dashboard-second-type-influencer.html" type="submit" class="btn btn-solid-violet" style="margin-top: 20px;">Sign up</a>
+                    
+                    <button type="submit" class="btn btn-solid">Sign up</button>
                 </form>
+                
             </div>
         </div>
     </div>
-    
-    <footer class="white-footer">
-        <div class="contain footer container-landing ">
+        
+    <footer>
+        <div class="contain footer">
             <div class="contain">
                 <div class="top-footer">
-                    <img class="influence" src="../../images/footer/techfluencer.io-footer.svg" alt="fluencer">
+                    <img class="influence" src="../../../images/22 1.svg" alt="fluencer">
                     <nav>
                         <a href="">Brand</a>
                         <a href="">Influencer</a>
@@ -174,10 +137,10 @@
                         <a href="">Contact Us</a>
                     </nav>
                     <div class="navlink">
-                        <img src="../../images/footer/linkedin-333.svg" alt="in">
-                        <img src="../../images/footer/instagram-333.svg" alt="instagram">
-                        <img src="../../images/footer/facebook-333.svg" alt="meta">
-                        <img src="../../images/footer/twitter-333.svg" alt="twitter">
+                        <img src="../../../images/in.svg" alt="in">
+                        <img src="../../../images/ins.svg" alt="twit">
+                        <img src="../../../images/meta.svg" alt="meta">
+                        <img src="../../../images/twit.svg" alt="instagram">
                     </div>
                 </div>
                 <div class="bottom-footer">
@@ -187,6 +150,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
