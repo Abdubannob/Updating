@@ -29,3 +29,8 @@
     box-shadow: 4px 4px 4px 4px  rgba(192, 189, 189, 0.445);
     transform: translateY(-3px);
 }
+
+.btn-outline-white{
+    border: 1px solid #fff;
+    color: #fff;
+}
