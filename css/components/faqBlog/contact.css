@@ -73,3 +73,12 @@
 	margin-top: 20px;
 	color: #6E7391;
 }
+
+.container-landing .header {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: #fff;
+}

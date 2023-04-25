@@ -50,24 +50,32 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Last Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last namet">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
                             </div>
+                          
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Phone Number</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
+                                <label for="id_phone_number">Phone number</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">+971</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                                                                             
                             </div>
+
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Subject</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
+                                <label for="id_subject">Subject</label>
+                                <input type="text" name="subject" maxlength="100" class="form-control" placeholder="Subject" required="" id="id_subject">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Massage</label>
-                                <textarea class="form-control" rows="5" id="comment" placeholder="Your message text"></textarea>
+                                <textarea class="form-control" rows="10" id="comment" placeholder="Your message text"></textarea>
                             </div>
                             <a href="contact-done.html" type="submit" class="btn btn-solid-violet" style="margin-top: 20px;">Submit</a>
                         </form>
@@ -95,43 +103,34 @@
         </div>
     </section>
 
-<footer>
-            <div class="container">
-                <div class="footer-body row">
-                    <div class="col-lg-2 col-12">
-                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
-                    </div>
-                    <div class="col-lg-8 col-12">
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="#">Brand</a></li>
-                                <li><a href="#">Influencer</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Career</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-12">
-                        <div class="footer-social">
-                            <ul>
-                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
-                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
-                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
-                            </ul>
-                        </div>
+    <footer class="white-footer">
+        <div class="contain footer container-landing ">
+            <div class="contain">
+                <div class="top-footer">
+                    <img class="influence" src="../../images/footer/techfluencer.io-footer.svg" alt="fluencer">
+                    <nav>
+                        <a href="">Brand</a>
+                        <a href="">Influencer</a>
+                        <a href="">FAQ</a>
+                        <a href="">Blog</a>
+                        <a href="">Career</a>
+                        <a href="">Contact Us</a>
+                    </nav>
+                    <div class="navlink">
+                        <img src="../../images/footer/linkedin-333.svg" alt="in">
+                        <img src="../../images/footer/instagram-333.svg" alt="instagram">
+                        <img src="../../images/footer/facebook-333.svg" alt="meta">
+                        <img src="../../images/footer/twitter-333.svg" alt="twitter">
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div class="container">
-                <div class="footer-bottom">
-                    <p>© mnWho 2021. All rights reserved</p>
-                    <a href="#">Terms and Conditions</a>
+                <div class="bottom-footer">
+                    <span> &copy Techfluencers 2023. All rights reserved</span>
+                    <span>Terms and Conditions</span>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
