@@ -255,3 +255,11 @@
 ul {
     list-style-type: none;
 }
+
+.bloging header{
+	background-color: #FDFDFE;
+}
+
+.bloging .header{
+	background-color: transparent;
+}

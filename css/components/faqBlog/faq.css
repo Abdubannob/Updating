@@ -107,7 +107,7 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #757575;
-	margin-bottom: 10px;
+	/* margin-top: 10px; */
 	margin-right: 10px;
 }
 .faq-tag ul,
@@ -129,6 +129,32 @@
 	color: #383B50;
 	list-style: none;
 }
+
+.faqs-icons li{
+	/* border: 1px solid #C7CBE0; */
+	border-radius: 20px;
+	padding: 5px 3px;
+	margin-right: 10px;
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #383B50;
+	list-style: none;
+}
+.faq-icon li{
+	border: 1px solid #C7CBE0;
+	border-radius: 20px;
+	padding: 5px 20px;
+	margin-right: 10px;
+	margin-top: 10px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #383B50;
+	list-style: none;
+}
+
 .faq-share li{
 	margin-right: 30px;
 	margin-bottom: 14px;
@@ -204,6 +230,9 @@
     background-color: transparent;
 }
 
+.blog-title{
+	padding-left: 20px;
+}
 
 @media (max-width: 575.98px) {
 	.faq-left{
