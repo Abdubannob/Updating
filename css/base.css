@@ -237,41 +237,67 @@ button{
     -webkit-appearance: none;
   }
 
-  @media(min-width: 2000px){
-    .container-webs{
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .contain{
-        overflow: hidden;
-    }
-
-    footer{
-        width: 1440px;
-        height: 114px;
-        background-color: #3F414E;
-        z-index: 999;
-        position: fixed;
-        bottom: 0;
-        overflow: hidden;
-        
-    }
+  @media(min-width: 2050px){
+    
 }
 
 
-@media(min-height:2068px)  {
+@media(min-height:1300px)  {
     
-    footer{
-        width: 1440px;
-        height: 114px;
-        background-color: #3F414E;
-        z-index: 999;
-        position: fixed;
-        bottom: 0;
-        overflow: hidden;
-        bottom: 0;
-    }
+  footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+   }
+   .container-webs{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.contain{
+    overflow: hidden;
+}
+
+footer{
+    width: 1440px;
+    height: 114px;
+    background-color: #3F414E;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    
+}
  }
 
+
+
+ @media screen and ( min-width: 2000px )
+{
+   footer{
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+   }
+   .container-webs{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.contain{
+    overflow: hidden;
+}
+
+footer{
+    width: 1440px;
+    height: 114px;
+    background-color: #3F414E;
+    z-index: 999;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    
+}
+}

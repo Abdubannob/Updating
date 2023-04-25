@@ -115,7 +115,7 @@
                             <img src="../../../images/header/search-item-multiple.svg" alt="search">
                             <input type="text" >
                         </div>
-                        <div class="multiple-searching">
+                        <div class="multiple-searching" id="sel">
                             <div class="search-item">
                                 <div class="checking">
                                     <input type="checkbox">
@@ -926,8 +926,15 @@
     <script>
         let multiple = document.querySelector(".multiple")
 let selection = document.querySelector(".languages")
-
+let selItem = document.getElementById("sel")
 selection.onclick = function (){
+    multiple.classList.toggle("actived");
+    selection.classList.toggle("actived");
+
+
+}
+
+selItem.onclick = function (){
     multiple.classList.toggle("actived");
     selection.classList.toggle("actived");
 

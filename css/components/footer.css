@@ -3,7 +3,7 @@ footer {
     height: 114px;
     background-color: #3F414E;
     z-index: 999;
-    position: static;
+    /* position: static; */
     bottom: 0;
     overflow: hidden;
 }
