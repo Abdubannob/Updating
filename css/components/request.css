@@ -45,6 +45,7 @@
     padding: 16px 16px 16px 16px;
     background-color: #fff;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 
@@ -86,6 +87,13 @@
 .users .user-photo {
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+}
+
+.users .user-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 

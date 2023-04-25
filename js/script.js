@@ -1,13 +1,13 @@
 // Owlcarousel
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-  	loop:true,
+  	loop:false,
     margin:0,
     nav:true,
 	autoplay:false,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
-    center: false,
+    center: true,
     navText: [
 	    "<i class='fa fa-angle-left'></i>",
 	    "<i class='fa fa-angle-right'></i>"
