@@ -16,7 +16,7 @@
 }
 
 .container-landing .login-btns .login-btn{
-    width: 80px;
+    width: 82px;
     height: 40px;
     color: #5B69BD;
     font-weight: 700;
@@ -37,6 +37,9 @@
 .btn-outline-white{
     border: 1px solid #fff;
     color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0;
 }
 
 .login-btns .logo-header:hover{
@@ -67,6 +70,12 @@
     max-width: 1245px;
     margin: 0 auto;
     padding: 0 0 0 8px;
+}
+
+.container-landing-two{
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 7px 0 0;
 }
 .main-banner .two-landing{
     max-width: 1245px;
@@ -199,4 +208,16 @@
 
 .landing-banner{
     padding:  0 20px;
+}
+
+.pricing-brand-card .boxs{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 100%;
+	box-shadow: 0px 15px 60px -5px rgba(27, 30, 51, 0.1);
+}
+
+.login-new-right{
+    padding: 40px 50px;
 }

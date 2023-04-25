@@ -16,6 +16,15 @@ body{
     
 }
 
+body::-webkit-scrollbar{
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: #c3c4c7;
+  border-radius: 10px;
+}
 :root {
     --white: #ffffff;
     --backgrounds: #F5F5F5;
@@ -265,3 +274,4 @@ button{
         bottom: 0;
     }
  }
+
