@@ -1,7 +1,8 @@
 
 let multiple = document.querySelector(".multiple")
 let selection = document.querySelector(".languages")
-// let searchItem = document.querySelector(".checking")
+let select = document.querySelector("selection-wrapper")
+let selectItems = document.querySelector(".selection-btn")
 
 let searchItem = document.getElementById("sel")
 selection.onclick = function (){
@@ -12,10 +13,17 @@ selection.onclick = function (){
 
 }
 
+selectItems.onclick = function (){
+    
+    selectItems.classList.toggle("actived");
+   
+}
+
+
 searchItem.onclick = function (){
     
     multiple.classList.toggle("actived");
-    selection.classList.toggle("actived");
+    select.classList.toggle("actived");
 
 
 }
@@ -25,4 +33,11 @@ document.onclick = function(e){
         multiple.classList.remove("actived");
         selection.classList.remove("actived");
     }
+
+    if(!searchItem.contains(e.target) && !select.contains(e.target)){
+        selectItems.classList.remove('actived')
+    }
 }
+
+// document.onclick = function(e){
+// }
