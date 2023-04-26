@@ -355,7 +355,7 @@
     display: none;
 }
 
-.actived .selection-wrapper{
+.activetion .selection-wrapper{
     position: absolute;
     left: -30px;
     top: 30px;

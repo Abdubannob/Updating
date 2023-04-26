@@ -2,7 +2,7 @@
 let multiple = document.querySelector(".multiple")
 let selection = document.querySelector(".languages")
 let select = document.querySelector("selection-wrapper")
-let selectItems = document.querySelector(".selection-btn")
+let selectItems = document.querySelector("#select-one")
 
 let searchItem = document.getElementById("sel")
 selection.onclick = function (){
@@ -15,7 +15,7 @@ selection.onclick = function (){
 
 selectItems.onclick = function (){
     
-    selectItems.classList.toggle("actived");
+    selectItems.classList.toggle("activetion");
    
 }
 
@@ -35,9 +35,7 @@ document.onclick = function(e){
     }
 
     if(!searchItem.contains(e.target) && !select.contains(e.target)){
-        selectItems.classList.remove('actived')
+        selectItems.classList.remove('activetion')
     }
+    
 }
-
-// document.onclick = function(e){
-// }
