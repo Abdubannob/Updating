@@ -33,3 +33,129 @@ body {
    
     background-color: var(--backgrounds);
 }
+
+
+
+.banner-title{
+    background-image: url(../images/banner-title.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #707FDA;
+    min-height: 120px;
+    margin-bottom: 20px;
+    border-radius: 0 0 12px 12px;
+    align-items: center;
+    padding: 20px;
+    --bs-gutter-x: 0;
+  }
+  .banner-title.brand{
+    background-color: #6A9586;;
+  }
+  .banner-title.youtube{
+    background-color: #FF4646;
+  }
+  .banner-title.facebook{
+    background-color: #4267B2;
+  }
+  .banner-title.linkedin{
+    background-color: #0077b7;
+  }
+  .banner-title.instagram{
+    background: linear-gradient(270deg, #576BE8 -0.52%, #E24379 90.21%, #FFBA4F 113.72%);
+  }
+  .banner-title .title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .banner-title .title p.text{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 5px;
+  }
+  .banner-title .title span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 7px;
+  }
+  .banner-title .title .status{
+    margin-top: 10px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 6px;
+  }
+  .banner-title .button{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .box-background{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .box-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.box-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+}
+.box-sub-title{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #112E3F;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+
+.nav-title-back .btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+ 
+  }
+  .nav-sub{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .nav-sub img{
+    margin-right: 10px;
+  }
+  .nav-sub p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+    opacity: 0.7;
+  }
+  .nav-tab{
+    align-items: baseline;
+      display: flex;
+      justify-content: space-between;
+    border-bottom: 1px solid #E9EBF3;
+  }
+  .nav-tab ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .nav-tab ul li{
+    padding: 0 20px;
+  }
