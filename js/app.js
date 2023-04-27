@@ -4,7 +4,7 @@ let noti = document.getElementById("item-notificate")
 let body = document.getElementById('body')
 let gradi = document.querySelector(".linear-gradient")
 let notifcation = document.getElementById(".notifcation-btn")
-
+let buttons = document.querySelector("button")
 document.getElementById("notifcation-cancel").onclick =()=>{
     noti.style.display = "none";
     gradi.style.display = "none";
@@ -59,4 +59,8 @@ window.onscroll = function() {myFunction()};
 notifcation.onclick = function () {
     notifcation.style.borderColor = "2px solid #707FDA"
 }        
+
+buttons.onclick = function (){
+    buttons.style
+}
 

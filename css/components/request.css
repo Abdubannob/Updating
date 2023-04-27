@@ -436,3 +436,7 @@
 /* #network{
     display:none;
 } */
+
+.service-card{
+    max-width: 293px !important;
+}
