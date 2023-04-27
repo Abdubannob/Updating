@@ -26,6 +26,7 @@
 .box-img {
     width: 294.75px;
     height: 150px;
+    position: relative;
 }
 
  .box {
