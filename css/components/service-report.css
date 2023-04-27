@@ -43,12 +43,18 @@
 	color: #212121;
 	margin-bottom: 5px;
 }
-.account-info-service h3.sub-title{
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 16px;
-	color: #212121;
+
+.account-pending h2.title{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 15px;
+	color: #D9DDF5;
+	margin-bottom: 5px;
 }
+
+
+
+
 .account-info-service h2.title svg{
 	margin-left: 6px;
 }
@@ -62,6 +68,21 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.account-info-service h3.sub-title{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #212121;
+}
+
+.account-pending h3.sub-title{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #D9DDF5;
+
 }
 img.account-img{
 	width: 50px;
@@ -97,12 +118,28 @@ img.account-img{
 	color: #212121;
 	margin-bottom: 2px;
 }
+.account-pending .account-stats h3{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+  color: #99A4E5;
+	margin-bottom: 2px;
+}
 .account-stats p{
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 20px;
 	color: #757575;
+ 
 }
+
+.account-pending .account-stats p{
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+  color: #99A4E5;
+}
+
 .account-status{
 	display: flex;
 	align-items: center;
@@ -439,6 +476,13 @@ form{
     text-transform: uppercase;
   }
 
+  #dropdownMenuButton{
+    background-color: #FFFFFF;
+  }
+  .account-pending #dropdownMenuButton{
+    background-color: #F4F5FC;
+  }
+
   .d-flex .circle{
     width: 20px;
     height: 20px;
@@ -478,5 +522,5 @@ form{
   }
 
   .account-pending{
-    background-color: #4261CC;
+    background: linear-gradient(180deg, #707FDA 0%, #7585DC 85.71%);
   }
