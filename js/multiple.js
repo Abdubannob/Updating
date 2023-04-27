@@ -26,7 +26,8 @@ let selectItemsWrapper = document.querySelector(".selection-wrapper-delivery")
 let ser = document.querySelector(".search-item-multiple")
 let searchItem = document.querySelector(".operation-select")
 let searchItemTwo = document.getElementById("network")
-// let searchItemOrder = document.getElementById("SelTwo")
+
+
 
 
 languagebtn.onclick = function (){  

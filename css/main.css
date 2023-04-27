@@ -1,5 +1,5 @@
 @import "./components/header.css";
-
+@import "./style.css";
 @import './components/dashboard.css';
 @import "./base.css";
 @import "./components/navbar.css";
@@ -24,7 +24,6 @@
 @import "./components/withdrawal.css";
 @import "./components/multiple-btn.css";
 @import "./components/banner-slider.css";
-@import "./components/old.css";
 @import "./components/alert.css";
 @import "./components/landing/signupInfluencer.css";
 @import "./components/landing/landing.css";

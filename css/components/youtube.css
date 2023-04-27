@@ -154,6 +154,17 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+.top-request .like{
+    position: absolute;
+    top: -5px;
+}
+
+.top-request .active-like{
+    position: absolute;
+    top: -5px;
 }
 
 .bottom-request {
