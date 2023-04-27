@@ -91,7 +91,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 30px solid red;
+    /* border: 30px solid red; */
 }
 
 .header-img img{
