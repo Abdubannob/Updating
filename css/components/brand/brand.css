@@ -39,7 +39,7 @@
     height: 40px;
     background-size: cover;
     background-position: center;
-    background-image: url("/images/dashboard/logo.PNG");
+    /* background-image: url("/images/dashboard/logo.PNG"); */
 }
 
 .brand-data{

@@ -120,6 +120,8 @@
 
 .box .data .text {
     width: 260px;
+    height: 50px;
+    overflow: hidden;
     font-size: 15px;
     /* padding-left: 15px; */
 }

@@ -173,16 +173,16 @@
 	width: 8%;
 }
 .main-carousel .carousel-control-next-icon{
-	background-image: url(../../images/landing/carousel-main-arrow-right.svg);
+	background-image: url(../../../images/landing/carousel-main-arrow-right.svg);
 }
 .main-carousel .carousel-control-prev-icon{
-	background-image: url(../../images/landing/carousel-main-arrow-left.svg);
+	background-image: url(../../../images/landing/carousel-main-arrow-left.svg);
 }
 .main-carousel.brand .carousel-control-next-icon{
-	background-image: url(../../images/landing/carousel-main-brand-arrow-right.svg);
+	background-image: url(../../../images/landing/carousel-main-brand-arrow-right.svg);
 }
 .main-carousel.brand .carousel-control-prev-icon{
-	background-image: url(../../images/landing/carousel-main-brand-arrow-left.svg);
+	background-image: url(../../../images/landing/carousel-main-brand-arrow-left.svg);
 }
 .main-carousel .carousel-control-next-icon, 
 .main-carousel .carousel-control-prev-icon {
@@ -198,8 +198,10 @@
 	text-align: left;
 	max-width: 1200px;
 	margin: 0 auto;
+	position: absolute;
 	left: 8%;
 	right: 8%;
+	bottom: 35%;
 }
 .main-carousel .carousel-item h5{
 	font-weight: 700;
@@ -409,11 +411,11 @@
 }
 .secondary-carousel.influencer .carousel-control-next-icon, 
 .secondary-carousel.influencer .carousel-control-prev-icon{
-	background-image: url(../../images/landing/secondary-arrow.svg);
+	background-image: url("../../../images/landing/secondary-arrow.svg");
 }
 .secondary-carousel.brand .carousel-control-next-icon, 
 .secondary-carousel.brand .carousel-control-prev-icon{
-	background-image: url(../../images/landing/secondary-arrow-green.svg);
+	background-image: url("../../../images/landing/secondary-arrow.svg");
 }
 .secondary-carousel .carousel-control-next-icon{
 	transform: rotate(180deg);

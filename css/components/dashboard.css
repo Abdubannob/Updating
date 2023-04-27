@@ -44,6 +44,29 @@
     flex-direction: column;
 }
 
+.brand-todo-body input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: solid #4CAF50;
+    top: 7px;
+    left: 11px;
+    width: 7px;
+    height: 12px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  } 
+
+  .brand-todo-body  input:checked + label:before{
+    border: 2px solid #4CAF50;
+}
+
+.brand-todo-body .select .complete-todo label{
+
+    color: #4F8C77;
+}
+
+
 .todo-body label:before {
     content:'';
     -webkit-appearance: none;
@@ -90,6 +113,7 @@
 	text-decoration: line-through;
 }
   
+
 .todo-body .complete-todo label{
 	font-weight: 500;
 	font-size: 16px;

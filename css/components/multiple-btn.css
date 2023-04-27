@@ -28,7 +28,7 @@
     overflow: hidden;
 }
 
-.delivery-actived .multiple{
+.order-actived .multiple{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -199,4 +199,12 @@
 
 .network-item input{
     outline: none;
+}
+
+.selection-wrapper-budget .multiple-searching{
+    margin-top: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
 }

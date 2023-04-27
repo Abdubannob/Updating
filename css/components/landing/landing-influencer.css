@@ -118,7 +118,7 @@
 
 .how-it-works .btn.solid-violet{
 	border: 1px solid var(--violet);
-	background-color: var(--violet);
+	background-color: #707FDA;
 	color: #ffffff;
 }
 
@@ -195,6 +195,14 @@
 .pricing-card .item.disabled{
 	opacity: 0.5;
 }
+
+
+.main-section{
+	min-height: calc(100vh - 173px);
+	position: relative;
+	padding: 0 20px 30px;
+	background-color: #F5F5F5;
+  }
 /*******************************/
 @media (max-width: 1200px){
 	.pricing-card{

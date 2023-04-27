@@ -120,7 +120,7 @@
                     <div class="item email-item">
                         <form >Add email notifcations *</form>
                          
-                    <div class="password notifcation-btn">
+                    <div class="password notifcation-btn" id="notifcation-btn">
                         <input type="password" placeholder="" class="input-active">
                         <button>Add</button>
                     </div>
@@ -152,7 +152,7 @@
                     <div class="item email-item">
                         <form >Add SMS notification *</form>
                          
-                    <div class="password notifcation-btn">
+                    <div class="password notifcation-btn" id="notifcation-btn2">
                         <input type="password" placeholder="" class="input-active">
                         <button>Add</button>
                     </div>
@@ -180,7 +180,7 @@
                     <div class="item email-item">
                         <form >Add Telegram notification *</form>
                          
-                    <div class="password notifcation-btn">
+                    <div class="password notifcation-btn" id="notifcation-btn3">
                         <input type="password" placeholder="" class="input-active">
                         <button>Add</button>
                     </div>
@@ -208,7 +208,7 @@
                     <div class="item email-item">
                         <form >Add WhatsApp notification *</form>
                          
-                    <div class="password notifcation-btn">
+                    <div class="password notifcation-btn" id="notifcation-btn4">
                         <input type="password" placeholder="">
                         <button>Add</button>
                     </div>
@@ -284,7 +284,46 @@
         </div>
     </footer>
 
-    <script src="../js/app.js"></script>
+    <script>
+
+        let notifcation = document.getElementById("notifcation-btn")
+        let notifcation2 = document.getElementById("notifcation-btn2")
+        let notifcation3 = document.getElementById("notifcation-btn3")
+        let notifcation4 = document.getElementById("notifcation-btn4")
+
+        notifcation.onclick = function () {
+            notifcation.classList.add("notifcation-btn-active");
+        }        
+
+        notifcation2.onclick = function () {
+            notifcation2.classList.add("notifcation-btn-active");
+        } 
+        
+        notifcation3.onclick = function () {
+            notifcation3.classList.add("notifcation-btn-active");
+        }        
+
+        notifcation4.onclick = function () {
+            notifcation4.classList.add("notifcation-btn-active");
+        }
+
+document.onclick = function(e){
+if( !notifcation.contains(e.target) ){
+    notifcation.classList.remove("notifcation-btn-active");
+}
+if( !notifcation2.contains(e.target) ){
+    notifcation2.classList.remove("notifcation-btn-active");
+}
+if( !notifcation3.contains(e.target) ){
+    notifcation3.classList.remove("notifcation-btn-active");
+}
+if( !notifcation4.contains(e.target) ){
+    notifcation4.classList.remove("notifcation-btn-active");
+}
+}
+    </script>
+
+    <script src="../../../js/app.js"></script>
 </body>
 
 </html>

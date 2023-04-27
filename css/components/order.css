@@ -95,7 +95,14 @@
 }
 
 .bx .you span {
+    width: 100%;
     font-weight: 600;
+}
+
+.bx .you{
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .left-order-side {
@@ -132,6 +139,15 @@
     border-right: 1px solid #E9EBF3;
 }
 
+.service-img{
+    width: 60px;
+    height: 47px;
+}
+
+.service-img img{
+    width: 100%;
+    height: 100%;
+}
 .service-name {
     max-width: 657px;
     /* height: 47px; */
@@ -140,15 +156,21 @@
 }
 
 .service-name span {
+    width: 100%;
+    height: 30px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 500;
     color: #212121;
+    overflow: hidden;
 }
 
 .service-name label {
+    width: 100%;
+    height: 20px;
     font-size: 14px;
     color: #757575;
+    overflow: hidden;
 }
 
 .right-bottom-side {
