@@ -1,8 +1,8 @@
 .btn-violet{
     padding: 8px  20px;
-    color: #fff;
+    color: #fff !important;
     font-weight: 500;
-    background-color: #707FDA;
+    background-color: #707FDA !important;
   }
   
   .btn-violet:hover{
@@ -69,4 +69,9 @@
 .term-condition-link li a.active{
 	background-color: #707FDA;
 	color: #ffffff;
+}
+
+.btn-solid-respond{
+    background-color: #707FDA;
+    color: #fff;
 }

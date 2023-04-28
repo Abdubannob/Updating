@@ -12,8 +12,8 @@
 	justify-content: space-between;
 }
 .term-condition-seach .form-control:focus {
-    box-shadow: 0 0 0 0.25rem #6675bf;
-    border: 1px solid #5462A7;
+    box-shadow: none !important;
+    border: none;
 }
 .has-search{
 	display: contents;
@@ -49,7 +49,7 @@
 }
 .term-condition-link li a{
 	width: 100%;
-	padding: 16px 20px;
+	padding: 16px 10px;
 	border-radius: 6px;
 	font-weight: bold;
 	font-size: 16px;

@@ -50,9 +50,10 @@
 
 .edit-items .edit-item{
     display: flex;
+    align-items: center;
     gap: 10px;
 }
-.edit-items .item-activetion{
+.edit-items .active{
     font-size: 15px;
     font-size: 15px;
     font-weight: 600;
@@ -60,6 +61,57 @@
     color: var(--primary);
 }
 
+.edit-items .edit-item div{
+    width: 15px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+   background-image: url("../images/image/notifcation-gray.svg");
+}
+
+.edit-items .edit-settings .edit-item div{
+   background-image: url("../images/image/password-noneactive.svg");
+}
+
+.edit-items .edit-settings .active div {
+    background-image: url("../images/image/security.svg");
+ }
+
+
+.edit-items .edit-notifcation .edit-item div{
+    background-image: url("../images/image/notifcation-noneactive.svg");
+ }
+
+ .edit-items .edit-notifcation .active div{
+    background-image: url("../images/image/notifcation-violet.svg");
+ }
+ .edit-items .edit-score .edit-item div{
+    background-image: url("../images/icons/sidebar-menu/upgrade-subscription-v.svg");
+ }
+ .edit-items .edit-score .active div{
+    background-image: url("../images/icons/sidebar-menu/upgrade-subscription-v-a.svg");
+ }
+
+
+ .edit-items .edit-upgrade .edit-item div{
+    background-image: url("../images/icons/sidebar-menu/p-score-v.svg");
+ }
+
+ .edit-items .edit-upgrade .active div{
+    background-image: url("../images/icons/sidebar-menu/p-score-v-a.svg");
+ }
+
+
+.edit-items .active div{
+    width: 15px;
+    height: 20px;
+    background-size: cover;
+    background-size: 15px;
+    background-position: center;
+   background-image: url("../images/image/edit-active.svg");
+}
 .item-active{
     font-size: 15px;
     font-weight: 600;
@@ -71,6 +123,14 @@
     margin-left: 371px;
     margin-top: 100px;
 }
+
+.editions{
+    max-width: 1019px;
+    margin: 20px 0 60px 0;
+    margin-left: 371px;
+    margin-top: 60px;
+}
+
 .channel-edition{
     width: 1019px;
     height: 1145px;
@@ -109,7 +169,7 @@
 }
 
 .edition .password button{
-    width: 50px;
+    width: 40px;
     height: 40px;
     background-color: transparent;
     outline: none;
@@ -504,6 +564,56 @@
 }
 
 
+.p-score{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.p-score h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.p-score .item {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #DFE3F4;
+}
+
+.p-score .progress {
+    height: 22px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    border-radius: 6px;
+}
+.p-score h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #373E56;
+    margin-bottom: 10px;
+}
+
+.p-score label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #6E7391;
+    font-weight: normal;
+    margin-bottom: -3px;
+}
+
+
+.bg-body{
+    background-color: #F6F9F8;
+    padding: 20px;
+    border-radius: 12px;
+}
 
 /*********************************************************/
 
@@ -687,7 +797,6 @@
 
 .payment-method{
     max-width: 1019px;
-    height: 331px;
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
@@ -809,7 +918,7 @@
 
 .last-method{
     max-width: 1019px;
-    height: 435px;
+    /* min-height: 435px; */
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;

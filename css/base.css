@@ -65,6 +65,9 @@ button{
   border: none;
 }
 
+.email-item .password input:focus{
+  background-color: #ffffff !important;
+}
 .status {
     padding: 10px;
     background: #F5F5F5;
