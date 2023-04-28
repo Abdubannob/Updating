@@ -80,18 +80,18 @@
                     
 <p>share:</p>
 
-<ul class="d-flex" style="flex-wrap: wrap;">
+<ul class="go-flex" style="flex-wrap: wrap;">
 
     <li>
         <a href="javascript:void(window.open('https://www.facebook.com/sharer.php?u=' + `${encodeURIComponent(document.location)}&amp;t=${encodeURIComponent(document.title)}&amp;hashtag=${encodeURIComponent('#Techfluencer')}`,'sharer','toolbar=0,status=0,width=626,height=436'))"><img
-                src="/static/images/blog/facebook.svg" alt="fb"></a></li>
+                src="../../images/blog/facebook.svg" alt="fb"></a></li>
     <li>
         <a href="javascript:void(window.open('https://twitter.com/share?url=' + `${encodeURIComponent(document.location)}&amp;text=${encodeURIComponent(document.title)}&amp;via=techfluencer&amp;hashtags=${encodeURIComponent('Techfluencer')}`,'sharer','toolbar=0,status=0,width=626,height=436'))"><img
-                src="/static/images/blog/twitter.svg" alt="tw"></a></li>
+                src="../../images/blog/twitter.svg" alt="tw"></a></li>
     <li>
         <a href="javascript:void(window.open('https://www.linkedin.com/shareArticle?url=' + `${encodeURIComponent(document.location)}&amp;title=${encodeURIComponent(document.title)}&amp;tags=${encodeURIComponent('Techfluencer')}`,'sharer','toolbar=0,status=0,width=626,height=436'))"><img
-                src="/static/images/blog/linkedIn.svg" alt="linkedin"></a></li>
-        <li onclick="copyText()"><a><img src="/static/images/blog/copy.svg" alt="copy"
+                src="../../images/blog/linkedIn.svg" alt="linkedin"></a></li>
+        <li onclick="copyText()"><a><img src="../../images/blog/copy.svg" alt="copy"
                          style="margin-right: 10px;"></a>
         Copy link
     </li>
@@ -137,8 +137,8 @@ function copyText() {
                 </div>
                 <div class="form-group">
                     <label for="upload_cv_btn">Upload CV</label>
-                    <button class="btn form-control drop-file" id="upload_cv_btn">
-                        <img src="/static/images/blog/folder-icon.svg" alt="folder">
+                    <button class="btn form-control drop-file go-flex" id="upload_cv_btn">
+                        <img src="../../images/blog/folder-icon.svg" alt="folder">
                         <p id="selected_file_name">Click or drag your CV here to upload</p>
                     </button>
                     <button id="delete_button" class="btn btn-solid-grey" style="color: #5B69BD; display: none">Delete</button>
@@ -149,50 +149,38 @@ function copyText() {
         </div>
     </div>
 </section>
-
-<footer class="footer-white">
-    <div class="container">
-        <div class="footer-body row">
-            <div class="col-lg-2 col-12">
-                <div class="footer-logo"><img src="/static/images/landing/techfluencer.io-footer.svg"></div>
-            </div>
-            <div class="col-lg-8 col-12">
-                <div class="footer-link">
-                    <ul>
-                        <li><a href="/brand-plan">Brand</a></li>
-                        <li><a href="/influencer-plan">Influencer</a></li>
-                        <li><a href="/faq/list">FAQ</a></li>
-                        <li><a href="/blog/list">Blog</a></li>
-                        <li><a href="/careers/list/">Career</a></li>
-                        <li><a href="/contact/">Contact us</a></li>
-                    </ul>
+<footer class="white-footer">
+    <div class="contain footer container-landing ">
+        <div class="contain">
+            <div class="top-footer">
+              <a href="#">  <img class="influence" src="../../images/footer/techfluencer.io-footer.svg" alt="fluencer"></a>
+                <nav>
+                    <a href="#">Brand</a>
+                    <a href="#">Influencer</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Career</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+                <div class="navlink">
+                    <a href="#">
+                        <img src="../../images/footer/linkedin-333.svg" alt="in">
+                    </a>
+                    <a href="#">
+                        <img src="../../images/footer/instagram-333.svg" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="../../images/footer/facebook-333.svg" alt="meta">
+                    </a>
+                    <a href="#">
+                        <img src="../../images/footer/twitter-333.svg" alt="twitter">
+                    </a>
                 </div>
             </div>
-            <div class="col-lg-2 col-12">
-                <div class="footer-social">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/company/techfluencer-io/" class="btn"><img src="/static/images/icons/linkedin-333.svg" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/techfluencer.io/" class="btn"><img src="/static/images/icons/instagram-333.svg" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/techfluencer.io" class="btn"><img src="/static/images/icons/facebook-333.svg" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/techfluencer_io" class="btn"><img src="/static/images/icons/twitter-333.svg" alt="icon"></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="bottom-footer">
+                <span> &copy Techfluencers 2023. All rights reserved</span>
+                <a href="#"><span>Terms and Conditions</span></a>
             </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="footer-bottom">
-            <p>© techfluencer 2021. All rights reserved</p>
-            <a href="/term-condition">Terms and Conditions</a>
         </div>
     </div>
 </footer>

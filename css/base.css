@@ -109,6 +109,7 @@ button{
   }
 
   .status-completed span{
+    font-weight: 500 !important;
     color: #34BAB2!important;
   }
 
@@ -137,6 +138,7 @@ button{
   }
 
   .status-pending span{
+    font-weight: 500 !important;
     color: #F5A200!important;
   }
 
@@ -155,6 +157,7 @@ button{
   }
 
   .status-awaiting-payment span{
+    font-weight: 500 !important;
     color: #707FDA!important;
   }
 
@@ -173,6 +176,7 @@ button{
 }
 
 .status-in-progress span{
+  font-weight: 500 !important;
     color: #4CAF50!important;
 }
 
@@ -191,6 +195,7 @@ button{
 }
 
   .status-rejected span{
+    font-weight: 500 !important;
     color: #F57070!important;
   }
 
@@ -209,6 +214,7 @@ button{
   }
 
   .status-saved span{
+    font-weight: 500 !important;
     color: #99A29C!important;
   }
 
@@ -227,6 +233,7 @@ button{
   }
 
   .status-disabled span{
+     font-weight: 500 !important;
     color: #99A29C!important;
   }
 
@@ -307,3 +314,4 @@ footer{
 .splide{
   visibility: visible !important;
 }
+

@@ -61,6 +61,6 @@ notifcation.onclick = function () {
 }        
 
 buttons.onclick = function (){
-    buttons.style
+    buttons.style.borderColor = "none"
 }
 

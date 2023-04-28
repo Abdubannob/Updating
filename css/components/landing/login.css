@@ -47,14 +47,7 @@
     transform: translateY(0);
 }
 
-.btn-solid{
-    padding: 10px 25px;
-    background-color: #6A9586;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1;
-}
+
 
 .btn-solid-white{
     padding: 8px 20px;
@@ -92,7 +85,12 @@
    background-color: #F5FFFD;
 }
 
-.btn-outline-violet{
+.login-right .violet .form-group{
+    margin-bottom: 15px
+}
+
+
+/* .btn-outline-violet{
     border: 1px solid #707FDA;
     border-radius: 6px;
     align-items: center;
@@ -101,10 +99,10 @@
     font-size: 15px;
     line-height: 18px;
     color: #5B69BD;
-  }
-  .btn-outline-violet:hover{
+  } */
+  /* .btn-outline-violet:hover{
     color: #5B69BD;
-  }
+  } */
 
   .container-landing .wrapper-landing {
     padding: 130px 20px 70px 20px;

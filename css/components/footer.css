@@ -47,7 +47,7 @@ footer {
 .top-footer .navlink{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
 }
 
 .bottom-footer{
@@ -62,7 +62,11 @@ footer {
     background-color: #3F414E;
 }
 
-
+.bottom-footer a{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
 
 .footer {
     max-width: 1440px;

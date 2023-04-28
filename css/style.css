@@ -29,12 +29,25 @@ a {
     text-decoration: none;
 }
 
+.bottom-footer a span{
+    text-decoration: none;
+    color: #B2B3B8;
+    font-size: 14px;
+}
+
+.bottom-footer span{
+  color: #B2B3B8;
+  font-size: 14px;
+}
+
 body {
    
     background-color: var(--backgrounds);
 }
 
-
+.faq-list-item{
+  height: 60px;
+}
 
 .banner-title{
     background-image: url(../images/banner-title.svg);
