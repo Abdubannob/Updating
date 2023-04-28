@@ -9,6 +9,19 @@
     display: flex;
     flex-direction: column;
     transition: all .2s linear;
+    display: none;
+}
+
+.screen-gradient .notifications-items{
+    width: 644px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s linear;
  
 }
 
@@ -111,8 +124,7 @@
     justify-content: center;
 }
 
-
- .linear-gradient{
+.linear-gradient{
     position: fixed;
     top: 0;
     left: 0;
@@ -120,8 +132,20 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     z-index: 3;
-}
-
-.linear-gradient {
     display: none;
 }
+
+.screen-gradient .linear-gradient{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 455;
+    display: flex;
+}
+
+
+
+ 
