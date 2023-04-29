@@ -13,19 +13,24 @@
 
 <body >
 
+  
     <header>
         <section class="contain header-top">
             <div class="header">
                 <div class="header-left">
-                   <a href="#"><img src="../../../images/header/techfluencer.svg" alt="techfluencer"></a>
+                    <a href="#"> <img src="../../../images/header/techfluencer.svg" alt="logo"></a>
                 </div>
                 <div class="header-right">
-                    <button class="img-header" id="notification">
+                    <button class="img-header" id="notifcation">
                         <img src="../../../images/q.svg" alt="vector">
                         <img class="ellipse" src="../../../images/notifcation-dotted.svg" alt="Ellipse">
                     </button>
                     <a href="#" class="header-img"><img src="../../../images/header/logo-header.svg" alt="header"></a>
                 </div>
+            
+                
+            </div>
+            <div class="notifcation-message">
                 <div class="notifications-items" id="item-notifcate">
                     <div class="top-notification">
                       <button id="notifcation-cancel">  <img src="../../../images/image/cancelimg.svg" alt="cancel" ></button>
@@ -132,9 +137,11 @@
                         </div>
                     </div>
                 </div>
-              <div class="linear-gradient"></div>
+                <div class="linear-gradient">
+                </div>
             </div>
         </section>
+
     </header>
 
   <div class="container-webs">
@@ -198,7 +205,7 @@
             </div> 
             
             <main id="filter">                
-                    <div class="selections ">
+                    <!-- <div class="selections ">
                         <div class="selection-btn-budget">
                             <div class="social-btns">
                                 <img src="../../../images/image/you.svg" alt="youtube">
@@ -245,8 +252,12 @@
 
 
                     </div>
-                    
+                     -->
            
+                     <select id="social-medias">
+                        <option style="background-image: url(../../../images/image/you.svg) ;" value="smotraTV" >  smotraTV</option>
+                        
+                      </select> 
              
                 <select class="selections">
                     <option value="Status">Status</option>  
@@ -1126,6 +1137,8 @@ document.querySelector("#apply").onclick =() => {
 
 <script src="../../../js/multiple.js"></script>
 <script src="../../../js/ShowHide.js"></script>
+<script src="../../../js/jQuery.js"></script>
+<script src="../../../js/notifcation.js"></script>
 </body>
 
 </html>

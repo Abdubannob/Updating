@@ -219,7 +219,7 @@
 }
 .main-carousel .carousel-item .btn.inf-plan{
 	background: #E6EAFF;
-	box-shadow: 0px 4px 20px rgba(54, 72, 170, 0.27);
+	/* box-shadow: 0px 4px 20px rgba(54, 72, 170, 0.27); */
 	border-radius: 30px;
 	padding: 14px 26px;
 	font-weight: normal;
@@ -230,7 +230,7 @@
 }
 .main-carousel .carousel-item .btn.brand-plan{
 	background: #F9FFFE;
-	box-shadow: 0px 4px 20px rgba(54, 72, 170, 0.27);
+	/* box-shadow: 0px 4px 20px rgba(54, 72, 170, 0.27); */
 	border-radius: 30px;
 	padding: 14px 26px;
 	font-weight: normal;

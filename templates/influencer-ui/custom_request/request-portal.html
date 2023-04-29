@@ -15,25 +15,26 @@
     <title>Document</title>
 </head>
 
-<body >
+<body  >
 
-    
+
     <header>
         <section class="contain header-top">
             <div class="header">
                 <div class="header-left">
-                  <a href="#"><img src="../../../images/header/techfluencer.svg" alt="tech"></a>
+                    <a href="#"> <img src="../../../images/header/techfluencer.svg" alt="logo"></a>
                 </div>
-                <!-- <input type="checkbox" id="note"> -->
-        
                 <div class="header-right">
-                        <button class="img-header" id="notification">      
-                            <img src="../../../images/q.svg" alt="vector">
-                            <img class="ellipse" src="../../../images/notifcation-dotted.svg" alt="Ellipse">
-                     
-                        </button>
-                    <a href="#" class="header-img"><img src="../../../images/header/logo-header.svg" alt=""></a>
+                    <button class="img-header" id="notifcation">
+                        <img src="../../../images/q.svg" alt="vector">
+                        <img class="ellipse" src="../../../images/notifcation-dotted.svg" alt="Ellipse">
+                    </button>
+                    <a href="#" class="header-img"><img src="../../../images/header/logo-header.svg" alt="header"></a>
                 </div>
+            
+                
+            </div>
+            <div class="notifcation-message">
                 <div class="notifications-items" id="item-notifcate">
                     <div class="top-notification">
                       <button id="notifcation-cancel">  <img src="../../../images/image/cancelimg.svg" alt="cancel" ></button>
@@ -140,13 +141,15 @@
                         </div>
                     </div>
                 </div>
-              <div class="linear-gradient">
-
-              </div>
-
+                <div class="linear-gradient">
+                </div>
             </div>
         </section>
+
     </header>
+
+
+    
 
 
     <div class="container-webs">
@@ -421,7 +424,7 @@
                                     <li class="splide__slide box service-card">
                                         <div class="box box2">
                                             <div class="box-img">
-                                                <img src="../../../images/headphones.svg" alt="computer">
+                                                <img src="../../../images/blog/extra.jpg" alt="computer">
                                                 <button class="like"></button>   
                                             </div>
                     
@@ -470,7 +473,7 @@
                                     <li class="splide__slide box service-card">
                                         <div class="box box2">
                                             <div class="box-img">
-                                                <img src="../../../images/headphones.svg" alt="computer">
+                                                <img src="../../../images/blog/instagram.jpg" alt="computer">
                                                 <button class="like active-like"></button>   
                                             </div>
                     
@@ -519,7 +522,7 @@
                                     <li class="splide__slide box service-card">
                                         <div class="box box2">
                                             <div class="box-img">
-                                                <img src="../../../images/headphones.svg" alt="computer">
+                                                <img src="../../../images/blog/twitter-two.jpg" alt="computer">
                                                 <button class="like"></button>   
                                             </div>
                     
@@ -568,7 +571,7 @@
                                     <li class="splide__slide box service-card">
                                         <div class="box box2">
                                             <div class="box-img">
-                                                <img src="../../../images/headphones.svg" alt="computer">
+                                                <img src="../../../images/blog/cake.jpg" alt="computer">
                                                 <button class="like"></button>   
                                             </div>
                     
@@ -2050,13 +2053,15 @@
                 </div>
                 <div class="bottom-footer">
                     <span> &copy Techfluencers 2023. All rights reserved</span>
-                    <a href="#"><span>Terms and Conditions</span></a>
+                     <a href="../../faq-blog/term-condition.html"><span>Terms and Conditions</span></a>
                 </div>
             </div>
         </div>
     </footer>
 
 </div>
+
+
 
     <script>
         window.onscroll = function() {myFunction()};
@@ -2109,9 +2114,10 @@ likebtn.onclick = function (){
     <script src="../../../js/script.js"></script>
     <script src="../../../js/multiple.js"></script>
     <script src="../../../js/service.js"></script>
-    <script src="../../../js/app.js"></script>
+    <!-- <script src="../../../js/app.js"></script> -->
     
     
+  
     
     <script>
         document.querySelectorAll('.splide').forEach(carousel => new Splide( carousel, {
@@ -2125,9 +2131,37 @@ likebtn.onclick = function (){
         </script>
     
 
-
-
-
+       
+<script src="../../../js/notifcation.js"></script>
+   
 </body>
+<!-- <script>
+    let not = document.getElementById("notifcation")
+let noteCancel = document.getElementById("notifcation-cancel")
+let bodR = document.querySelector(".notifcation-message")
+let notebodyR = document.querySelector(".note-contents")
 
+notebodyR.onclick = function (){
+bodR.classList.add("screen-gradient-two")
+}
+
+not.onclick = function () {
+bodR.classList.add("screen-gradient")
+}
+
+noteCancel.onclick = function () {
+bodR.classList.remove("screen-gradient")
+}
+
+document.onclick = function(e){
+if(!not.contains(e.target) ){
+bodR.classList.remove("screen-gradient");
+}
+if(!notebodyR.contains(e.target)){
+bodR.classList.remove("screen-gradient-two");
+}
+}
+
+
+</script> -->
 </html>
