@@ -449,6 +449,7 @@
     border: navajowhite;
     border-radius: 6px;
     color: #fff;
+    /* margin-top: 20px; */
 }
 
 .email-item .notifcation-btn{
@@ -480,25 +481,52 @@
     font-weight: 500;
 }
 
+.selected-items .btns-edit .email-notifcation-button{
+    background-color: #F5F5F5;
+    border: 1px solid #CED4E2;
+    display: flex;
+    align-items: center;
+    border:  1px solid #CED4E2;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
 .email-notifcation-button{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 97px;
+
     height: 31px;
+    font-size: 14px;
     border-radius: 10px;
     background-color: #F5F5F5;
     border:  1px solid #CED4E2;
 }
 
-.email-notifcation-button label{
-    min-width: 53px;
+/* .btns-edit{
+    border: 1px solid  #CED4E2;
+} */
+
+.btns-edit .email-notifcation-button .cancel-item{
+    width: 25px;
     height: 100%;
     font-size: 13px;
     color: #373E56;
-    border-right: 1px solid #CED4E2;
-    padding:8px;
+    border-left: 1px solid #CED4E2;
+    /* margin: 0 0 15px 15px; */
+    border-radius: 0;
+    position: relative;
+    padding: 10px;
+}
+
+.btns-edit .email-notifcation-button .cancel-item img{
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    margin: 0 0 15px 5px;
+    border-radius: 0;
+    height: 15px;
 }
 
 .email-notifcation-button .cancel-item{
