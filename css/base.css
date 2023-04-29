@@ -266,9 +266,9 @@ button{
     overflow: hidden;
 }
 
-.contain{
+/* .contain{
     overflow: hidden;
-}
+} */
 
 footer{
     width: 1440px;
@@ -297,15 +297,15 @@ footer{
     overflow: hidden;
 }
 
-.contain{
+/* .contain{
     overflow: hidden;
-}
+} */
 
 footer{
     width: 1440px;
     height: 114px;
     background-color: #3F414E;
-    z-index: 999;
+    z-index: 9;
     position: fixed;
     bottom: 0;
     overflow: hidden;

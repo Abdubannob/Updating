@@ -166,8 +166,11 @@
 .three-dots-item .dots-details:hover{
     background-color: #F6F7FF;
     cursor: pointer;
+    color: #4261CC;
 }
-
+.three-dots-item .dots-details:hover button{
+    color: #4261CC;
+}
  .actives .three-dots-item{
     width: 240px;
     height: 180px;
@@ -206,11 +209,10 @@
 }
 
 .dots-details{
-    
     padding: 10px 20px;
     border-radius: 4px;
-
 }
+
 
 .three-dots img{
     margin-bottom: 10px;

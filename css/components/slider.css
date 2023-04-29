@@ -147,5 +147,32 @@ a {
   display: flex;
   height: 100%;
   margin: 0 0 40px 0 !important;
-  padding: 0!important;
+  padding: 0 0 40px 0!important;
+  position: relative;
+}
+
+#margin-bottom {
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 40px 0!important;
+  position: relative;
+}
+.slider-button{
+  position: relative;
+}
+.slider-left{
+  position: absolute;
+  top: 195px;
+  left: -35px;
+  z-index: 99;
+}
+
+.slider-right{
+  position: absolute;
+  top: 195px;
+  right: -25px;
+  z-index: 99;
 }

@@ -412,9 +412,11 @@
     height: 10px;
 }
 
+
+
 .gender-button .cancel-item{
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     border: 1px solid #B1CDBA;
     border-radius: 50%;
     display: flex;
