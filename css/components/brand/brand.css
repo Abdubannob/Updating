@@ -276,3 +276,9 @@ line-height: 20px;
 .grid-carousel .brand-box{
     height: 500px;
 }
+
+.brand-operation{
+    background-color: #F5F5F5;
+}
+
+.brand-operation #filter{background-color: #F5F5F5;}
