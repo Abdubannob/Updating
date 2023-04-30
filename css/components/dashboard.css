@@ -168,6 +168,10 @@
 	display: initial;
 }
 
+.brand-todo-body .select.checked  p{
+	display: initial;
+}
+
 .complete-todo .complete-item .active{
    position: absolute;
     top: 10px;
