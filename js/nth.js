@@ -1,0 +1,1 @@
+$(".res-image res-buttons:nth-child(n+4)").remove();

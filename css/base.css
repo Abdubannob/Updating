@@ -12,7 +12,7 @@
 
 body{
     /* width: 100%; */
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     
 }
 
@@ -109,6 +109,7 @@ button{
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 18px;
   }
 
   .status-completed span{
@@ -129,14 +130,15 @@ button{
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 22px;
+    height: 20px;
   }
 
   .status-pending div{
     width: 18px;
     height: 18px;
     background-position: center;
-    background-size: cover;
+    background-size: 18px;
+    background-repeat: no-repeat;
     background-image: url(../images/components/orange-circle-two.svg);
   }
 
@@ -168,6 +170,7 @@ button{
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 18px;
   }
 
 .status-in-progress div{

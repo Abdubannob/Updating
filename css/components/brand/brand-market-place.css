@@ -1,0 +1,23 @@
+.influencer-image{
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    
+}
+.influencer-image img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.brand-carousel .box-img .active{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-image: url("../../../images/components/brand-active-like.svg");
+}

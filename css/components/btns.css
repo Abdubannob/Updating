@@ -81,3 +81,19 @@
 .btn-opt{
     padding: 8px 20px;
 }
+
+.reject{
+  padding: 11px 20px;
+  background-color: #F4F5F9;
+  border-radius: 6px;
+  color: #6A9586;
+  font-weight: 500;
+}
+
+.accept{
+  padding: 11px 20px;
+  background-color: #6A9586;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+}

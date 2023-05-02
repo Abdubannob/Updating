@@ -96,14 +96,33 @@
     position: relative;
 }
 
-.brand-like{
+
+
+.influencers-items .brand-like{
+    background-image: url("../../../images/dashboard/brand-like-noneactive.svg");
     width: 37px;
     height: 37px;
     border: 1px solid #B1CDBA;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.influencers-items .active{
+    background-image: url("../../../images/dashboard/brand-like.svg");
+    width: 37px;
+    height: 37px;
+    border: 1px solid #B1CDBA;
+    border-radius: 50%;
+    background-position: center;
+  
+    background-repeat: no-repeat;
+    background-size: 20px;
     position: absolute;
     top: 20px;
     right: 20px;

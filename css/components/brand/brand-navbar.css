@@ -131,7 +131,7 @@
     
     }
     
-    
+/*     
     .navigation .menu-bar {
         width: 101px;
         height: 84px;
@@ -231,7 +231,7 @@
         position: absolute;
         right: 30px;
         top: 10px;
-    }
+    } */
     
     .navigation .menu-bar span{
         font-size: 14px;
@@ -253,24 +253,24 @@
     .navigation .menu-brand-request{background-image: url('../../../images/brandnavbar/brand-request.svg');}
     /* .navigation .menu-request.active{background-image: url('../../images/navbar/Request-Menu.svg'); padding-bottom: 10px;} */
     
-    .navigation .menu-brand-dashboard{background-image: url("../../images/navbar/dashboard-noneactive.svg");}
+    .navigation .menu-brand-dashboard{background-image: url("../../../images/navbar/Brand-dashboard-noneactive.svg");}
     /* .navigation .menu-dashboard.active{background-image: url("../../images/navbar/Dashboard.svg");} */
     
-    .navigation .menu-brand-service{background-image: url("../../images/navbar/Services.svg"); }
+    .navigation .menu-brand-service{background-image: url("../../../images/navbar/Services.svg"); }
     /* .navigation .menu-service.active{background-image: url("../../images/navbar/Service-Menu.svg");} */
     
-    .navigation .menu-brand-channel{background-image: url("../../images/navbar/Channel-noneactive.svg");}
+    .navigation .menu-brand-channel{background-image: url("../../../images/navbar/Channel-noneactive.svg");}
     /* .navigation .menu-channel.active{background-image: url("../../images/navbar/Channel-Menu.svg");} */
     
-    .navigation .menu-brand-service{background-image: url("../../images/navbar/Services.svg");}
+    .navigation .menu-brand-service{background-image: url("../../../images/navbar/Services.svg");}
     /* .navigation .menu-service.active{background-image: url("../../images/navbar/Service-Menu.svg");} */
     
     .navigation .menu-brand-marketplace {
-        background-image: url("../../../images/brandnavbar/marketplace-noneactive.svg");
+        background-image: url("../../../../images/brandnavbar/marketplace-noneactive.svg");
     }
 
     .navigation .menu-brand-influencer {
-        background-image: url("../../../images/brandnavbar/influncer-noneactive.svg");
+        background-image: url("../../../../images/brandnavbar/influncer-noneactive.svg");
     }
     .menu-cont-order{
        width: 48px;

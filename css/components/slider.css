@@ -146,8 +146,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  margin: 0 0 40px 0 !important;
-  padding: 0 0 40px 0!important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 0 20px 0!important;
   position: relative;
 }
 
@@ -157,7 +157,7 @@ a {
   display: flex;
   height: 100%;
   margin: 0 0 0 0 !important;
-  padding: 0 0 40px 0!important;
+  padding: 0 0 20px 0!important;
   position: relative;
 }
 .slider-button{
