@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top violet">
+        <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">&#9776;</span>
+                <div id="mySidebar" class="sidebar-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">CLOSE MENU &times;</a>
+                    <div class="sidebar-overlay-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-influencer.html" class="navbar-brand"><img src="../../../images/Logo-mnWho.svg" alt="logo"></a>
+                
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn p-0"><img class="m-0" src="../../../images/icons/nav-bell.svg" alt="Bell"></button>
+                <button class="btn avatar"><img class="rounded-circle" src="../../../images/ava.png" alt="ava"></button>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social violet">
+                <ul>
+                    <li><a href="../dashboard-influencer.html" class="home"></a></li>
+                    <li><a href="../youtube/youtube-add.html" class="youtube"></a></li>
+                    <li><a href="../instagram/instagram-add.html" class="instagram"></a></li>
+                    <li><a href="../facebook/facebook-add.html" class="facebook"></a></li>
+                    <li><a href="../twitter/twitter-add.html" class="twitter"></a></li>
+                    <li><a href="../tiktok/tiktok-add.html" class="tiktok"></a></li>
+                    <li><a href="linkedin-add.html" class="linkedIn active"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="../invoice-influencer.html" class="withdrawal"></a></li>
+                    <li><a href="../edit-profile-influencer.html" class="setting"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main" class="no-menu">
+        <div class="main-section">
+            <div class="banner-title row linkedin">
+                <div class="col-12 col-md-2 nav-title-back">
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <img src="../../../images/icons/banner-linkedin.svg" alt="icon">
+                    <p class="text">Channels</p>
+                </div>
+                <div class="col-12 col-md-2 button">
+                </div>
+            </div>
+            <div class="account-list">
+                <div class="add-card">
+                    <div class="add-body">
+                        <h2>Add LinkedIn account</h2>
+                        <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                        <a href="linkedin-create.html" class="btn"><img src="../../../images/icons/add.svg" alt="add-icon"></a>
+                    </div>
+                </div>
+                <div class="box account-card">
+                    <div class="box-body">
+                        <div class="account-info">
+                            <div class="account-status">
+                                <div class="d-flex status status-in-progress" style="align-items: center;">
+                                    <p>Active</p>
+                                </div>
+                                <div class="dropleft tree-dot dropdown show">
+                                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../../../images/icons/three-dot.svg" alt="icon">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View details</a>
+                                        <button class="btn dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="linkedin-content.html" class="account-head">
+                                <img class="account-img rounded-circle" src="../../../images/social-accaunt-ava.png" alt="ava">
+                                <div>
+                                    <h2 class="title">LabelCom<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13ZM9.57617 5.48014C9.84134 5.16193 9.79835 4.68901 9.48014 4.42383C9.16193 4.15866 8.68901 4.20165 8.42383 4.51986L5.63977 7.86074L4.55287 6.67502C4.27297 6.36969 3.79855 6.34906 3.49321 6.62895C3.18787 6.90885 3.16724 7.38327 3.44713 7.68861L5.1138 9.50679C5.26003 9.66631 5.46803 9.7549 5.68437 9.74979C5.90071 9.74468 6.1043 9.64638 6.24283 9.48014L9.57617 5.48014Z" fill="#707FDA"/>
+                                    </svg>
+                                    </h2>
+                                    <h3 class="sub-title">Influencer Name</h3>
+                                </div>
+                            </a>
+                            <div class="account-stats">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="item">
+                                        <h3>343</h3>
+                                        <p>Videos</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Subscribers</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Views</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>46K</h3>
+                                        <p>Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-title">
+                <h1>Active (22)</h1>
+            </div>
+            <div class="account-list">
+                <div class="box account-card">
+                    <div class="box-body">
+                        <div class="account-info">
+                            <div class="account-status">
+                                <div class="d-flex status status-in-progress" style="align-items: center;">
+                                    <p>Active</p>
+                                </div>
+                                <div class="dropleft tree-dot dropdown show">
+                                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../../../images/icons/three-dot.svg" alt="icon">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View details</a>
+                                        <button class="btn dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="account-head">
+                                <img class="account-img rounded-circle" src="../../../images/social-accaunt-ava.png" alt="ava">
+                                <div>
+                                    <h2 class="title">LabelCom<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13ZM9.57617 5.48014C9.84134 5.16193 9.79835 4.68901 9.48014 4.42383C9.16193 4.15866 8.68901 4.20165 8.42383 4.51986L5.63977 7.86074L4.55287 6.67502C4.27297 6.36969 3.79855 6.34906 3.49321 6.62895C3.18787 6.90885 3.16724 7.38327 3.44713 7.68861L5.1138 9.50679C5.26003 9.66631 5.46803 9.7549 5.68437 9.74979C5.90071 9.74468 6.1043 9.64638 6.24283 9.48014L9.57617 5.48014Z" fill="#707FDA"/>
+                                    </svg>
+                                    </h2>
+                                    <h3 class="sub-title">Influencer Name</h3>
+                                </div>
+                            </a>
+                            <div class="account-stats">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="item">
+                                        <h3>343</h3>
+                                        <p>Videos</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Subscribers</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Views</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>46K</h3>
+                                        <p>Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-title">
+                <h1>Rejected (8)</h1>
+            </div>
+            <div class="account-list">
+                <div class="box account-card">
+                    <div class="box-body">
+                        <div class="account-info">
+                            <div class="account-status">
+                                <div class="d-flex status status-in-progress" style="align-items: center;">
+                                    <p>Active</p>
+                                </div>
+                                <div class="dropleft tree-dot dropdown show">
+                                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../../../images/icons/three-dot.svg" alt="icon">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View details</a>
+                                        <button class="btn dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="account-head">
+                                <img class="account-img rounded-circle" src="../../../images/social-accaunt-ava.png" alt="ava">
+                                <div>
+                                    <h2 class="title">LabelCom<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13ZM9.57617 5.48014C9.84134 5.16193 9.79835 4.68901 9.48014 4.42383C9.16193 4.15866 8.68901 4.20165 8.42383 4.51986L5.63977 7.86074L4.55287 6.67502C4.27297 6.36969 3.79855 6.34906 3.49321 6.62895C3.18787 6.90885 3.16724 7.38327 3.44713 7.68861L5.1138 9.50679C5.26003 9.66631 5.46803 9.7549 5.68437 9.74979C5.90071 9.74468 6.1043 9.64638 6.24283 9.48014L9.57617 5.48014Z" fill="#707FDA"/>
+                                    </svg>
+                                    </h2>
+                                    <h3 class="sub-title">Influencer Name</h3>
+                                </div>
+                            </a>
+                            <div class="account-stats">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="item">
+                                        <h3>343</h3>
+                                        <p>Videos</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Subscribers</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Views</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>46K</h3>
+                                        <p>Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-title">
+                <h1>Disabled (6)</h1>
+            </div>
+            <div class="account-list">
+                <div class="box account-card">
+                    <div class="box-body">
+                        <div class="account-info">
+                            <div class="account-status">
+                                <div class="d-flex status status-in-progress" style="align-items: center;">
+                                    <p>Active</p>
+                                </div>
+                                <div class="dropleft tree-dot dropdown show">
+                                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../../../images/icons/three-dot.svg" alt="icon">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View details</a>
+                                        <button class="btn dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="account-head">
+                                <img class="account-img rounded-circle" src="../../../images/social-accaunt-ava.png" alt="ava">
+                                <div>
+                                    <h2 class="title">LabelCom<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13ZM9.57617 5.48014C9.84134 5.16193 9.79835 4.68901 9.48014 4.42383C9.16193 4.15866 8.68901 4.20165 8.42383 4.51986L5.63977 7.86074L4.55287 6.67502C4.27297 6.36969 3.79855 6.34906 3.49321 6.62895C3.18787 6.90885 3.16724 7.38327 3.44713 7.68861L5.1138 9.50679C5.26003 9.66631 5.46803 9.7549 5.68437 9.74979C5.90071 9.74468 6.1043 9.64638 6.24283 9.48014L9.57617 5.48014Z" fill="#707FDA"/>
+                                    </svg>
+                                    </h2>
+                                    <h3 class="sub-title">Influencer Name</h3>
+                                </div>
+                            </a>
+                            <div class="account-stats">
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="item">
+                                        <h3>343</h3>
+                                        <p>Videos</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Subscribers</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>112M</h3>
+                                        <p>Views</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>46K</h3>
+                                        <p>Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content block-container">
+                    <div class="modal-header d-block ">
+                        <button type="button" class="close btn" data-bs-dismiss="modal" aria-label="Close">
+                            <img class="m-0" src="../../../images/icons/close.svg" alt="close">
+                        </button>
+                    </div>
+                    <div class="modal-body mt-2">
+                        <h1>Are you sure?</h1>
+                        <p>You are about to delete the channel and all services from the channel. This cannot be undone. Press okay to confirm the deletion.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-solid-grey" data-bs-dismiss="modal" style="color: #757575;">Close</button>
+                        <a href="#" type="button" class="btn btn-solid-red" style="margin-left: 20px;">Delete channel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../../vendor/js/bootstrap.min.js"></script>
+    <script src="../../../js/index.js"></script>
+
+
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

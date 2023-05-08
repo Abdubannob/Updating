@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top">
+        <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">&#9776;</span>
+                <div id="mySidebar" class="sidebar-overlay brand">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">CLOSE MENU &times;</a>
+                    <div class="sidebar-overlay-content">
+                        <a href="dashboard-brand.html">Dashboard</a>
+                        <a href="campaigns-add-brand.html">Custom service</a>
+                        <a href="service-order-pending-brand.html">Service orders</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-brand.html" class="navbar-brand"><img src="../../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="bookmark-brand.html" class="btn"><img class="m-0" src="../../images/icons/nav-bookmark.svg" alt="Bell"></a>
+                <a href="notifications-list-brand.html" class="btn"><img class="m-0" src="../../images/icons/nav-bell.svg" alt="Bell"></a>
+                <a href="edit-profile-brand.html" class="btn avatar m-0"><img class="rounded-circle" src="../../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social">
+                <ul>
+                    <li><a href="dashboard-brand.html" class="home active"></a></li>
+                    <li><a href="youtube/youtube-brand.html" class="youtube"></a></li>
+                    <li><a href="instagram/instagram-brand.html" class="instagram"></a></li>
+                    <li><a href="facebook/facebook-brand.html" class="facebook"></a></li>
+                    <li><a href="twitter/twitter-brand.html" class="twitter"></a></li>
+                    <li><a href="tiktok/tiktok-brand.html" class="tiktok"></a></li>
+                    <li><a href="linkedin/linkedin-brand.html" class="linkedIn"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="payment-method-add-brand.html" class="withdrawal"></a></li>
+                    <li><a href="edit-profile-brand.html" class="setting"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+            <div class="menu" id="menu">
+                <h1 class="title">General</h1>
+                <li><a href="dashboard-brand.html" class="menu-dashboard">Dashboard</a></li>
+                <li><a href="campaigns-add-brand.html" class="menu-campaigns active">Custom service</a></li>
+                <li><a href="service-order-pending-brand.html" class="menu-service-order">Service orders</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main">
+        <div class="main-section">
+            <div class="banner-title brand row">
+                <div class="col-12 col-md-2 nav-title-back">
+                    <a href="campaigns-add-brand.html" class="btn"><img src="../../images/icons/go-back.svg" alt="back">Go back</a>
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <p class="text">Custom service orders</p>
+                </div>
+                <div class="col-12 col-md-2 button">
+                    <!-- <button class="btn btn-solid-white">sadsd</button> -->
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal video fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row w-100">
+                        <div class="col-12" style="min-height: 500px;">
+                            <div class="embed-responsive embed-responsive-16by9 h-100">
+                                <iframe class="embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-container campaign-creation">
+                <form style="max-width: initial;">
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="exampleInputEmail1">Select <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <select class="form-control" id="numberOfEmployees">
+                            <option>Select</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="exampleFormControlTextarea1">Description <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your custom service focus and goals"></textarea>
+                        <small id="emailHelp" class="form-text text-muted">Describe your Custom service focus and goals</small>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="exampleFormControlTextarea1">Delivery Type <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="What will you be delivering to the client as part of your service."></textarea>
+                        <small id="emailHelp" class="form-text text-muted">What will you be delivering to the client as part of your service.</small>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="numberOfEmployees">Location <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <select class="form-control" id="numberOfEmployees">
+                            <option>Select location</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small id="emailHelp" class="form-text text-muted">Select one or more languages of your Custom service</small>
+                        <div class="selected-items">
+                            <ul>
+                                <li>United Arab Emirates<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                                <li>Spain<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="numberOfEmployees">Language <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <select class="form-control" id="numberOfEmployees">
+                            <option>Select language</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small id="emailHelp" class="form-text text-muted">Select one or more languages of your Custom service</small>
+                        <div class="selected-items">
+                            <ul>
+                                <li>English<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                                <li>Arabic<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="numberOfEmployees">Category <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <select class="form-control" id="numberOfEmployees">
+                            <option>Select category</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small id="emailHelp" class="form-text text-muted">Select one or more categories of your Custom service</small>
+                        <div class="selected-items">
+                            <ul>
+                                <li>Web development<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="numberOfEmployees">Social Networks to rum the Custom service on <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <select class="form-control" id="numberOfEmployees">
+                            <option>Select social network</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <small id="emailHelp" class="form-text text-muted">Select one or more social networks to run the Custom service</small>
+                        <div class="selected-items">
+                            <ul>
+                                <li>Facebook<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                                <li>Instagram<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                                <li>Youtube<button class="btn"><img src="../../images/campaigns/cancel-selected.svg" alt="cancel-icon"></button></li>
+                            </ul>                           
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 584px;">
+                        <label for="exampleInputEmail1">Custom service Duration <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <div class="d-flex justify-content-between" style="flex-wrap: wrap;">
+                            <div style="max-width: 282px; width: 100%;">
+                                <input type="date" class="form-control" id="date" aria-describedby="date">
+                            </div>
+                            <div style="max-width: 282px; width: 100%;">
+                                <input type="date" class="form-control" id="date" aria-describedby="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="title">Custom service Images (optional) <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <label class="btn form-control drop-file">
+                            <input type="file" id="id_image" name="image" style="display: none" accept="image/*" class="form-control" data-com.bitwarden.browser.user-edit="yes">
+                            <img src="../../images/campaigns/drop-img.svg" alt="picture">
+                            <img src="../../images/campaigns/drop-video.svg" alt="video">
+                            <p>Click or drag your photo here to upload</p>
+                        </label>
+                        <small id="emailHelp" class="form-text text-muted">Add up to 4 photos</small>
+                        <div class="uploaded">
+                            <div class="item">
+                                <img src="../../images/campaigns/uploaded1.png" alt="uploaded">
+                                <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                            </div>
+                            <div class="item">
+                                <img src="../../images/campaigns/uploaded2.png" alt="uploaded">
+                                <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                            </div>
+                            <div class="item">
+                                <img src="../../images/campaigns/uploaded3.png" alt="uploaded">
+                                <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                            </div>
+                            <div class="item">
+                                <img src="../../images/campaigns/uploaded4.png" alt="uploaded">
+                                <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="title">Custom service URLs (optional) <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                    <div class="campaign-management">
+                        <div class="add-url">
+                            <div style="max-width: 500px;">
+                                <div class="form-group" style="max-width: 500px;">
+                                    <label for="exampleInputEmail1">URL</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                </div>
+                                <div class="form-group" style="max-width: 500px;">
+                                    <label for="exampleFormControlTextarea1">Description or instruction</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder=""></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-solid" style="margin-right: 20px">Add URL</button>
+                            </div>
+                            <div class="added-url" style="max-width: 566px;">
+                                <div class="divider"></div>
+                                <div class="item">
+                                    <div class="info">
+                                        <img src="../../images/added-url.png" alt="img">
+                                        <div>
+                                            <p>https://www.youtube.com/channel/UCPGKizSs-jOR0sNoOEtnMXQ</p>
+                                            <span>Description/instruction lorem ipsum</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn delete">
+                                        <img src="../../images/icons/added-url-delete.svg" alt="icon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="exampleFormControlTextarea1">Custom service Giveaway (optional)  <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="The name of your campaign giveaway"></textarea>
+                        <small id="emailHelp" class="form-text text-muted">Describe your Custom service giveaway</small>
+                    </div>
+                    <div class="form-group" style="max-width: 500px;">
+                        <label for="title">Price per infleuncer  <button type="button" class="btn p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><img src="../../images/icons/info-grey.svg" alt="img">
+                        </button></label>
+                        <input type="text" class="form-control" disabled id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" value="500 AED">
+                    </div>
+                    <div class="campaign-management">
+                        <div class="budget">
+                            <div class="form-group" style="max-width: 500px;">
+                                <label>Number of infleuncers</label>
+                                <div class="input-group plus-minus">
+                                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                                    <div class="input-group-append d-flex">
+                                        <button class="btn mt-0" type="button"><img src="../../images/login/minus.svg" alt="icon"></button>
+                                        <button class="btn mt-0" type="button"><img src="../../images/login/plus.svg" alt="icon"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="budget-info">
+                                <div class="d-flex justify-content-between">
+                                    <p>Estimated Influencers Used</p>
+                                    <span>23 - 35</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Estimated People Reached</p>
+                                    <span>2300 - 3500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <a href="campaign-creation-done-brand.html" type="submit" class="btn btn-solid" style="margin-right: 20px">Submit custom service </a>
+                        <button type="submit" class="btn btn-solid-grey">Save custom service</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../js/index.js"></script>
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+</body>
+
+</html>

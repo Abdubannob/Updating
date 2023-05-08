@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top">
+        <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer">&#9776;</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-brand.html" class="navbar-brand"><img src="../../../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="bookmark-brand.html" class="btn"><img class="m-0" src="../../../images/icons/nav-bookmark.svg" alt="Bell"></a>
+                <a href="notifications-list-brand.html" class="btn"><img class="m-0" src="../../../images/icons/nav-bell.svg" alt="Bell"></a>
+                <a href="edit-profile-brand.html" class="btn avatar m-0"><img class="rounded-circle" src="../../../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social">
+                <ul>
+                    <li><a href="../dashboard-brand.html" class="home"></a></li>
+                    <li><a href="../youtube/youtube-brand.html" class="youtube"></a></li>
+                    <li><a href="../instagram/instagram-brand.html" class="instagram"></a></li>
+                    <li><a href="../facebook/facebook-brand.html" class="facebook"></a></li>
+                    <li><a href="../twitter/twitter-brand.html" class="twitter"></a></li>
+                    <li><a href="tiktok-brand.html" class="tiktok active"></a></li>
+                    <li><a href="../linkedin/linkedin-brand.html" class="linkedIn"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="../payment-method-add-brand.html" class="withdrawal"></a></li>
+                    <li><a href="../edit-profile-brand.html" class="setting"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="menu menu-filter" id="menu">
+        <h1 class="title" style="padding-left: 20px;">Filters</h1>
+        <div class="sidenav-search" style="padding: 0 20px;">
+            <div class="has-search">
+                <span class="form-control-feedback"><img src="../../../images/profile/search-icon.svg" alt="search-icon"></span>
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>  
+        <div class="sidenav-accordion" id="inf-list">
+            <div class="card">
+                <div class="card-header" id="inf-listhead1">
+                    <a href="#inf-list1" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list1">Location</a>
+                </div>
+                <div id="inf-list1" class="collapse">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-check d-flex justify-content-between" style="align-items: center;">
+                                <div class="d-flex" style="align-items: center;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">United Arab Emirates</label>
+                                </div>
+                                <p>234</p>
+                            </div>
+                            <div class="form-check d-flex justify-content-between" style="align-items: center;">
+                                <div class="d-flex" style="align-items: center;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label" for="exampleCheck2">Spain</label>
+                                </div>
+                                <p>524</p>
+                            </div>
+                            <div class="form-show-more">
+                                <button class="btn show-more">Show more</button>
+                                <button class="btn clear">Clear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead2">
+                    <a href="#inf-list2" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list1">Category</a>
+                </div>
+                <div id="inf-list2" class="collapse">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-check d-flex justify-content-between" style="align-items: center;">
+                                <div class="d-flex" style="align-items: center;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Food</label>
+                                </div>
+                                <p>234</p>
+                            </div>
+                            <div class="form-check d-flex justify-content-between" style="align-items: center;">
+                                <div class="d-flex" style="align-items: center;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                    <label class="form-check-label" for="exampleCheck2">Sports</label>
+                                </div>
+                                <p>524</p>
+                            </div>
+                            <div class="form-show-more">
+                                <button class="btn show-more">Show more</button>
+                                <button class="btn clear">Clear</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead3">
+                    <a href="#inf-list3" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list1">Subscribers</a>
+                </div>
+                <div id="inf-list3" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>1K</p><p>1M</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead4">
+                    <a href="#inf-list4" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list1">Views</a>
+                </div>
+                <div id="inf-list4" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>0</p><p>10M</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead5">
+                    <a href="#inf-list5" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list5">Average views per video</a>
+                </div>
+                <div id="inf-list5" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>500</p><p>500K</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead6">
+                    <a href="#inf-list6" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list6">Videos</a>
+                </div>
+                <div id="inf-list6" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>10</p><p>1K</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead7">
+                    <a href="#inf-list7" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list7">Videos per week</a>
+                </div>
+                <div id="inf-list7" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>0.5</p><p>20 or more</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead8">
+                    <a href="#inf-list8" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list7">Last video</a>
+                </div>
+                <div id="inf-list8" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p>1 week ago</p><p>1 years ago</p></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="inf-listhead9">
+                    <a href="#inf-list9" class="btn btn-header-link collapsed" data-bs-toggle="collapse" aria-expanded="true" aria-controls="inf-list7">Channel</a>
+                </div>
+                <div id="inf-list9" class="collapse">
+                    <div class="card-body">
+                        <form class="filter-range">
+                            <div class="d-flex justify-content-between"><p class="irs_from">1 week ago</p><p class="to">10 years ago</p></div>
+                               <input type="text" class="js-range-slider" name="my_range" value=""
+                                data-skin="round"
+                                data-type="double"
+                                data-min="0"
+                                data-max="1000"
+                                data-grid="false"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear-filter">
+                <button class="btn">Clear all filters</button>  
+            </div>
+        </div>
+    </div>
+    <main id="main">
+        <div class="main-section dashboard">
+            <div class="banner-title brand row">
+                <div class="col-12 col-md-2 nav-title-back">
+                    <!-- <a href="#" class="btn"><img src="../../images/icons/go-back.svg" alt="back">Go back</a> -->
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <img src="../../../images/icons/banner-tiktok.svg" alt="icon">
+                    <p class="text">TikTok</p>
+                    <span>2342 results</span>
+                </div>
+                <div class="col-12 col-md-2 button">
+                    <!-- <button class="btn btn-solid-white">sadsd</button> -->
+                </div>
+            </div>
+            <div class="influencer-list">
+                <div class="influencer-items">
+                    <div id="products" class="row view-group">
+                        <div class="item col-xs-4 col-xl-4 col-lg-6 col-md-6">
+                            <div class="influencer-card">
+                                <div class="influencer-card-body">
+                                    <div class="user-info">
+                                        <img class="rounded-circle" src="../../../images/influencer-list/ava.png" alt="ava">
+                                        <div>
+                                            <h5>Jaxson <img src="../../../images/influencer-list/official.svg" alt="icon"></h5>
+                                            <p>Zaire Press</p>
+                                        </div>
+                                    </div>
+                                    <div class="influencer-stats">
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Followers</p>
+                                        </div>
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="influencer-card-footer">
+                                    <div class="location">
+                                        <p>Some status text</p>
+                                    </div>
+                                    <div class="like-save">
+                                        <button class="like btn"></button>
+                                        <button class="save btn active"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xs-4 col-xl-4 col-lg-6 col-md-6">
+                            <div class="influencer-card">
+                                <div class="influencer-card-body">
+                                    <div class="user-info">
+                                        <img class="rounded-circle" src="../../../images/influencer-list/ava.png" alt="ava">
+                                        <div>
+                                            <h5>Jaxson <img src="../../../images/influencer-list/official.svg" alt="icon"></h5>
+                                            <p>Zaire Press</p>
+                                        </div>
+                                    </div>
+                                    <div class="influencer-stats">
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Followers</p>
+                                        </div>
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="influencer-card-footer">
+                                    <div class="location">
+                                        <p>Some status text</p>
+                                    </div>
+                                    <div class="like-save">
+                                        <button class="like btn"></button>
+                                        <button class="save btn active"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xs-4 col-xl-4 col-lg-6 col-md-6">
+                            <div class="influencer-card">
+                                <div class="influencer-card-body">
+                                    <div class="user-info">
+                                        <img class="rounded-circle" src="../../../images/influencer-list/ava.png" alt="ava">
+                                        <div>
+                                            <h5>Jaxson <img src="../../../images/influencer-list/official.svg" alt="icon"></h5>
+                                            <p>Zaire Press</p>
+                                        </div>
+                                    </div>
+                                    <div class="influencer-stats">
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Followers</p>
+                                        </div>
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="influencer-card-footer">
+                                    <div class="location">
+                                        <p>Some status text</p>
+                                    </div>
+                                    <div class="like-save">
+                                        <button class="like btn"></button>
+                                        <button class="save btn active"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item col-xs-4 col-xl-4 col-lg-6 col-md-6">
+                            <div class="influencer-card">
+                                <div class="influencer-card-body">
+                                    <div class="user-info">
+                                        <img class="rounded-circle" src="../../../images/influencer-list/ava.png" alt="ava">
+                                        <div>
+                                            <h5>Jaxson <img src="../../../images/influencer-list/official.svg" alt="icon"></h5>
+                                            <p>Zaire Press</p>
+                                        </div>
+                                    </div>
+                                    <div class="influencer-stats">
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Followers</p>
+                                        </div>
+                                        <div>
+                                            <h3>112M</h3>
+                                            <p>Likes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="influencer-card-footer">
+                                    <div class="location">
+                                        <p>Some status text</p>
+                                    </div>
+                                    <div class="like-save">
+                                        <button class="like btn"></button>
+                                        <button class="save btn active"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../../js/index.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+
+<script>
+    var $range = $(".js-range-slider"),
+    $from = $(".from"),
+    $to = $(".to"),
+    range,
+    min = $range.data('min'),
+    max = $range.data('max'),
+    from,
+    to;
+
+var updateValues = function () {
+    $from.prop("value", from);
+    $to.prop("value", to);
+};
+
+$range.ionRangeSlider({
+    onChange: function (data) {
+      from = data.from;
+      to = data.to;
+      updateValues();
+    }
+});
+
+range = $range.data("ionRangeSlider");
+var updateRange = function () {
+    range.update({
+        from: from,
+        to: to
+    });
+};
+
+$from.on("input", function () {
+    from = +$(this).prop("value");
+    if (from < min) {
+        from = min;
+    }
+    if (from > to) {
+        from = to;
+    }
+    updateValues();    
+    updateRange();
+});
+
+$to.on("input", function () {
+    to = +$(this).prop("value");
+    if (to > max) {
+        to = max;
+    }
+    if (to < from) {
+        to = from;
+    }
+    updateValues();    
+    updateRange();
+});
+</script>
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+</body>
+
+</html>

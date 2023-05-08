@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top violet">
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-influencer.html" class="navbar-brand"><img src="../../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn p-0"><img class="m-0" src="../../images/icons/nav-bell.svg" alt="Bell"></button>
+                <a href="edit-profile-influencer.html" class="btn avatar"><img class="rounded-circle" src="../../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social violet">
+                <ul>
+                    <li><a href="dashboard-influencer.html" class="home"></a></li>
+                    <li><a href="service-add.html" class="service"></a></li>
+                    <li><a href="list.html" class="list"></a></li>
+                    <li><a href="social-media.html" class="social-media active"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="invoice-influencer.html" class="withdrawal"></a></li>
+                    <li><a href="edit-profile-influencer.html" class="setting"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main" class="no-menu">
+        <div class="main-section" style="min-height: initial; padding-bottom: 0;">
+            <div class="banner-title row">
+                <div class="col-12 col-md-2 nav-title-back">
+                    
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <p class="text">Social media accounts</p>
+                </div>
+                <div class="col-12 col-md-2 button">
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-body" style="padding-left: 0; padding-right: 0;">
+                    <section class="mb-0 splide social-media-list">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide box account-card youtube">
+                                    <div class="box-body">
+                                        <div class="account-info">
+                                            <div class="account-status">
+                                                <div class="d-flex">
+                                                    <img class="social-logo" src="../../images/icons/social/youtube-logo-border.svg" alt="logo">
+                                                    <div class="d-flex status status-in-progress" style="align-items: center;">
+                                                        <p>Active</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="dropleft tree-dot dropdown show">
+                                                    <button class="btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <svg width="19" height="5" viewBox="0 0 19 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="2.00391" cy="2.01172" r="2" fill="#707FDA"></circle>
+                                                        <circle cx="9.00391" cy="2.01172" r="2" fill="#707FDA"></circle>
+                                                        <circle cx="16.0039" cy="2.01172" r="2" fill="#707FDA"></circle>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Disable</a>
+                                                        <a class="dropdown-item" href="#">Enable</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="account-head">
+                                                <img class="account-img rounded-circle" src="../../images/social-accaunt-ava.png" alt="ava">
+                                                <div>
+                                                    <h2 class="title">LabelCom<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 13C10.0899 13 13 10.0899 13 6.5C13 2.91015 10.0899 0 6.5 0C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13ZM9.57617 5.48014C9.84134 5.16193 9.79835 4.68901 9.48014 4.42383C9.16193 4.15866 8.68901 4.20165 8.42383 4.51986L5.63977 7.86074L4.55287 6.67502C4.27297 6.36969 3.79855 6.34906 3.49321 6.62895C3.18787 6.90885 3.16724 7.38327 3.44713 7.68861L5.1138 9.50679C5.26003 9.66631 5.46803 9.7549 5.68437 9.74979C5.90071 9.74468 6.1043 9.64638 6.24283 9.48014L9.57617 5.48014Z" fill="#707FDA"></path>
+                                                    </svg>
+                                                    </h2>
+                                                    <h3 class="sub-title">Influencer Name</h3>
+                                                </div>
+                                            </a>
+                                            <div class="account-stats">
+                                                <div class="d-flex align-items-center flex-wrap">
+                                                    <div class="item">
+                                                        <h3>343</h3>
+                                                        <p>Videos</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <h3>112M</h3>
+                                                        <p>Subscribers</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <h3>112M</h3>
+                                                        <p>Views</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <h3>46K</h3>
+                                                        <p>Comments</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions.</p> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="add-card">
+                                        <div class="add-body">
+                                            <img class="logo" src="../../images/icons/social/youtube.svg" alt="logo">
+                                            <h2>Add YouTube</h2>
+                                            <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                                            <a href="social-media-creation.html" class="btn"><img src="../../images/icons/add.svg" alt="add-icon"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="add-card">
+                                        <div class="add-body">
+                                            <img class="logo" src="../../images/icons/social/facebook.svg" alt="logo">
+                                            <h2>Add Facebook</h2>
+                                            <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                                            <a href="social-media-creation.html" class="btn"><img src="../../images/icons/add.svg" alt="add-icon"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="add-card">
+                                        <div class="add-body">
+                                            <img class="logo" src="../../images/icons/social/instagram.svg" alt="logo">
+                                            <h2>Add Instagram</h2>
+                                            <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                                            <a href="social-media-creation.html" class="btn"><img src="../../images/icons/add.svg" alt="add-icon"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="add-card">
+                                        <div class="add-body">
+                                            <img class="logo" src="../../images/icons/social/twitter.svg" alt="logo">
+                                            <h2>Add Twitter</h2>
+                                            <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                                            <a href="social-media-creation.html" class="btn"><img src="../../images/icons/add.svg" alt="add-icon"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="main-section" style="background-color: #ffffff; padding-top: 20px;">
+            <div class="box social-profile youtube">
+                <div class="box-body">
+                    <div class="nav-title">
+                        <h1>Profile</h1>
+                    </div>
+                    <div class="influencer-block">
+                        <div style="max-width: 1080px;">
+                            <div class="influencer-page-info">
+                                <div class="influencer-page-img">
+                                    <img class="rounded-circle" src="../../images/influencer-list/influencer-page-img.png" alt="ava">
+                                </div>
+                                <div class="user-info">
+                                    <div class="d-flex" style="align-items: flex-start;">
+                                        <img src="../../images/icons/social/youtube-logo-border.svg" alt="logo" class="social-profile-logo">
+                                        <div>
+                                            <h1>Grand Tour <img src="../../images/influencer-list/official-violet.svg" alt="icon"></h1>
+                                            <p class="sub-title">Influencer Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="influencer-stats">
+                                        <div class="item">
+                                            <h3>343</h3>
+                                            <p>Videos</p>
+                                        </div>
+                                        <div class="item">
+                                            <h3>112M</h3>
+                                            <p>Subscribers</p>
+                                        </div>
+                                        <div class="item">
+                                            <h3>112M</h3>
+                                            <p>Avg. Views</p>
+                                        </div>
+                                        <div class="item">
+                                            <h3>23%</h3>
+                                            <p>Engagement</p>
+                                        </div>
+                                    </div>
+
+                            <p class="description">This is a description of the channel I use for social media influencing brand promotions...This is a description of the channel I use for social media influencing brand promotions... This is a description of the channel I use for social media influencing brand promotions. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="influencer-page-rating">
+                            <div class="rate">
+                                <h2>4.7</h2>
+                                <p>Rating</p>
+                            </div>
+                            <div class="like-save">
+                                <button class="like btn active"></button>
+                                <button class="save btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-title">
+                        <h1>Services</h1>
+                    </div>
+                    <div class="account-list">
+                        <div class="box service-card disable">
+                            <div class="top">
+                                <img class="" src="../../images/dashboard/service-card.png" alt="service-card">
+                                <div class="top-right">
+                                    <div class="d-flex">
+                                        <img class="social-logo" src="../../images/icons/social/youtube-logo.svg" alt="logo">
+                                        <div class="d-flex status status-in-progress" style="align-items: center;">
+                                            <p>Active</p>
+                                        </div>
+                                    </div>
+                                    <h4>Order title quis consectetur lacus, diam.</h4>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent morbi lectus it amet, consectetur</p>
+                                </div>
+                                <hr>
+                                <div class="items">
+                                    <div class="item">
+                                        <p>Price:</p>
+                                        <span>3000,00 AED</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Account</p>
+                                        <span>smotraTV</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Income:</p>
+                                        <span>13,234.00 AED</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Views:</p>
+                                        <span>2034</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box service-card">
+                            <div class="top">
+                                <img src="../../images/dashboard/service-card.png" alt="service-card">
+                                <div class="top-right">
+                                    <div class="d-flex">
+                                        <img class="social-logo" src="../../images/icons/social/youtube-logo.svg" alt="logo">
+                                    </div>
+                                    <h4>Order title quis consectetur lacus, diam.</h4>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent morbi lectus it amet, consectetur</p>
+                                </div>
+                                <hr>
+                                <div class="items">
+                                    <div class="item">
+                                        <p>Price:</p>
+                                        <span>3000,00 AED</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Account</p>
+                                        <span>smotraTV</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Income:</p>
+                                        <span>13,234.00 AED</span>
+                                    </div>
+                                    <div class="item">
+                                        <p>Views:</p>
+                                        <span>2034</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-card">
+                            <div class="add-body">
+                                <h2>Add a service</h2>
+                                <p>Adding your social account would allow you to view your account metrics and offer services</p>
+                                <a href="#" class="btn"><img src="../../images/icons/add.svg" alt="add-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="nav-title">
+                        <h1>Content</h1>
+                    </div>
+                    <div class="content-create">
+                        <h3>Content URL</h3>
+                        <p>Lorem Ipsum leo orci nisl vel, tortor non, mauris tellus auctor..</p>
+                        <form>
+                            <input type="text" class="form-control">
+                            <a href="#" type="submit" class="btn btn-solid-violet">Submit URL</a>
+                        </form>                 
+                    </div>
+                    <hr>
+                    <div class="nav-title">
+                        <h1>Ranking</h1>
+                    </div>
+                    <div class="service-report">
+                        <div class="service-report-card">
+                            <div class="box box-1">            
+                                <div class="box-body item-big">
+                                    <img src="../../images/icons/star-round-violet.svg" alt="icon">
+                                    <div class="text">
+                                        <h4>Mega</h4>
+                                        <p>2 234 009 followers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-2">            
+                                <div class="box-body item-big">
+                                    <div>
+                                        <img src="../../images/icons/star-round-violet.svg" alt="icon">
+                                        <div class="text">
+                                            <h4>Rate Card</h4>
+                                            <p>Suggested service prices lorem ipsum</p>
+                                        </div>
+                                    </div>
+                                    <div class="rate-list">
+                                        <ul>
+                                            <li><p>Adipiscing vitae euismod:</p><span>1$-10$</span></li>
+                                            <li><p>Elit proin bibendum ac:</p><span>15$-20$</span></li>
+                                            <li><p>Suspendisse vel:</p><span>15$-25$</span></li>
+                                            <li><p>Adipiscing egestas:</p><span>150$-200$</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="rate-text-bottom">
+                                        <h5>Some Title</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl eget imperdiet duis lectus ut ullamcorper.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-3">            
+                                <div class="box-body item-big">
+                                    <img src="../../images/icons/star-round-violet.svg" alt="icon">
+                                    <div class="text">
+                                        <h4>P Score</h4>
+                                        <p>Lorem Ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block item-table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Rank name</th>
+                                            <th scope="col">Followers</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mega</td>
+                                            <td>1 000 000 +</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Macro</td>
+                                            <td>100 000 - 1 000 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Micro</td>
+                                            <td>10 000 - 100 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nano</td>
+                                            <td>0 - 10 000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../js/index.js"></script>
+
+
+    <script>
+        document.querySelectorAll('.splide').forEach(carousel => new Splide( carousel, {
+          perPage: 1,
+          perMove: 1,
+          fixedWidth: 340,
+          gap: 20,
+          trimSpace  : false,
+          arrows: false,
+          pagination: false 
+        } ).mount());
+    </script>
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+    <script>
+        let checkboxes = document.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("click", checkboxHandler);
+            });
+            function checkboxHandler() {
+                if (this.checked === true) {
+                    this.closest(".checkbox-group").classList.add("checked");
+                } else {
+                    this.closest(".checkbox-group").classList.remove("checked");
+                }
+            }
+    </script>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../../js/custom-chart.js"></script>
+</body>
+
+</html>

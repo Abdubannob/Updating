@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top violet">
+        <!-- <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">&#9776;</span>
+                <div id="mySidebar" class="sidebar-overlay">
+                    <a href="javascript:void(0)" class="closebtn btn" onclick="closeSidebar()">CLOSE MENU &times;</a>
+                    <div class="sidebar-overlay-content">
+                        <a href="dashboard-influencer.html">Home</a>
+                        <a href="services-list-influencer.html">Services</a>
+                        <a href="orders-list-influencer.html">Orders</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-influencer.html" class="navbar-brand"><img src="../../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn p-0"><img class="m-0" src="../../images/icons/nav-bell.svg" alt="Bell"></button>
+                <a href="edit-profile-influencer.html" class="btn avatar"><img class="rounded-circle" src="../../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social violet">
+                <ul>
+                    <li><a href="dashboard-influencer.html" class="home"></a></li>
+                    <li><a href="service-add.html" class="service"></a></li>
+                    <li><a href="list.html" class="list"></a></li>
+                    <li><a href="social-media.html" class="social-media active"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="invoice-influencer.html" class="withdrawal"></a></li>
+                    <li><a href="edit-profile-influencer.html" class="setting"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main" class="no-menu">
+        <div class="main-section">
+            <div class="banner-title row">
+                <div class="col-12 col-md-2 nav-title-back">
+                    <a href="social-media-list.html" class="btn"><img src="../../images/icons/go-back.svg" alt="back">Go back</a>
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <p class="text">Add sevice</p>
+                </div>
+                <div class="col-12 col-md-2 button">
+                    <!-- <button class="btn btn-solid-white">sadsd</button> -->
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-body">
+                    <form class="violet">
+                        <h4 class="mb-4" style="font-weight: 700;">Add service</h4>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Title</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="The name of your service">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Description of your service"></textarea>
+                            <small id="emailHelp" class="form-text text-muted">Let me tell you about the service, provide in detail so you know what to expect.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Delivery Type</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="What will you be delivering to the client as part of your service."></textarea>
+                            <small id="emailHelp" class="form-text text-muted">What will you be delivering to the client as part of your service.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Order Note</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Sed aliquet faucibus interdum augue gravida. Dapibus amet pulvinar facilisi in."></textarea>
+                            <small id="emailHelp" class="form-text text-muted">Ut urna dictumst magna et pulvinar nunc nunc aliquam maecenas.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfEmployees">Location</label>
+                            <select class="form-control" id="numberOfEmployees">
+                                <option>Select location</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="emailHelp" class="form-text text-muted">Select one or more location of your service</small>
+                            <div class="selected-items">
+                                <ul>
+                                    <li>United Arab Emirates<button class="btn"><img src="../../images/icons/form-x-icon.svg" alt="cancel-icon"></button></li>
+                                    <li>Spain<button class="btn"><img src="../../images/icons/form-x-icon.svg" alt="cancel-icon"></button></li>
+                                </ul>                           
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfEmployees">Language</label>
+                            <select class="form-control" id="numberOfEmployees">
+                                <option>Select language</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="emailHelp" class="form-text text-muted">Select one or more languages of your service</small>
+                            <div class="selected-items">
+                                <ul>
+                                    <li>English<button class="btn"><img src="../../images/icons/form-x-icon.svg" alt="cancel-icon"></button></li>
+                                    <li>Arabic<button class="btn"><img src="../../images/icons/form-x-icon.svg" alt="cancel-icon"></button></li>
+                                </ul>                           
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfEmployees">Category</label>
+                            <select class="form-control" id="numberOfEmployees">
+                                <option>Select category</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="emailHelp" class="form-text text-muted">Select one or more categories of your service</small>
+                            <div class="selected-items">
+                                <ul>
+                                    <li>Web development<button class="btn"><img src="../../images/icons/form-x-icon.svg" alt="cancel-icon"></button></li>
+                                </ul>                           
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Service Images</label>
+                            <label class="btn form-control drop-file">
+                                <input type="file" id="id_image" name="image" style="display: none" accept="image/*" class="form-control" data-com.bitwarden.browser.user-edit="yes">
+                                <img src="../../images/campaigns/drop-img-violet.svg" alt="picture">
+                                <img src="../../images/campaigns/drop-video-violet.svg" alt="video">
+                                <p>Click or drag your photo here to upload</p>
+                            </label>
+                            <small id="emailHelp" class="form-text text-muted">Add up to 4 photos</small>
+                            <div class="uploaded">
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded1.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded2.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded3.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded4.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Service Video URLs</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="The name of your service giveaway">
+                            <small id="emailHelp" class="form-text text-muted">Add up to 4 video URLs</small>
+                            <div class="uploaded">
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded1.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded2.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded3.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/campaigns/uploaded4.png" alt="uploaded">
+                                    <button class="btn"> <img src="../../images/campaigns/cancel-btn.svg" alt="canel"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numberOfEmployees">Delivery Time (Days)</label>
+                            <div class="input-group plus-minus">
+                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                                <div class="input-group-append d-flex">
+                                    <button class="btn mt-0" type="button"><img src="../../images/icons/form-minus-icon.svg" alt="icon"></button>
+                                    <button class="btn mt-0" type="button"><img src="../../images/icons/form-plus-icon.svg" alt="icon"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Service Price</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="200$  please visit rate card tab for suggested price">
+                        </div>
+                        <div class="d-flex" style="flex-wrap: wrap;">
+                            <a href="social-media-service-added.html" type="submit" class="btn btn-solid-violet mb-1" style="margin-right: 20px">Submit Service</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../js/index.js"></script>
+
+
+    <script>
+        document.querySelectorAll('.splide').forEach(carousel => new Splide( carousel, {
+          perPage: 1,
+          perMove: 1,
+          fixedWidth: 340,
+          gap: 20,
+          trimSpace  : false,
+          arrows: false,
+          pagination: false 
+        } ).mount());
+    </script>
+
+    <script>
+        let btn = document.querySelector("#sidebtn");    
+        let sidebar = document.querySelector(".sidebar");    
+        let overlay = document.querySelector(".overlay");    
+        
+        btn.onclick = function() {
+            sidebar.classList.toggle("active"),
+            overlay.classList.toggle("active")
+        }
+    </script>
+    <script>
+        let checkboxes = document.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("click", checkboxHandler);
+            });
+            function checkboxHandler() {
+                if (this.checked === true) {
+                    this.closest(".checkbox-group").classList.add("checked");
+                } else {
+                    this.closest(".checkbox-group").classList.remove("checked");
+                }
+            }
+    </script>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../../js/custom-chart.js"></script>
+</body>
+
+</html>

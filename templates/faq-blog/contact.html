@@ -12,32 +12,40 @@
     <link rel="stylesheet" href="../../css/main.css">   
 </head>
 
-<body style="background-color: #ffffff;" class="bloging">
-    <header class="landing-background">
-        <div class="container-landing container-landing-two">
-         <section class="contain ">
-             <div class="header">
-                 <div class="header-left">
-                  <button> <img src="../../images/header/techfluencer.io.svg" alt="logo"></button>
-                 </div>
-                 <div class="header-right login-btns">
-                    <button class="login-btn">Login</button>
-                 </div>
-             </div>
-         </section>
+<body style="background-color: #ffffff;">
+    <div class="topnav color-white">
+        <div class="top-navbar">
+            <div class="nav-left">
+                <a href="#"><img src="../../images/mnWho-logo-violet.svg" alt="logo"></a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a class="btn" href="sign-up-influencer.html">Influencer</a></li>
+                    <li><a class="btn" href="sign-up-brand.html">Brands</a></li>
+                    <li><a class="btn btn-solid-violet" href="login.html">Login</a></li>
+                </ul>
+                <div id="myNav" class="topnav-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <li><a class="btn" href="sign-up-influencer.html">Influencer</a></li>
+                        <li><a class="btn" href="sign-up-brand.html">Brands</a></li>
+                        <li><a class="btn" href="login.html">Login</a></li>
+                    </div>
+                </div>
+                <a href="#" class="btn avatar"><img class="rounded-circle" src="../../images/ava.png" alt="ava"></a>
+                <span style="font-size:30px;cursor:pointer;color:#000000; margin-left: 15px" onclick="openNav()">&#9776; </span>
+            </div>
         </div>
-     </header>
+    </div>
     <section class="section-bg">
         <div class="bg-contact">
-            <div class="container container-landing">
+            <div class="container">
                 <div class="banner-content">
-                    <h1 class="violet">contact us</h1>
-                    <p>contact us - we're Here to Listen
-                    </p>
+                    <h1 class="violet">Contact Us</h1>
                 </div>
             </div>
         </div>
-        <div class="container container-landing">
+        <div class="container">
             <div class="contact">
                 <div class="title"><h1>Have a question?</h1></div>
                 <div class="row">
@@ -46,38 +54,30 @@
                             <div class="form-inline">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">First Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Some text">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Last Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Some text">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                                <label for="exampleInputEmail1">Work Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
                             </div>
-                          
                             <div class="form-group">
-                                <label for="id_phone_number">Phone number</label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1">+971</span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                </div>
-                                                                                             
+                                <label for="exampleInputEmail1">Phone Number</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
                             </div>
-
                             <div class="form-group">
-                                <label for="id_subject">Subject</label>
-                                <input type="text" name="subject" maxlength="100" class="form-control" placeholder="Subject" required="" id="id_subject">
+                                <label for="exampleInputEmail1">Subject</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email addres">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Massage</label>
-                                <textarea class="form-control" rows="10" id="comment" placeholder="Your message text"></textarea>
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Some text"></textarea>
                             </div>
-                            <a href="contact-done.html" type="submit" class="btn btn-violet" style="margin-top: 20px;">Submit</a>
+                            <a href="contact-done.html" type="submit" class="btn btn-solid-violet" style="margin-top: 20px;">Submit</a>
                         </form>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -103,42 +103,43 @@
         </div>
     </section>
 
-    <footer class="white-footer">
-        <div class="contain footer container-landing ">
-            <div class="contain">
-                <div class="top-footer">
-                  <a href="#">  <img class="influence" src="../../images/footer/techfluencer.io-footer.svg" alt="fluencer"></a>
-                    <nav>
-                        <a href="../static/brand-plan.html">Brand</a>
-                        <a href="../static/landing-influencer.html">Influencer</a>
-                        <a href="./faq.html">FAQ</a>
-                        <a href="./blog.html">Blog</a>
-                        <a href="./career.html">Career</a>
-                        <a href="./contact.html">Contact Us</a>
-                    </nav>
-                    <div class="navlink">
-                        <a href="#">
-                            <img src="../../images/footer/linkedin-333.svg" alt="in">
-                        </a>
-                        <a href="#">
-                            <img src="../../images/footer/instagram-333.svg" alt="instagram">
-                        </a>
-                        <a href="#">
-                            <img src="../../images/footer/facebook-333.svg" alt="meta">
-                        </a>
-                        <a href="#">
-                            <img src="../../images/footer/twitter-333.svg" alt="twitter">
-                        </a>
+<footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="bottom-footer">
-                    <span> &copy Techfluencers 2023. All rights reserved</span>
-                    <a href="../faq-blog/term-condition.html"><span>Terms and Conditions</span></a>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

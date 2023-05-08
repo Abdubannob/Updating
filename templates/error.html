@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../vendor/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top violet">
+        <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">&#9776;</span>
+                <div id="mySidebar" class="sidebar-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">CLOSE MENU &times;</a>
+                    <div class="sidebar-overlay-content">
+                        <a href="#"><img src="../images/icons/sidebar-social/home-white.svg" alt="icon">Dashboard</a>
+                        <a href="#"><img src="../images/icons/sidebar-social/youtube-white.svg" alt="icon">Services</a>
+                        <a href="#"><img src="../images/icons/sidebar-social/instagram-white.svg" alt="icon">Orders</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-influencer.html" class="navbar-brand"><img src="../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn p-0"><img class="m-0" src="../images/icons/nav-bell.svg" alt="Bell"></button>
+                <a href="edit-profile-influencer.html" class="btn avatar"><img class="rounded-circle" src="../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social violet">
+                <ul>
+                    <li><a href="dashboard-influencer.html" class="home"></a></li>
+                    <li><a href="youtube/youtube-add.html" class="youtube"></a></li>
+                    <li><a href="instagram/instagram-add.html" class="instagram"></a></li>
+                    <li><a href="facebook/facebook-add.html" class="facebook"></a></li>
+                    <li><a href="twitter/twitter-add.html" class="twitter"></a></li>
+                    <li><a href="tiktok/tiktok-add.html" class="tiktok"></a></li>
+                    <li><a href="linkedin/linkedin-add.html" class="linkedIn"></a></li>
+                    <li><a href="github/github-add.html" class="github"></a></li>
+                    <li><a href="soundcloud/soundcloud-add.html" class="soundcloud"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+            <div class="menu violet" id="menu">
+                <h1 class="title">Edit profile</h1>
+                <li><a href="edit-profile-influencer.html" class="menu-edit active">Edit profile</a></li>
+                <li><a href="email-password-influencer.html" class="menu-password">Email & password</a></li>
+                <li><a href="#" class="menu-payment-method">Payment method</a></li>
+                <li><a href="#" class="menu-withdrawal">Withdrawal method</a></li>
+                <li><a href="#" class="menu-subscription">Subscription</a></li>
+                <li><a href="#" class="menu-invoice">Invoices</a></li>
+                <li><a href="#" class="menu-notification">Notifcation settings</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main">
+        <div class="main-section">
+            <div class="nav-title">
+                <div class="nav-title-back">
+                    <a href="edit-profile-influencer.html" class="btn"><img src="../images/icons/go-back.svg">Go back</a>
+                    <h1>Edit profile</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-body">
+                    <div class="add">
+                        <img src="../images/icons/no-done.svg">
+                        <h1>Payment method couldn’t be deleted</h1>
+                        <p>Go back to your <a href="edit-profile-influencer.html">profile edit.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <footer>
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-12 col-xl-2">
+                        <div class="logo">
+                            <img src="../images/mnWho-logo.svg" alt="logo">
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><img src="../images/blog/instagram1.svg" alt="insta"></a></li>
+                                <li><a href="#"><img src="../images/blog/facebook.svg" alt="insta"></a></li>
+                                <li><a href="#"><img src="../images/blog/twitter.svg" alt="insta"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-10">
+                        <div class="row footer-link">
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <ul>
+                                    <li><h3>Influencers</h3></li>
+                                    <li><a href="#">Influencer</a></li>
+                                    <li><a href="#">Influencer pricing</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <ul>
+                                    <li><h3>Brands</h3></li>
+                                    <li><a href="#">Brand</a></li>
+                                    <li><a href="#">Brand pricing</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <ul>
+                                    <li><h3>Resources</h3></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3">
+                                <ul>
+                                    <li><h3>About us</h3></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <div><p>© mnWho 2021. All rights reserved</p></div>
+                    <div>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/custom-chart.js"></script>
+</body>
+
+</html>

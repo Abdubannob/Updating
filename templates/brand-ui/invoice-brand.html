@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar justify-content-between fixed-top">
+        <div class="row d-block d-lg-none">
+            <div class="col">
+                <span style="font-size:30px;cursor:pointer" onclick="openSidebar()">&#9776;</span>
+                <div id="mySidebar" class="sidebar-overlay brand">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">CLOSE MENU &times;</a>
+                    <div class="sidebar-overlay-content">
+                        <li><a href="payment-method-add-brand.html" class="menu-payment-method">Payment method</a></li>
+                        <li><a href="invoice-brand.html" class="menu-invoice">Invoices</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="dashboard-brand.html" class="navbar-brand"><img src="../../images/Logo-mnWho.svg" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn"><img class="m-0" src="../../images/icons/nav-bookmark.svg" alt="Bell"></button>
+                <button class="btn"><img class="m-0" src="../../images/icons/nav-bell.svg" alt="Bell"></button>
+                <a href="edit-profile-brand.html" class="btn avatar m-0"><img class="rounded-circle" src="../../images/ava.png" alt="ava"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-body d-flex" style="height: auto; min-height: -webkit-fill-available;">
+            <div class="social">
+                <ul>
+                    <li><a href="dashboard-brand.html" class="home"></a></li>
+                    <li><a href="youtube/youtube-brand.html" class="youtube"></a></li>
+                    <li><a href="instagram/instagram-brand.html" class="instagram"></a></li>
+                    <li><a href="facebook/facebook-brand.html" class="facebook"></a></li>
+                    <li><a href="twitter/twitter-brand.html" class="twitter"></a></li>
+                    <li><a href="tiktok/tiktok-brand.html" class="tiktok"></a></li>
+                    <li><a href="linkedin/linkedin-brand.html" class="linkedIn"></a></li>
+                    <div class="divider"></div>
+                    <li><a href="payment-method-add-brand.html" class="withdrawal"></a></li>
+                    <li><a href="edit-profile-brand.html" class="setting active"></a></li>                    
+                    <div class="divider"></div>
+                    <li><a href="#" class="sms"></a></li>
+                </ul>
+                <button class="btn btn-sidebar" id="sidebtn"><img src="../../images/icons/sidebar-arrow.svg" alt="icon"></button>
+            </div>
+            <div class="menu" id="menu">
+                <h1 class="title">Payment settings</h1>
+                <li><a href="payment-method-add-brand.html" class="menu-payment-method">Payment method</a></li>
+                <li><a href="invoice-brand.html" class="menu-invoice active">Invoices</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <main id="main">
+        <div class="main-section">
+            <div class="banner-title row brand">
+                <div class="col-12 col-md-2 nav-title-back">
+                </div>
+                <div class="col-12 col-md-8 title">
+                    <p class="text">Invoices</p>
+                </div>
+                <div class="col-12 col-md-2 button">
+                    
+                </div>
+            </div>
+            <div class="invoices">
+                <div class="grand-total block-container">
+                    <h1>Grand Total $6 500</h1>
+                </div> 
+                <div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 52px;">#</th>
+                                    <th scope="col">Order number</th>
+                                    <th scope="col">Service Price</th>
+                                    <th scope="col" style="width: 70px;">Tax</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="collapsed" data-bs-toggle="collapse" data-bs-target="#inv-list1" aria-expanded="false" aria-controls="inv-list1">
+                                    <td>1</td>
+                                    <td><a>Service order #0192348</a></td>
+                                    <td>$500</td>
+                                    <td>5%</td>
+                                    <td class="expand-button">$1 000</td>
+                                </tr>
+                                <tr class="hide-table-padding">
+                                    <td></td>
+                                    <td colspan="4">
+                                        <div id="inv-list1" class="collapse" style="">
+                                            <div class="service-order-invoice">
+                                                <div class="d-flex justify-content-between" style="margin-bottom: 30px; align-items: flex-start;">
+                                                    <div class="d-flex">
+                                                        <div class="item" style="margin-right: 50px;">
+                                                            <h1>Order status</h1>
+                                                            <p>Delivered</p>
+                                                        </div>
+                                                        <div class="item">
+                                                            <h1>Order date</h1>
+                                                            <p>10.02.2020</p>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-solid">Print</button>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="item">
+                                                        <h1>Bill from</h1>
+                                                        <p>New age Inc</p>
+                                                        <p>some address</p>
+                                                    </div>
+                                                    <div class="item" style="text-align: right;">
+                                                        <h1>Bill to</h1>
+                                                        <p>New age Inc</p>
+                                                        <p>some address</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="collapsed" data-bs-toggle="collapse" data-bs-target="#inv-list2" aria-expanded="true" aria-controls="inv-list2">
+                                    <td>2</td>
+                                    <td><a>Campaign order #1234929</a></td>
+                                    <td>$1 000</td>
+                                    <td>5%</td>
+                                    <td class="expand-button">$1 000</td>
+                                </tr>
+                                <tr class="hide-table-padding">
+                                    <td></td>
+                                    <td colspan="4">
+                                        <div id="inv-list2" class="collapse">
+                                            <div class="service-order-invoice">
+                                                <div class="d-flex justify-content-between" style="margin-bottom: 30px; align-items: flex-start;">
+                                                    <div class="d-flex">
+                                                        <div class="item" style="margin-right: 50px;">
+                                                            <h1>Order status</h1>
+                                                            <p>Delivered</p>
+                                                        </div>
+                                                        <div class="item">
+                                                            <h1>Order date</h1>
+                                                            <p>10.02.2020</p>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-solid">Print</button>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="item">
+                                                        <h1>Bill from</h1>
+                                                        <p>New age Inc</p>
+                                                        <p>some address</p>
+                                                    </div>
+                                                    <div class="item" style="text-align: right;">
+                                                        <h1>Bill to</h1>
+                                                        <p>New age Inc</p>
+                                                        <p>some address</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-body row">
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-logo"><img src="../../images/mnWho-logo.svg"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#">Brand</a></li>
+                                <li><a href="#">Influencer</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-12">
+                        <div class="footer-social">
+                            <ul>
+                                <li><button class="btn"><img src="../../images/icons/instagram.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/facebook.svg" alt="icon"></button></li>
+                                <li><button class="btn"><img src="../../images/icons/twitter.svg" alt="icon"></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p>© mnWho 2021. All rights reserved</p>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../../js/index.js"></script>
+
+  <script>
+    let btn = document.querySelector("#sidebtn");    
+    let sidebar = document.querySelector(".sidebar");    
+    let overlay = document.querySelector(".overlay");    
+    
+    btn.onclick = function() {
+        sidebar.classList.toggle("active"),
+        overlay.classList.toggle("active")
+    }
+    </script>
+</body>
+
+</html>
